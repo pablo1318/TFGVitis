@@ -1,0 +1,30 @@
+17:16:52 **** Build of configuration Emulation-SW for project vadd_system_hw_link ****
+make all 
+/mnt/ec2910c8-3756-4768-aff8-d45da3bbee93/XILINX/Vitis/2022.2/bin/v++ --target sw_emu --link --config binary_container_1-link.cfg -o"binary_container_1.xclbin" ../../vadd_kernels/Emulation-SW/build/krnl_vadd.xo
+Option Map File Used: '/mnt/ec2910c8-3756-4768-aff8-d45da3bbee93/XILINX/Vitis/2022.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2022.2 (64-bit)
+  **** SW Build 3671529 on 2022-10-13-17:52:11
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/pablo1318/workspace/vadd_system_hw_link/Emulation-SW/binary_container_1.build/reports/link
+	Log files: /home/pablo1318/workspace/vadd_system_hw_link/Emulation-SW/binary_container_1.build/logs/link
+Running Dispatch Server on port: 36609
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/pablo1318/workspace/vadd_system_hw_link/Emulation-SW/binary_container_1.xclbin.link_summary, at Thu Mar 16 17:17:05 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/pablo1318/workspace/vadd_system_hw_link/Emulation-SW/binary_container_1.build/reports/link/link_guidance.html', at Thu Mar 16 17:17:05 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2022.2
+INFO: [v++ 60-629] Linking for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
+INFO: [v++ 60-645] kernel flags are '-g -I /home/pablo1318/workspace/vadd_kernels/src -g'
+ERROR: [v++ 17-1309] Gcc: /usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+ERROR: [v++ 60-398] gcc failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.
+make: *** [makefile:62: binary_container_1.xclbin] Error 1
+
+17:17:09 Build Finished (took 16s.412ms)
+

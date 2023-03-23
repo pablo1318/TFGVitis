@@ -1,0 +1,33 @@
+17:25:09 **** Incremental Build of configuration Emulation-SW for project vadd_kernels ****
+make -j8 all 
+/mnt/ec2910c8-3756-4768-aff8-d45da3bbee93/XILINX/Vitis/2022.2/bin/v++ --target sw_emu --compile -I"../src" --config krnl_vadd-compile.cfg -o"build/krnl_vadd.xo" "../src/krnl_vadd.cpp"
+Option Map File Used: '/mnt/ec2910c8-3756-4768-aff8-d45da3bbee93/XILINX/Vitis/2022.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2022.2 (64-bit)
+  **** SW Build 3671529 on 2022-10-13-17:52:11
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/reports/krnl_vadd
+	Log files: /home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/logs/krnl_vadd
+Running Dispatch Server on port: 41533
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/krnl_vadd.xo.compile_summary, at Thu Mar 16 17:25:22 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/reports/krnl_vadd/krnl_vadd_guidance.html', at Thu Mar 16 17:25:22 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2022.2
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
+INFO: [v++ 60-242] Creating kernel: 'krnl_vadd'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: krnl_vadd Log file: /home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/vitis_hls.log :
+ERROR: [v++ 207-812] 'stdin.h' file not found (/home/pablo1318/workspace/vadd_kernels/src/krnl_vadd.cpp:83:10)
+ERROR: [v++ 60-300] Failed to build kernel(ip) krnl_vadd, see log for details: /home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/vitis_hls.log
+ERROR: [v++ 60-773] In '/home/pablo1318/workspace/vadd_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-812] 'stdin.h' file not found (/home/pablo1318/workspace/vadd_kernels/src/krnl_vadd.cpp:83:10)
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.
+make: *** [makefile:58: build/krnl_vadd.xo] Error 1
+
+17:25:29 Build Finished (took 19s.287ms)
+

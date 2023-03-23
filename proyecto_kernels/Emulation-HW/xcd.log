@@ -1,0 +1,33 @@
+Wed Mar 22 18:09:59 2023: Running xcd server. This server was built by gradle.
+Wed Mar 22 18:09:59 2023: Server was asked to start on port: '46175'
+Wed Mar 22 18:09:59 2023: Server is using token UUID: 'b456eb3a-232c-41dc-9772-a0bdfe260db4'
+Wed Mar 22 18:09:59 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Wed Mar 22 18:09:59 2023: Attempting to start server on port '46175'
+Wed Mar 22 18:09:59 2023: XCD main fifo: created main fifo '/tmp/xcdmainb456eb3a-232c-41dc-9772-a0bdfe260db4', fd read = 14
+Wed Mar 22 18:09:59 2023: Running Dispatch Server
+Wed Mar 22 18:09:59 2023: Version 2.2.0
+Wed Mar 22 18:10:08 2023: Dispatch Server: Accepted socket connection from client
+Wed Mar 22 18:10:08 2023: Starting Socket connection
+Wed Mar 22 18:10:08 2023: EXCHANGE_TOKEN received, server token: b456eb3a-232c-41dc-9772-a0bdfe260db4, passed token: b456eb3a-232c-41dc-9772-a0bdfe260db4
+Wed Mar 22 18:10:08 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Wed Mar 22 18:10:08 2023: SESSION_MGR: creating session with session uuid: '269d61f5-75fe-4284-899a-70f3fc5729d5' and name 'krnl_vadd'
+Wed Mar 22 18:10:08 2023: KERNEL_SVC: creating session with uuid: '269d61f5-75fe-4284-899a-70f3fc5729d5' and name 'krnl_vadd'
+Wed Mar 22 18:10:08 2023: GUIDANCE_SMGR: creating guidance session with uuid: '269d61f5-75fe-4284-899a-70f3fc5729d5' and name 'krnl_vadd'
+Wed Mar 22 18:10:08 2023: SYSTEM_DIAGRAM: creating session with uuid: '269d61f5-75fe-4284-899a-70f3fc5729d5' and name 'krnl_vadd'
+Wed Mar 22 18:10:17 2023: Dispatch Server: Accepted socket connection from client
+Wed Mar 22 18:10:17 2023: Starting Socket connection
+Wed Mar 22 18:11:12 2023: SESSION_MGR: closing session for UUID '269d61f5-75fe-4284-899a-70f3fc5729d5' with name 'krnl_vadd'
+Wed Mar 22 18:11:12 2023: KERNEL_SVC: closing session for UUID '269d61f5-75fe-4284-899a-70f3fc5729d5' with name 'krnl_vadd'
+Wed Mar 22 18:11:12 2023: GUIDANCE_SMGR: closing session for UUID '269d61f5-75fe-4284-899a-70f3fc5729d5' with name 'krnl_vadd'
+Wed Mar 22 18:11:12 2023: SYSTEM_DIAGRAM: closing session for UUID '269d61f5-75fe-4284-899a-70f3fc5729d5' with name 'krnl_vadd'
+Wed Mar 22 18:11:12 2023: STOP_SERVER received, server token: b456eb3a-232c-41dc-9772-a0bdfe260db4, passed token: b456eb3a-232c-41dc-9772-a0bdfe260db4
+Wed Mar 22 18:11:12 2023: Socket received request to stop server.
+Wed Mar 22 18:11:12 2023: Dispatch Server: do_await_stop
+Wed Mar 22 18:11:12 2023: Dispatch Server: stopping mainFifo_
+Wed Mar 22 18:11:12 2023: XCD main fifo: Stopping
+Wed Mar 22 18:11:12 2023: XCD main fifo: do_read error code: Operation canceled
+Wed Mar 22 18:11:12 2023: XCD main fifo: bytes_transferred: 0
+Wed Mar 22 18:11:12 2023: SERVER: destructor for server bound to port 46175
+Wed Mar 22 18:11:12 2023: XCD main fifo: Good unlink of /tmp/xcdmainb456eb3a-232c-41dc-9772-a0bdfe260db4
+Wed Mar 22 18:11:12 2023: Server exiting with status 0.
+Wed Mar 22 18:11:12 2023: Closing log file.

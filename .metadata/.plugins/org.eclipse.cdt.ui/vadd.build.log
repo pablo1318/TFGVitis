@@ -1,0 +1,6 @@
+17:15:27 **** Incremental Build of configuration Emulation-SW for project vadd ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+17:15:28 Build Finished (took 921ms)
+

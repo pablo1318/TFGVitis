@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Mar 22 20:27:07 2023
+# Process ID: 51448
+# Current directory: /home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1
+# Command line: vivado -log rtl_kernel_wizard_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rtl_kernel_wizard_0.tcl
+# Log file: /home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/rtl_kernel_wizard_0.vds
+# Journal file: /home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 4000.814 MHz, CPU Physical cores: 4, Host memory: 16713 MB
+#-----------------------------------------------------------
+source rtl_kernel_wizard_0.tcl -notrace

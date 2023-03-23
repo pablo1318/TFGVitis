@@ -1,0 +1,18 @@
+20:49:28 **** Incremental Build of configuration Debug for project prueba ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/prueba.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/prueba.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/pablo1318/workspace/zc706/export/zc706/sw/zc706/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/prueba.d" -MT"src/prueba.o" -o "src/prueba.o" "../src/prueba.cpp"
+../src/prueba.cpp:23:10: fatal error: sycl/sycl.hpp: No such file or directory
+   23 | #include <sycl/sycl.hpp>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [src/subdir.mk:23: src/prueba.o] Error 1
+make: *** [makefile:46: all] Error 2
+
+20:49:29 Build Finished (took 1s.289ms)
+

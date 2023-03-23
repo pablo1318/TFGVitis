@@ -1,0 +1,22 @@
+/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:94:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=load_input_XLX_SEP_ PragmaOptions=min = c_size max = c_size_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
+        ^
+/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:107:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=compute_add_XLX_SEP_ PragmaOptions=min = c_size max = c_size_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min = c_size max = c_size
+        ^
+/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:113:80: warning: unused parameter 'size' [-Wunused-parameter]
+static void store_result(uint32_t* out, hls::stream<uint32_t>& out_stream, int size) {
+                                                                               ^
+/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd.tcl:29:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=krnl_vadd_XLX_SEP_ PragmaOptions=name=krnl_vadd_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=krnl_vadd
+        ^
+/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:133:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=krnl_vadd_XLX_SEP_ PragmaOptions=m_axi port = in1 bundle = gmem0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port = in1 bundle = gmem0
+        ^
+/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:134:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=krnl_vadd_XLX_SEP_ PragmaOptions=m_axi port = out bundle = gmem0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port = out bundle = gmem0
+        ^
+/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:139:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=krnl_vadd_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dataflow
+        ^
+7 warnings generated.

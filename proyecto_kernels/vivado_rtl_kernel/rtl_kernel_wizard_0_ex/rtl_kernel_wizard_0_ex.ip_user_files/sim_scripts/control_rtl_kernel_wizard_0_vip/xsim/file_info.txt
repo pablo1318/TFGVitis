@@ -1,0 +1,3 @@
+control_rtl_kernel_wizard_0_vip_pkg.sv,systemverilog,xil_defaultlib,../../../../rtl_kernel_wizard_0_ex.gen/sources_1/ip/control_rtl_kernel_wizard_0_vip/sim/control_rtl_kernel_wizard_0_vip_pkg.sv,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+control_rtl_kernel_wizard_0_vip.sv,systemverilog,xil_defaultlib,../../../../rtl_kernel_wizard_0_ex.gen/sources_1/ip/control_rtl_kernel_wizard_0_vip/sim/control_rtl_kernel_wizard_0_vip.sv,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

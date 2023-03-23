@@ -1,0 +1,12 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<unsigned int, 0>::stream(char const*)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<unsigned int, 0>::operator<<(unsigned int const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" line="94" pragmaType="loop_tripcount" parentfunction="load_input" min="4096" max="4096" avg="4096"/>
+<pragma file="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" line="139" pragmaType="dataflow" parentfunction="krnl_vadd" disable_start_propagation="0"/>
+<pragma file="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" line="133" pragmaType="interface" parentfunction="krnl_vadd" mode="m_axi" port="in1" bundle="gmem0" offset="" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" line="134" pragmaType="interface" parentfunction="krnl_vadd" mode="m_axi" port="out" bundle="gmem0" offset="" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" line="107" pragmaType="loop_tripcount" parentfunction="compute_add" min="4096" max="4096" avg="4096"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+</pragmas>

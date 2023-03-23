@@ -1,0 +1,6 @@
+18:18:53 **** Incremental Build of configuration Emulation-SW for project proyecto ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+18:18:54 Build Finished (took 921ms)
+

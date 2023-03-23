@@ -1,0 +1,6 @@
+20:40:28 **** Incremental Build of configuration Emulation-SW for project asdas ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+20:40:29 Build Finished (took 866ms)
+

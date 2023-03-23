@@ -1,0 +1,8 @@
+2023-03-22T18:21:07.20315100255-18:21:07 **** Clean-only build of configuration Emulation-HW for project proyecto_kernels ****
+000-make -j8 clean 
+000-rm -f build/krnl_vadd.xo .mdb,build/krnl_vadd.o 
+000-rm -rf build
+000-rm -rf .Xil
+00255-
+18:21:08 Build Finished (took 978ms)
+

@@ -1,0 +1,7 @@
+sv xil_defaultlib --include "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl" \
+"../../../../rtl_kernel_wizard_0_ex.gen/sources_1/ip/control_rtl_kernel_wizard_0_vip/sim/control_rtl_kernel_wizard_0_vip_pkg.sv" \
+"../../../../rtl_kernel_wizard_0_ex.gen/sources_1/ip/control_rtl_kernel_wizard_0_vip/sim/control_rtl_kernel_wizard_0_vip.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

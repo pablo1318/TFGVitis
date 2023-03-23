@@ -1,0 +1,688 @@
+
+*** Running vivado
+    with args -log rtl_kernel_wizard_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rtl_kernel_wizard_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source rtl_kernel_wizard_0.tcl -notrace
+Command: synth_design -top rtl_kernel_wizard_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 51478
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2872.617 ; gain = 369.801 ; free physical = 2707 ; free virtual = 32782
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2285.090; parent = 2080.565; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3903.367; parent = 2878.559; children = 1024.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0.v:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_control_s_axi' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:7]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_control_s_axi' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example.sv:5]
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 512 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_vadd' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:6]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDER_BIT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_axi_read_master' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_read_master.sv:52]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_OUTSTANDING bound to: 8 - type: integer 
+	Parameter C_INCLUDE_DATA_FIFO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 513 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 2 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 513 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:493]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 20 - type: integer 
+	Parameter C_INIT bound to: 20'b00000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized0' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 4 - type: integer 
+	Parameter C_INIT bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized0' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_axi_read_master' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_read_master.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_adder.v:11]
+	Parameter C_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_ADDER_BIT_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_CLOCKS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2349]
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter FIFO_MEMORY_TYPE bound to: distributed - type: string 
+	Parameter PACKET_FIFO bound to: false - type: string 
+	Parameter FIFO_DEPTH bound to: 32 - type: integer 
+	Parameter TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter TID_WIDTH bound to: 1 - type: integer 
+	Parameter TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1002 - type: string 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 27 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 5 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2349]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_adder' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_adder.v:11]
+WARNING: [Synth 8-7071] port 's_axis_tstrb' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 's_axis_tid' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 's_axis_tdest' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 's_axis_tuser' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tid' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tdest' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tuser' of module 'rtl_kernel_wizard_0_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+WARNING: [Synth 8-7023] instance 'inst_adder' of module 'rtl_kernel_wizard_0_example_adder' has 22 connections declared, but only 14 given [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:120]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_axi_write_master' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_write_master.sv:42]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_OUTSTANDING bound to: 32 - type: integer 
+	Parameter C_INCLUDE_DATA_FIFO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+	Parameter FIFO_MEMORY_TYPE bound to: distributed - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 32 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized1' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_INIT bound to: 6'b111111 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized1' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized2' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_INIT bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized2' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized3' [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_INIT bound to: 6'b100000 
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_counter__parameterized3' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_axi_write_master' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_axi_write_master.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example_vadd' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example_vadd.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0_example' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_example.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'rtl_kernel_wizard_0' (0#1) [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0.v:7]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_control_s_axi.v:278]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-7129] Port rd_clk in module xpm_fifo_rst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[511] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[510] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[509] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[508] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[507] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[506] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[505] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[504] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[503] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[502] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[501] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[500] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[499] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[498] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[497] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[496] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[495] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[494] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[493] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[492] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[491] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[490] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[489] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[488] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[487] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[486] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[485] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[484] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[483] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[482] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[481] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[480] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[479] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[478] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[477] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[476] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[475] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[474] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[473] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[472] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[471] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[470] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[469] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[468] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[467] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[466] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[465] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[464] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[463] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[462] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[461] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[460] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[459] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[458] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[457] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[456] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[455] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[454] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[453] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[452] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[451] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[450] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[449] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[448] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[447] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[446] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[445] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[444] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[443] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[442] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[441] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[440] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[439] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[438] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[437] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[436] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[435] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[434] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[433] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[432] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[431] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[430] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[429] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[428] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[427] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[426] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[425] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[424] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[423] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[422] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[421] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[420] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2965.547 ; gain = 462.730 ; free physical = 2979 ; free virtual = 32834
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2285.090; parent = 2080.565; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3990.359; parent = 2965.551; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2983.359 ; gain = 480.543 ; free physical = 2979 ; free virtual = 32833
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2285.090; parent = 2080.565; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4008.172; parent = 2983.363; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2983.359 ; gain = 480.543 ; free physical = 2979 ; free virtual = 32833
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2285.090; parent = 2080.565; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4008.172; parent = 2983.363; children = 1024.809
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2983.359 ; gain = 0.000 ; free physical = 2974 ; free virtual = 32826
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc]
+Finished Parsing XDC File [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_ooc.xdc]
+Parsing XDC File [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+Finished Parsing XDC File [/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/imports/rtl_kernel_wizard_0_user.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rtl_kernel_wizard_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rtl_kernel_wizard_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rtl_kernel_wizard_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rtl_kernel_wizard_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 4 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3163.977 ; gain = 0.000 ; free physical = 2859 ; free virtual = 32730
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3163.977 ; gain = 0.000 ; free physical = 2859 ; free virtual = 32731
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3163.977 ; gain = 661.160 ; free physical = 3021 ; free virtual = 32895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2293.950; parent = 2089.426; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4156.773; parent = 3131.965; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3163.977 ; gain = 661.160 ; free physical = 3021 ; free virtual = 32895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2293.950; parent = 2089.426; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4156.773; parent = 3131.965; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis/\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/\gen_fifo.inst_rd_xpm_fifo_sync . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_example/inst_example_vadd_m00_axi/inst_axi_write_master/\gen_fifo.inst_xpm_fifo_sync . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 3163.977 ; gain = 661.160 ; free physical = 3021 ; free virtual = 32895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2293.950; parent = 2089.426; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4156.773; parent = 3131.965; children = 1024.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'rtl_kernel_wizard_0_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'rtl_kernel_wizard_0_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'rtl_kernel_wizard_0_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'rtl_kernel_wizard_0_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 3163.977 ; gain = 661.160 ; free physical = 3020 ; free virtual = 32893
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2293.950; parent = 2089.426; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4156.773; parent = 3131.965; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 16    
+	   2 Input   26 Bit       Adders := 2     
+	   4 Input   10 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 1     
+	   4 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   4 Input    6 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 5     
+	   4 Input    5 Bit       Adders := 8     
+	   3 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	              644 Bit    Registers := 2     
+	              513 Bit    Registers := 2     
+	              512 Bit    Registers := 4     
+	               64 Bit    Registers := 7     
+	               32 Bit    Registers := 5     
+	               26 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 103   
++---RAMs : 
+	             256K Bit	(512 X 513 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 99    
+	   4 Input    2 Bit        Muxes := 21    
+	   2 Input    1 Bit        Muxes := 69    
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+RAM ("\inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/gen_fifo.inst_rd_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg ") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+WARNING: [Synth 8-3332] Sequential element (inst_control_s_axi/FSM_onehot_wstate_reg[0]) is unused and will be removed from module rtl_kernel_wizard_0.
+WARNING: [Synth 8-3332] Sequential element (inst_control_s_axi/FSM_onehot_rstate_reg[0]) is unused and will be removed from module rtl_kernel_wizard_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 3163.977 ; gain = 661.160 ; free physical = 3052 ; free virtual = 32933
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2293.950; parent = 2089.426; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4156.773; parent = 3131.965; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                       | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/gen_fifo.inst_rd_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 513(READ_FIRST)  | W |   | 512 x 513(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                     | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                      | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 644             | RAM32M16 x 46  | 
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_write_master/gen_fifo.inst_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 512             | RAM32M16 x 37  | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 3381.352 ; gain = 878.535 ; free physical = 2611 ; free virtual = 32519
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2773.603; parent = 2569.109; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4406.164; parent = 3381.355; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32548
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2801.327; parent = 2596.833; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                       | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_read_master/gen_fifo.inst_rd_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 513(READ_FIRST)  | W |   | 512 x 513(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                     | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|\inst_example/inst_example_vadd_m00_axi/inst_adder/inst_xpm_fifo_axis /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                      | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 644             | RAM32M16 x 46  | 
+|\inst_example/inst_example_vadd_m00_axi/inst_axi_write_master/gen_fifo.inst_xpm_fifo_sync /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 512             | RAM32M16 x 37  | 
++------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32548
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2802.354; parent = 2597.860; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.636; parent = 2599.142; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.636; parent = 2599.142; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.815; parent = 2599.321; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.878; parent = 2599.384; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.878; parent = 2599.384; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.878; parent = 2599.384; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    88|
+|2     |LUT1     |    84|
+|3     |LUT2     |    93|
+|4     |LUT3     |   239|
+|5     |LUT4     |    69|
+|6     |LUT5     |    88|
+|7     |LUT6     |    72|
+|8     |RAM32M16 |    83|
+|9     |RAMB18E2 |     1|
+|10    |RAMB36E2 |     7|
+|11    |FDRE     |  3845|
+|12    |FDSE     |    39|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 3446.406 ; gain = 943.590 ; free physical = 2646 ; free virtual = 32547
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2803.878; parent = 2599.384; children = 204.524
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4471.219; parent = 3446.410; children = 1024.809
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1752 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 3446.406 ; gain = 762.973 ; free physical = 2678 ; free virtual = 32579
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 3446.414 ; gain = 943.590 ; free physical = 2678 ; free virtual = 32579
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3454.406 ; gain = 0.000 ; free physical = 2783 ; free virtual = 32685
+INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3546.098 ; gain = 0.000 ; free physical = 2688 ; free virtual = 32590
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 83 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 83 instances
+
+Synth Design complete, checksum: 3a8b057f
+INFO: [Common 17-83] Releasing license: Synthesis
+108 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 3546.098 ; gain = 2133.242 ; free physical = 2875 ; free virtual = 32777
+INFO: [Common 17-1381] The checkpoint '/home/pablo1318/workspace/proyecto_kernels/vivado_rtl_kernel/rtl_kernel_wizard_0_ex/rtl_kernel_wizard_0_ex.runs/synth_1/rtl_kernel_wizard_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rtl_kernel_wizard_0_utilization_synth.rpt -pb rtl_kernel_wizard_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 22 20:28:10 2023...

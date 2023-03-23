@@ -1,0 +1,19 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/reports/krnl_vadd
+	Log files: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/logs/krnl_vadd
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd.xo.compile_summary, at Wed Mar 22 18:26:07 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/reports/krnl_vadd/krnl_vadd_guidance.html', at Wed Mar 22 18:26:07 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2022.2
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
+INFO: [v++ 60-242] Creating kernel: 'krnl_vadd'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: krnl_vadd Log file: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/vitis_hls.log :
+ERROR: [v++ 207-812] 'trisycl.h' file not found (/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:85:10)
+ERROR: [v++ 60-300] Failed to build kernel(ip) krnl_vadd, see log for details: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/vitis_hls.log
+ERROR: [v++ 60-773] In '/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-812] 'trisycl.h' file not found (/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:85:10)
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.

@@ -1,0 +1,7 @@
+20:34:47 **** Build of configuration Emulation-SW for project prueba_kernels ****
+make -j8 all 
+Error: No Hardware Functions added for build. Nothing to build.
+To add Hardware Functions for the project, goto Project, open the project editor -> Hardware Functions -> Add Hardware Function...
+
+20:34:48 Build Finished (took 872ms)
+
