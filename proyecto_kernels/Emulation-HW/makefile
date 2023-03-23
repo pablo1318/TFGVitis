@@ -42,6 +42,10 @@ clean:
 	-$(RMDIR) $(BUILD_SUBDIRS)
 	-$(RMDIR) .Xil
 
+ifeq ($(MAKECMDGOALS),all)
+.PHONY: build/krnl_vadd.xo
+endif
+
 .PHONY: incremental
 incremental: all
 

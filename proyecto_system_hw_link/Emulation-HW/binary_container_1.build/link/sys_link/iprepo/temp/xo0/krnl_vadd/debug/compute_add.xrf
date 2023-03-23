@@ -1,0 +1,14 @@
+Begin Function 'compute_add'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local size_read <read_99> <integer> <FifoRead> 'read' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:99>
+size_read /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:99
+reg: size_read_reg_71[31:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state3)
+# ST_3
+
+End Function 'compute_add'
+

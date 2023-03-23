@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="binary_container_1">
+  <platform vendor="xilinx" boardid="u250" name="gen3x16_xdma_4_1" featureRomTime="0">
+    <version major="202210" minor="1"/>
+    <description/>
+    <board name="xilinx.com:au250:1.4" vendor="xilinx.com" fpga="xcu250-figd2104-2L-e">
+      <interfaces/>
+      <memories>
+        <memory name="static_region_sim_ddr_0" type="ddr4" size="16GB"/>
+        <memory name="static_region_sim_ddr_0" type="ddr4" size="16GB"/>
+      </memories>
+      <images>
+        <image name="" type="HDPI"/>
+        <image name="" type="MDPI"/>
+        <image name="" type="LDPI"/>
+      </images>
+      <id>
+        <vendor/>
+        <device/>
+        <subsystem/>
+      </id>
+    </board>
+    <build_flow/>
+    <host architecture="unknown"/>
+    <device name="fpga0" fpgaDevice="virtexuplus:xcu250:figd2104:-2L:e" addrWidth="0">
+      <core name="OCL_REGION_0" target="hw_em" type="clc_region" clockFreq="0MHz" numComputeUnits="60">
+        <kernelClocks>
+          <clock port="DATA_CLK" frequency="300.000000MHz" name="kernel_clk/clk"/>
+          <clock port="KERNEL_CLK" frequency="300.000000MHz" name="kernel_clk/clk"/>
+        </kernelClocks>
+        <kernel name="krnl_vadd" language="c" vlnv="xilinx.com:hls:krnl_vadd:1.0" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="true" interrupt="true" hwControlProtocol="ap_ctrl_chain" countedAutoRestart="0" deadlockDetection="local" mailbox="none" swReset="false">
+          <module name="krnl_vadd">
+            <module name="entry_proc" instName="entry_proc_U0" type="DataflowHS">
+              <rtlPort name="out_r" object="out_r" protocol="ap_none"/>
+            </module>
+            <module name="load_input" instName="load_input_U0" type="DataflowHS">
+              <rtlPort name="m_axi_gmem0_AWVALID" object="gmem0" protocol="m_axi"/>
+              <rtlPort name="in_r" object="in_r" protocol="ap_none"/>
+              <rtlPort name="size" object="size" protocol="ap_none"/>
+              <module name="load_input_Pipeline_mem_rd" instName="grp_load_input_Pipeline_mem_rd_fu_82" type="NonDataflowHS">
+                <rtlPort name="m_axi_gmem0_AWVALID" object="gmem0" protocol="m_axi"/>
+                <rtlPort name="sext_ln93" object="sext_ln93" protocol="ap_none"/>
+                <rtlPort name="size" object="size" protocol="ap_none"/>
+              </module>
+            </module>
+            <module name="compute_add" instName="compute_add_U0" type="DataflowHS">
+              <module name="compute_add_Pipeline_VITIS_LOOP_106_1" instName="grp_compute_add_Pipeline_VITIS_LOOP_106_1_fu_53" type="NonDataflowHS">
+                <rtlPort name="size_load" object="size_load" protocol="ap_none"/>
+              </module>
+            </module>
+            <module name="store_result" instName="store_result_U0" type="DataflowHS">
+              <rtlPort name="m_axi_gmem0_AWVALID" object="gmem0" protocol="m_axi"/>
+            </module>
+          </module>
+          <port name="M_AXI_GMEM0" mode="master" range="0xFFFFFFFF" dataWidth="32" portType="addressable" base="0x0"/>
+          <port name="S_AXI_CONTROL" mode="slave" range="0x30" dataWidth="32" portType="addressable" base="0x0"/>
+          <arg name="in1" addressQualifier="1" id="0" port="M_AXI_GMEM0" size="0x8" offset="0x10" hostOffset="0x0" hostSize="0x8" type="void*"/>
+          <arg name="out_r" addressQualifier="1" id="1" port="M_AXI_GMEM0" size="0x8" offset="0x1C" hostOffset="0x0" hostSize="0x8" type="void*"/>
+          <arg name="size" addressQualifier="0" id="2" port="S_AXI_CONTROL" size="0x4" offset="0x28" hostOffset="0x0" hostSize="0x4" type="unsigned int"/>
+          <compileWorkGroupSize x="1" y="1" z="1"/>
+          <maxWorkGroupSize x="1" y="1" z="1"/>
+          <string_table/>
+          <instance name="krnl_vadd_1">
+            <addrRemap base="0x000000001D010000" range="0x10000" port="S_AXI_CONTROL"/>
+          </instance>
+          <FIFOInformation>
+            <FIFOInst>
+              <Name>size_c_U</Name>
+              <ParentInst/>
+              <StaticDepth>2</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+            <FIFOInst>
+              <Name>in1_stream_U</Name>
+              <ParentInst/>
+              <StaticDepth>2</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+            <FIFOInst>
+              <Name>out_stream_U</Name>
+              <ParentInst/>
+              <StaticDepth>2</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+          </FIFOInformation>
+        </kernel>
+        <connection srcType="core" srcInst="OCL_REGION_0" srcPort="slr1/interconnect_axilite_user_1_M01_AXI" dstType="kernel" dstInst="krnl_vadd_1" dstPort="S_AXI_CONTROL"/>
+        <connection srcType="core" srcInst="OCL_REGION_0" srcPort="memory_subsystem" dstType="kernel" dstInst="krnl_vadd_1" dstPort="M_AXI_GMEM0"/>
+      </core>
+    </device>
+  </platform>
+</project>

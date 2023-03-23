@@ -1,0 +1,15 @@
+Begin Function 'store_result'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local out_stream_read <read_116> <integer> <FifoRead> 'read' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:116>
+out_stream_read /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:116
+reg: out_stream_read_reg_100[31:0] lv
+
+local gmem0_addr <getelementptr_116> <integer> <> 'getelementptr' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:116>
+gmem0_addr /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:116
+reg: gmem0_addr_reg_105[63:0] lv
+
+
+End Function 'store_result'
+

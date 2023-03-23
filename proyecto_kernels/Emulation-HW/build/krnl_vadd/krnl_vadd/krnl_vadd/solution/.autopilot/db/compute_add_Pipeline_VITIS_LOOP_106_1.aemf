@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1679593525753">
+  <ports id="1" name="size_load" type="PortType" coreId="3621216858" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="accum_out" type="PortType" coreId="1836017711" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="in1_stream" type="PortType" coreName="FIFO_SRL" coreId="4102991570" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="37" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="40" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="44" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="45" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="48" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="49" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="50" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="58" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="59" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="63" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="70" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="116" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="117" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="118" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="119" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="120" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="121" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="122" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <blocks id="11" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="accum" originalName="accum" coreId="48" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="i" coreId="4294967295" bitwidth="31" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="size_load_read" lineNumber="99" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreId="0" contextFuncName="compute_add" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="99" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+      <dataInputObjs>size_load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="accum_write_ln0" coreId="0" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="4294967295" opcode="br" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp">
+      <validLinenumbers>99</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="31" name="compute_add.exit.exitStub" type="BlockType">
+    <controlInputObjs>for.inc.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="accum_load_1" coreId="241982208" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="accum_out_write_ln0" coreId="242114576" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>accum_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="_ln0" coreId="1953067621" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="107" pipe_depth="3" RegionName="VITIS_LOOP_106_1">
+    <basic_blocks id="18" name="for.inc.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc.split.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.split.i</controlOutputObjs>
+      <controlOutputObjs>compute_add.exit.exitStub</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_load" coreId="0" bitwidth="31" opcode="load" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="i_cast" rtlName="i_cast_fu_80_p1" coreId="241983088" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="icmp_ln106" lineNumber="106" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." rtlName="icmp_ln106_fu_84_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_add" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.85" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="106" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i_1" rtlName="i_1_fu_90_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="31" opcode="add" m_display="0" m_delay="0.87" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln106" lineNumber="106" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreId="0" contextFuncName="compute_add" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="106" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>compute_add.exit.exitStub</controlInputObjs>
+        <controlInputObjs>for.inc.split.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp">
+        <validLinenumbers>106</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="27" name="for.inc.split.i" type="BlockType">
+      <controlInputObjs>for.inc.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="accum_load" lineNumber="108" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreId="0" contextFuncName="compute_add" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="108" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="in1_stream_read" lineNumber="108" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="compute_add" bitwidth="32" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.21" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="108" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>in1_stream</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="accum_1" lineNumber="108" originalName="accum" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." rtlName="accum_1_fu_104_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="compute_add" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="108" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i_write_ln106" lineNumber="106" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreId="1768318322" contextFuncName="compute_add" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="106" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="accum_write_ln106" lineNumber="106" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreId="909192752" contextFuncName="compute_add" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="106" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln106" lineNumber="106" fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" fileDirectory=".." coreId="1953852527" contextFuncName="compute_add" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp" linenumber="106" fileDirectory="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd" functionName="compute_add"/>
+        <controlInputObjs>for.inc.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp">
+        <validLinenumbers>108</validLinenumbers>
+        <validLinenumbers>106</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="icmp_ln106_reg_133">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="accum_reg_118">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="in1_stream_read_reg_137">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_126">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <expressionNodes realName="accum_fu_40">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_90">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_80">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_44">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="accum_1_fu_104">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln106_fu_84">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="i_load_load_fu_77">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in1_stream_read_read_fu_54">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_72">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln106_store_fu_96">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="size_load_read_read_fu_48">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_60">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="accum_load_load_fu_101">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="accum_load_1_load_fu_114">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_67">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln106_store_fu_109">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioPorts name="accum_out">
+    <contents name="write">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in1_stream">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="size_load">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="compute_add_Pipeline_VITIS_LOOP_106_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4099" mMaxLatency="4099">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>11</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_106_1" mII="1" mDepth="3" mMinTripCount="4096" mMaxTripCount="4096" mMinLatency="4097" mMaxLatency="4097" mType="1">
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>27</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>31</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

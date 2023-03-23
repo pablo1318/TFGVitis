@@ -1,0 +1,22 @@
+Begin Function 'load_input'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local empty_23 <select_93> <integer> <> 'select' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93>
+empty_23 /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93
+empty_23 /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:91
+reg: empty_23_reg_140[30:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+local trunc_ln <partselect_93> <integer> <> 'partselect' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93>
+trunc_ln /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93
+reg: trunc_ln_reg_145[61:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state73)
+# ST_73
+
+End Function 'load_input'
+

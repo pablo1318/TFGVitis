@@ -257,3 +257,22 @@ timestamp=[2023-03-23 18:18:54], mode=BUILD, duration=0:00:00.940, duration_ms=9
 timestamp=[2023-03-23 18:19:18], mode=BUILD, duration=0:00:22.618, duration_ms=22618, data={name=proyecto_kernels, configuration=Emulation-SW, clean_build=false}
 timestamp=[2023-03-23 18:19:37], mode=BUILD, duration=0:00:18.784, duration_ms=18784, data={name=proyecto_system_hw_link, configuration=Emulation-SW, clean_build=false}
 timestamp=[2023-03-23 18:19:53], mode=BUILD, duration=0:00:15.413, duration_ms=15413, data={name=proyecto_system, configuration=Emulation-SW, clean_build=false}
+timestamp=[2023-03-23 18:38:12], mode=WORKBENCH_START, duration=0:00:08.128, duration_ms=8128, data={}
+timestamp=[2023-03-23 18:38:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.031, duration_ms=31, data={}
+timestamp=[2023-03-23 18:38:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.910, duration_ms=910, data={editors_count=3, platform_editors_count=0, projects_count=5, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles,proyecto,proyecto_kernels,proyecto_system,proyecto_system_hw_link}
+timestamp=[2023-03-23 18:38:59], mode=BUILD, duration=0:00:00.981, duration_ms=981, data={name=proyecto, configuration=Emulation-SW, clean_build=true}
+timestamp=[2023-03-23 18:39:00], mode=BUILD, duration=0:00:01.039, duration_ms=1039, data={name=proyecto_kernels, configuration=Emulation-SW, clean_build=true}
+timestamp=[2023-03-23 18:39:03], mode=BUILD, duration=0:00:01.030, duration_ms=1030, data={name=proyecto_system_hw_link, configuration=Emulation-SW, clean_build=true}
+timestamp=[2023-03-23 18:39:04], mode=BUILD, duration=0:00:00.926, duration_ms=926, data={name=proyecto_system, configuration=Emulation-SW, clean_build=true}
+timestamp=[2023-03-23 18:39:14], mode=BUILD, duration=0:00:02.199, duration_ms=2199, data={name=proyecto, configuration=Emulation-SW, clean_build=false}
+timestamp=[2023-03-23 18:39:40], mode=BUILD, duration=0:00:23.978, duration_ms=23978, data={name=proyecto_kernels, configuration=Emulation-SW, clean_build=false}
+timestamp=[2023-03-23 18:40:00], mode=BUILD, duration=0:00:19.614, duration_ms=19614, data={name=proyecto_system_hw_link, configuration=Emulation-SW, clean_build=false}
+timestamp=[2023-03-23 18:40:16], mode=BUILD, duration=0:00:15.903, duration_ms=15903, data={name=proyecto_system, configuration=Emulation-SW, clean_build=false}
+timestamp=[2023-03-23 18:44:52], mode=BUILD, duration=0:00:00.939, duration_ms=939, data={name=proyecto, configuration=Emulation-HW, clean_build=true}
+timestamp=[2023-03-23 18:44:55], mode=BUILD, duration=0:00:02.138, duration_ms=2138, data={name=proyecto, configuration=Emulation-HW, clean_build=false}
+timestamp=[2023-03-23 18:44:57], mode=BUILD, duration=0:00:00.938, duration_ms=938, data={name=proyecto_kernels, configuration=Emulation-HW, clean_build=true}
+timestamp=[2023-03-23 18:45:50], mode=BUILD, duration=0:00:52.486, duration_ms=52486, data={name=proyecto_kernels, configuration=Emulation-HW, clean_build=false}
+timestamp=[2023-03-23 18:45:51], mode=BUILD, duration=0:00:00.976, duration_ms=976, data={name=proyecto_system_hw_link, configuration=Emulation-HW, clean_build=true}
+timestamp=[2023-03-23 18:50:56], mode=BUILD, duration=0:05:04.514, duration_ms=304514, data={name=proyecto_system_hw_link, configuration=Emulation-HW, clean_build=false}
+timestamp=[2023-03-23 18:50:57], mode=BUILD, duration=0:00:00.977, duration_ms=977, data={name=proyecto_system, configuration=Emulation-HW, clean_build=true}
+timestamp=[2023-03-23 18:51:17], mode=BUILD, duration=0:00:20.026, duration_ms=20026, data={name=proyecto_system, configuration=Emulation-HW, clean_build=false}

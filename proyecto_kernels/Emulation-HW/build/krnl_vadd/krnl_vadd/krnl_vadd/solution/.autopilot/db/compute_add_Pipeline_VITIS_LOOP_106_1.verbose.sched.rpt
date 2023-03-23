@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_add_Pipeline_VITIS_LOOP_106_1'
+================================================================
+* Date:           Thu Mar 23 18:45:24 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        krnl_vadd
+* Solution:       solution (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu250-figd2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.267 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     4099|     4099|  13.662 us|  13.662 us|  4099|  4099|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_106_1  |     4097|     4097|         3|          1|          1|  4096|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.26>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%accum = alloca i32 1"   --->   Operation 6 'alloca' 'accum' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 7 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in1_stream, void @empty_12, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%size_load_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %size_load" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:99]   --->   Operation 9 'read' 'size_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.38ns)   --->   "%store_ln0 = store i31 0, i31 %i"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 11 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %accum"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i_load = load i31 %i"   --->   Operation 13 'load' 'i_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i_cast = zext i31 %i_load"   --->   Operation 14 'zext' 'i_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 15 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.85ns)   --->   "%icmp_ln106 = icmp_slt  i32 %i_cast, i32 %size_load_read" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106]   --->   Operation 16 'icmp' 'icmp_ln106' <Predicate = true> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.87ns)   --->   "%i_1 = add i31 %i_load, i31 1"   --->   Operation 17 'add' 'i_1' <Predicate = true> <Delay = 0.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln106 = br i1 %icmp_ln106, void %compute_add.exit.exitStub, void %for.inc.split.i" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106]   --->   Operation 18 'br' 'br_ln106' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln106 = store i31 %i_1, i31 %i" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106]   --->   Operation 19 'store' 'store_ln106' <Predicate = (icmp_ln106)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 1.21>
+ST_2 : Operation 20 [1/1] (1.21ns)   --->   "%in1_stream_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %in1_stream" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108]   --->   Operation 20 'read' 'in1_stream_read' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%accum_load_1 = load i32 %accum"   --->   Operation 27 'load' 'accum_load_1' <Predicate = (!icmp_ln106)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %accum_out, i32 %accum_load_1"   --->   Operation 28 'write' 'write_ln0' <Predicate = (!icmp_ln106)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (!icmp_ln106)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.26>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%accum_load = load i32 %accum" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108]   --->   Operation 21 'load' 'accum_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln107 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:107]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln107' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln105 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:105]   --->   Operation 23 'specloopname' 'specloopname_ln105' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.88ns)   --->   "%accum_1 = add i32 %in1_stream_read, i32 %accum_load" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108]   --->   Operation 24 'add' 'accum_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (0.38ns)   --->   "%store_ln106 = store i32 %accum_1, i32 %accum" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106]   --->   Operation 25 'store' 'store_ln106' <Predicate = true> <Delay = 0.38>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln106 = br void %for.inc.i" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106]   --->   Operation 26 'br' 'br_ln106' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.33ns, clock uncertainty: 0.9ns.
+
+ <State 1>: 1.26ns
+The critical path consists of the following:
+	'alloca' operation ('i') [5]  (0 ns)
+	'load' operation ('i_load') on local variable 'i' [12]  (0 ns)
+	'add' operation ('i_1') [16]  (0.874 ns)
+	'store' operation ('store_ln106', /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106) of variable 'i_1' on local variable 'i' [24]  (0.387 ns)
+
+ <State 2>: 1.22ns
+The critical path consists of the following:
+	fifo read operation ('in1_stream_read', /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108) on port 'in1_stream' (/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108) [22]  (1.22 ns)
+
+ <State 3>: 1.27ns
+The critical path consists of the following:
+	'load' operation ('accum_load', /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108) on local variable 'accum' [19]  (0 ns)
+	'add' operation ('accum', /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108) [23]  (0.88 ns)
+	'store' operation ('store_ln106', /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106) of variable 'accum', /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108 on local variable 'accum' [25]  (0.387 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,12 @@
+[Debug]
+power_profile=false
+host_trace=true
+opencl_trace=false
+lop_trace=false
+xrt_trace=false
+native_xrt_trace=false
+device_trace=off
+stall_trace=off
+app_debug=true
+[Emulation]
+debug_mode=off

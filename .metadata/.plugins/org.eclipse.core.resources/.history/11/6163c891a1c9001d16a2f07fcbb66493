@@ -1,0 +1,36 @@
+{
+ "session": {
+  "name": "SystemDebugger_proyecto_system_10_proyecto",
+  "uuid": "2b9d016e-335d-4aa9-a847-cd3421acfc34",
+  "description": "Vitis IDE session SystemDebugger_proyecto_system_10_proyecto",
+  "timestamp": "0",
+  "report_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/pablo1318/workspace/proyecto/Emulation-SW/SystemDebugger_proyecto_system_10_proyecto/guidance.html",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "proto_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/pablo1318/workspace/proyecto/Emulation-SW/SystemDebugger_proyecto_system_10_proyecto/guidance.pb",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "build_target": "",
+  "config_files": []
+ },
+ "violation_count": 0,
+ "waived_count": 0,
+ "affirmation_count": 0
+}
+

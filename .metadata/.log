@@ -6995,3 +6995,332 @@ org.eclipse.core.runtime.CoreException: Invalid linkage ID in database
 
 !ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:20:06.230
 !MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '3'
+!SESSION 2023-03-23 18:37:36.355 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-23 18:37:36.894
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-23 18:37:36.935
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-03-23 18:38:07.958
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:13.984
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:13.986
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:13.986
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:13.987
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-12
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:13.992
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:13.993
+!MESSAGE XSCT Command: [setws /home/pablo1318/workspace], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:14.140
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:14.142
+!MESSAGE XSCT command with result: [setws /home/pablo1318/workspace], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:14.145
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 18:38:14.146
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 18:38:50.305
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 18:38:50.306
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 18:38:50.306
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:38:59.385
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:39:00.627
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:39:03.366
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:39:04.297
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:39:14.651
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:39:40.694
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:40:00.683
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:40:16.608
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:40:46.628
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:44:52.687
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:44:55.030
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:44:57.930
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:45:50.618
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:45:51.796
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:50:56.509
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:50:57.500
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:51:17.529
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '6'
+
+!ENTRY org.eclipse.cdt.core 4 0 2023-03-23 18:51:18.791
+!MESSAGE Already freed record 524098
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.internal.core.pdom.db.Database.free(Database.java:485)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:64)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseVersionInContext(AbstractIndexerTask.java:994)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:911)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2023-03-23 18:51:18.804
+!MESSAGE Already freed record 524098
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.internal.core.pdom.db.Database.free(Database.java:485)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:64)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseVersionInContext(AbstractIndexerTask.java:994)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:911)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2023-03-23 18:51:18.804
+!MESSAGE Already freed record 524098
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.internal.core.pdom.db.Database.free(Database.java:485)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:64)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseVersionInContext(AbstractIndexerTask.java:994)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:911)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 4 0 2023-03-23 18:51:18.804
+!MESSAGE Already freed record 524098
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.internal.core.pdom.db.Database.free(Database.java:485)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:64)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseVersionInContext(AbstractIndexerTask.java:994)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:911)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-23 18:52:21.322
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY org.eclipse.cdt.core 4 0 2023-03-23 18:52:26.796
+!MESSAGE Error while parsing /home/pablo1318/workspace/proyecto/Emulation-HW/.run/15537/hw_em/device0/binary_0/behav_waveform/xsim/xsim.dir/pfm_top_wrapper_behav/obj/sysc_interface.cc.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error while parsing /home/pablo1318/workspace/proyecto/Emulation-HW/.run/15537/hw_em/device0/binary_0/behav_waveform/xsim/xsim.dir/pfm_top_wrapper_behav/obj/sysc_interface.cc.
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:303)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Error while parsing /usr/include/c++/11/utility.
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:99)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:58)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Error while parsing /usr/include/c++/11/tuple.
+java.lang.ArrayIndexOutOfBoundsException: Index 4096 out of bounds for length 4096
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.clear(Chunk.java:281)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.clearBytes(Database.java:557)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.deleteSerializedData(PDOMLinkage.java:545)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.deleteArgument(PDOMLinkage.java:625)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeTemplateArgument(PDOMLinkage.java:612)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:61)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2023-03-23 18:52:26.808
+!MESSAGE Error while parsing /home/pablo1318/workspace/proyecto/Emulation-HW/.run/15537/hw_em/device0/binary_0/behav_waveform/xsim/xsim.dir/pfm_top_wrapper_behav/obj/sysc_interface.cc.
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2023-03-23 18:52:26.808
+!MESSAGE Error while parsing /usr/include/c++/11/utility.
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:99)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:58)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.cdt.core 4 0 2023-03-23 18:52:26.808
+!MESSAGE Error while parsing /usr/include/c++/11/tuple.
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Index 4096 out of bounds for length 4096
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.clear(Chunk.java:281)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.clearBytes(Database.java:557)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.deleteSerializedData(PDOMLinkage.java:545)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.deleteArgument(PDOMLinkage.java:625)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMLinkage.storeTemplateArgument(PDOMLinkage.java:612)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPArgumentList.clearArguments(PDOMCPPArgumentList.java:61)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPVariableTemplatePartialSpecialization.setTemplateArguments(PDOMCPPVariableTemplatePartialSpecialization.java:84)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage$ConfigurePartialSpecialization.run(PDOMCPPLinkage.java:278)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.handlePostProcesses(PDOMCPPLinkage.java:1301)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPLinkage.addBinding(PDOMCPPLinkage.java:631)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.createPDOMName(PDOMFile.java:515)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.addNames(PDOMFile.java:482)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addFileContent(WritablePDOM.java:154)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.setFileContent(WritableCIndex.java:86)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:678)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:325)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1284)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1096)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:896)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:557)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

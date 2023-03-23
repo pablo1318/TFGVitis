@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_106_1:  '
+    FileOffset:      106
+    FilePath:        /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp
+        Offset:          21015
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_106_1: '
+...

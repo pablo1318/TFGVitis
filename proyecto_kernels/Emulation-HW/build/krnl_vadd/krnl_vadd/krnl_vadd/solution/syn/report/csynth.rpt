@@ -1,0 +1,175 @@
+
+
+================================================================
+== Synthesis Summary Report of 'krnl_vadd'
+================================================================
++ General Information: 
+    * Date:           Thu Mar 23 18:45:26 2023
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        krnl_vadd
+    * Solution:       solution (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcu250-figd2104-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+------+----+------------+------------+-----+
+    |                  Modules                  |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |      |    |            |            |     |
+    |                  & Loops                  |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF     |     LUT    | URAM|
+    +-------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+------+----+------------+------------+-----+
+    |+ krnl_vadd*                               |  Timing|  -0.00|     4174|  1.391e+04|         -|     4172|     -|  dataflow|     -|   -|  1743 (~0%)|  3047 (~0%)|    -|
+    | + entry_proc                              |       -|   1.21|        0|      0.000|         -|        0|     -|        no|     -|   -|     3 (~0%)|    37 (~0%)|    -|
+    | + load_input                              |  Timing|  -0.00|     4171|  1.390e+04|         -|     4171|     -|        no|     -|   -|   238 (~0%)|   704 (~0%)|    -|
+    |  + load_input_Pipeline_mem_rd             |  Timing|  -0.00|     4099|  1.366e+04|         -|     4099|     -|        no|     -|   -|    69 (~0%)|   126 (~0%)|    -|
+    |   o mem_rd                                |       -|   2.43|     4097|  1.366e+04|         3|        1|  4096|       yes|     -|   -|           -|           -|    -|
+    | + compute_add                             |       -|   1.16|     4102|  1.367e+04|         -|     4102|     -|        no|     -|   -|   139 (~0%)|   233 (~0%)|    -|
+    |  + compute_add_Pipeline_VITIS_LOOP_106_1  |       -|   1.16|     4099|  1.366e+04|         -|     4099|     -|        no|     -|   -|   101 (~0%)|   161 (~0%)|    -|
+    |   o VITIS_LOOP_106_1                      |       -|   2.43|     4097|  1.366e+04|         3|        1|  4096|       yes|     -|   -|           -|           -|    -|
+    | + store_result                            |  Timing|  -0.00|       70|    233.310|         -|       70|     -|        no|     -|   -|   168 (~0%)|   391 (~0%)|    -|
+    +-------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+------+----+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem0 | 32 -> 32   | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                                         |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                                           |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                                      |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                                      |
+| s_axi_control | in1_1    | 0x10   | 32    | W      | Data signal of in1               |                                                                                    |
+| s_axi_control | in1_2    | 0x14   | 32    | W      | Data signal of in1               |                                                                                    |
+| s_axi_control | out_r_1  | 0x1c   | 32    | W      | Data signal of out_r             |                                                                                    |
+| s_axi_control | out_r_2  | 0x20   | 32    | W      | Data signal of out_r             |                                                                                    |
+| s_axi_control | size     | 0x28   | 32    | W      | Data signal of size              |                                                                                    |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+
+* Other Ports
++-------------+----------+
+| Interface   | Bitwidth |
++-------------+----------+
+| event_done  | 1        |
+| event_start | 1        |
++-------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| in1      | inout     | unsigned int* |
+| out      | inout     | unsigned int* |
+| size     | in        | int           |
++----------+-----------+---------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+---------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                         |
++----------+---------------+-----------+----------+---------------------------------+
+| in1      | m_axi_gmem0   | interface |          |                                 |
+| in1      | s_axi_control | register  | offset   | name=in1_1 offset=0x10 range=32 |
+| in1      | s_axi_control | register  | offset   | name=in1_2 offset=0x14 range=32 |
+| out      | m_axi_gmem0   | interface |          |                                 |
+| out      | s_axi_control | interface | offset   |                                 |
+| size     | s_axi_control | register  |          | name=size offset=0x28 range=32  |
++----------+---------------+-----------+----------+---------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+--------+-----------+----------+-------+-------------------------------------------------------------------+
+| HW Interface | Loop   | Direction | Length   | Width | Location                                                          |
++--------------+--------+-----------+----------+-------+-------------------------------------------------------------------+
+| m_axi_gmem0  | mem_rd | read      | variable | 32    | /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93:5 |
++--------------+--------+-----------+----------+-------+-------------------------------------------------------------------+
+
+* Inferred Bursts and Widening Missed
++--------------+----------+--------+------------------------------------------------+------------+-------------------------------------------------------------------+
+| HW Interface | Variable | Loop   | Problem                                        | Resolution | Location                                                          |
++--------------+----------+--------+------------------------------------------------+------------+-------------------------------------------------------------------+
+| m_axi_gmem0  | in       | mem_rd | Sequential access length is not divisible by 2 | 214-234    | /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93:5 |
++--------------+----------+--------+------------------------------------------------+------------+-------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                      | DSP | Pragma | Variable | Op  | Impl   | Latency |
++-------------------------------------------+-----+--------+----------+-----+--------+---------+
+| + krnl_vadd                               | 0   |        |          |     |        |         |
+|  + load_input                             | 0   |        |          |     |        |         |
+|   + load_input_Pipeline_mem_rd            | 0   |        |          |     |        |         |
+|     add_ln93_fu_104_p2                    | -   |        | add_ln93 | add | fabric | 0       |
+|  + compute_add                            | 0   |        |          |     |        |         |
+|   + compute_add_Pipeline_VITIS_LOOP_106_1 | 0   |        |          |     |        |         |
+|     i_1_fu_90_p2                          | -   |        | i_1      | add | fabric | 0       |
+|     accum_1_fu_104_p2                     | -   |        | accum_1  | add | fabric | 0       |
++-------------------------------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-------------+------+------+--------+----------+---------+------+---------+
+| Name        | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++-------------+------+------+--------+----------+---------+------+---------+
+| + krnl_vadd | 0    | 0    |        |          |         |      |         |
+|   size_c_U  | -    | -    |        | size_c   | fifo    | srl  | 0       |
+|   out_r_c_U | -    | -    |        | out_r_c  | fifo    | srl  | 0       |
++-------------+------+------+--------+----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+---------------------------------+--------------------------------------------------+
+| Type           | Options                         | Location                                         |
++----------------+---------------------------------+--------------------------------------------------+
+| loop_tripcount | min = c_size max = c_size       | ../../../../src/krnl_vadd.cpp:94 in load_input   |
+| loop_tripcount | min = c_size max = c_size       | ../../../../src/krnl_vadd.cpp:107 in compute_add |
+| interface      | m_axi port = in1 bundle = gmem0 | ../../../../src/krnl_vadd.cpp:133 in krnl_vadd   |
+| interface      | m_axi port = out bundle = gmem0 | ../../../../src/krnl_vadd.cpp:134 in krnl_vadd   |
+| dataflow       |                                 | ../../../../src/krnl_vadd.cpp:139 in krnl_vadd   |
++----------------+---------------------------------+--------------------------------------------------+
+
+

@@ -1,0 +1,22 @@
+{
+    "kernelContainerValues": [
+        "krnl_vadd:xo"
+    ],
+    "profileDataTransferValues": [
+        "krnl_vadd:krnl_vadd_1:in1:all",
+        "krnl_vadd:krnl_vadd_1:out:all"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/pablo1318\/workspace\/proyecto_system_hw_link\/Emulation-HW\/binary_container_1.build\/logs\/link",
+    "package": "false",
+    "reportDir": "\/home\/pablo1318\/workspace\/proyecto_system_hw_link\/Emulation-HW\/binary_container_1.build\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

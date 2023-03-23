@@ -1,0 +1,5 @@
+/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp:548:5: warning: Added loop label VITIS_LOOP_106_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < size; i++) {
+    ^~~
+    VITIS_LOOP_106_1: 
+/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp:548:5: note: FIX-IT applied suggested code changes

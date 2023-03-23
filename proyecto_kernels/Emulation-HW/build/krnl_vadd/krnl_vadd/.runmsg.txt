@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: krnl_vadd
+Log file: /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/vitis_hls.log

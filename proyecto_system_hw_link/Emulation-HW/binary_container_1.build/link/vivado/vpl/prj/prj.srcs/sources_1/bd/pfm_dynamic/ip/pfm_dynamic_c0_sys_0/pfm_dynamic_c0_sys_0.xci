@@ -1,0 +1,74 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "pfm_dynamic_c0_sys_0",
+    "cell_name": "c0_sys",
+    "component_reference": "xilinx.com:ip:sim_clk_gen:1.0",
+    "ip_revision": "3",
+    "gen_directory": "../../../../../../prj.gen/sources_1/bd/pfm_dynamic/ip/pfm_dynamic_c0_sys_0",
+    "parameters": {
+      "component_parameters": {
+        "INITIAL_RESET_CLOCK_CYCLES": [ { "value": "100", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "CLOCK_CYCLES_BEFORE_SHUTDOWN": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "pfm_dynamic_c0_sys_0", "resolve_type": "user", "usage": "all" } ],
+        "CLOCK_TYPE": [ { "value": "Differential", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "RESET_POLARITY": [ { "value": "ACTIVE_LOW", "resolve_type": "user", "enabled": false, "usage": "all" } ],
+        "FREQ_HZ": [ { "value": "300000000", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "SLR_ASSIGNMENTS": [ { "value": "", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "CLOCK_TYPE": [ { "value": "Differential", "resolve_type": "generated", "usage": "simulation.tlm" } ],
+        "CLOCK_PERIOD": [ { "value": "3.3333333333333335", "resolve_type": "generated", "format": "float", "usage": "all" } ],
+        "INITIAL_RESET_CLOCK_CYCLES": [ { "value": "100", "resolve_type": "generated", "format": "long", "enabled": false, "usage": "all" } ],
+        "CLOCK_CYCLES_BEFORE_SHUTDOWN": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "RESET_POLARITY": [ { "value": "0", "resolve_type": "generated", "format": "long", "enabled": false, "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "virtexuplus" } ],
+        "BASE_BOARD_PART": [ { "value": "xilinx.com:au250:part0:1.4" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xcu250" } ],
+        "PACKAGE": [ { "value": "figd2104" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2L" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "E" } ],
+        "USE_RDI_CUSTOMIZATION": [ { "value": "TRUE" } ],
+        "USE_RDI_GENERATION": [ { "value": "TRUE" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "3" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../prj.gen/sources_1/bd/pfm_dynamic/ip/pfm_dynamic_c0_sys_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "rtl" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2022.1" } ],
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk_n": [ { "direction": "out" } ],
+        "clk_p": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "diff_clk": {
+          "vlnv": "xilinx.com:interface:diff_clock:1.0",
+          "abstraction_type": "xilinx.com:interface:diff_clock_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "CAN_DEBUG": [ { "value": "false", "value_permission": "bd", "resolve_type": "generated", "format": "bool", "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "300000000", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK_N": [ { "physical_name": "clk_n" } ],
+            "CLK_P": [ { "physical_name": "clk_p" } ]
+          }
+        }
+      }
+    }
+  }
+}

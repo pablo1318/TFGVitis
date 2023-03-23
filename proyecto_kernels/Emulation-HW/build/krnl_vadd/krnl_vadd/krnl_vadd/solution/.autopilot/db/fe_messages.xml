@@ -1,0 +1,24 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:113:80" msg_body="unused parameter 'size'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_input" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = c_size max = c_size" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute_add" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = c_size max = c_size" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd.tcl:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="krnl_vadd" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=krnl_vadd" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="krnl_vadd" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = in1 bundle = gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:134:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="krnl_vadd" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = out bundle = gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:139:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="krnl_vadd" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

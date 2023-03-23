@@ -1,0 +1,16 @@
+Begin Function 'compute_add_Pipeline_VITIS_LOOP_106_1'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local icmp_ln106 <icmp_106> <integer> <Comparator> 'icmp' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106>
+icmp_ln106 /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106
+reg: icmp_ln106_reg_133[0:0] lv
+
+# ST_2
+local in1_stream_read <read_108> <integer> <FifoRead> 'read' </home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108>
+in1_stream_read /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108
+reg: in1_stream_read_reg_137[31:0] lv
+
+
+End Function 'compute_add_Pipeline_VITIS_LOOP_106_1'
+

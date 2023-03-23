@@ -1,0 +1,47 @@
+IP pfm_top_axi_clock_converter_0_0 is locked. Locked reason: * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_axi_vip_0_0 is locked. Locked reason: * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_axi_vip_1_0 is locked. Locked reason: * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_1_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_axi_vip_2_0 is locked. Locked reason: * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_2_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_axi_vip_3_0 is locked. Locked reason: * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_3_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_connect_to_es_cu_0 is locked. Locked reason: * IP definition 'AXI Interconnect (2.1)' for IP 'pfm_top_connect_to_es_cu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_sim_ddr_0_0 is locked. Locked reason: * IP definition 'DDR4 SDRAM (MIG) (2.2)' for IP 'pfm_top_sim_ddr_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+ * IP 'pfm_top_sim_ddr_0_0' contains one or more locked subcores.* Target IP definition 'DDR4 SDRAM (MIG) (2.2)' requires a revision change. Please review the change log before upgrading the IP.
+.
+IP pfm_top_smartconnect_0_0 is locked. Locked reason: * IP definition 'AXI SmartConnect (1.0)' for IP 'pfm_top_smartconnect_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+ * IP 'pfm_top_smartconnect_0_0' contains one or more locked subcores.* Target IP definition 'AXI SmartConnect (1.0)' requires a revision change. Please review the change log before upgrading the IP.
+.
+IP pfm_top_xbar_0 is locked. Locked reason: * IP definition 'AXI Crossbar (2.1)' for IP 'pfm_top_xbar_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP pfm_top_sim_ddr_0_0_microblaze_mcs is locked. Locked reason: * IP definition 'MicroBlaze MCS (3.0)' for IP 'pfm_top_sim_ddr_0_0_microblaze_mcs' (customized with software release 2022.1) has a different revision in the IP Catalog.
+ * IP 'pfm_top_sim_ddr_0_0_microblaze_mcs' contains one or more locked subcores.* Please upgrade the parent IP 'pfm_top_sim_ddr_0_0'.
+.
+IP pfm_top_sim_ddr_0_0_phy is locked. Locked reason: * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+.
+IP bd_387c_m00e_0 is locked. Locked reason: * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m00e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_m01e_0 is locked. Locked reason: * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m01e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_m02e_0 is locked. Locked reason: * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m02e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_m03e_0 is locked. Locked reason: * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m03e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_m04e_0 is locked. Locked reason: * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m04e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_one_0 is locked. Locked reason: * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+.
+IP bd_387c_s00mmu_0 is locked. Locked reason: * IP definition 'SC MMU (1.0)' for IP 'bd_387c_s00mmu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_s00sic_0 is locked. Locked reason: * IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_387c_s00sic_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_s01mmu_0 is locked. Locked reason: * IP definition 'SC MMU (1.0)' for IP 'bd_387c_s01mmu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_387c_s01sic_0 is locked. Locked reason: * IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_387c_s01sic_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+IP bd_448f_microblaze_I_0 is locked. Locked reason: * IP definition 'MicroBlaze (11.0)' for IP 'bd_448f_microblaze_I_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.

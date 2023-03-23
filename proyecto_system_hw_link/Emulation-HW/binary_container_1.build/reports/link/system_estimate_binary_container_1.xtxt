@@ -1,0 +1,57 @@
+===============================================================================
+Version:    v++ v2022.2 (64-bit)
+Build:      SW Build 3671529 on 2022-10-13-17:52:11
+Copyright:  Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Created:    Thu Mar 23 18:50:56 2023
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             binary_container_1
+Target Device:           xilinx:u250:gen3x16_xdma_4_1:202210.1
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library      Compute Units
+-----------  ----  ------------------  ------------------  -------------
+krnl_vadd    c     fpga0:OCL_REGION_0  binary_container_1  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     binary_container_1
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                            Target Frequency  Estimated Frequency
+------------  -----------  -------------------------------------  ----------------  -------------------
+krnl_vadd_1   krnl_vadd    entry_proc                             300.300293        821.692688
+krnl_vadd_1   krnl_vadd    load_input_Pipeline_mem_rd             300.300293        411.015198
+krnl_vadd_1   krnl_vadd    load_input                             300.300293        411.015198
+krnl_vadd_1   krnl_vadd    compute_add_Pipeline_VITIS_LOOP_106_1  300.300293        789.265991
+krnl_vadd_1   krnl_vadd    compute_add                            300.300293        789.265991
+krnl_vadd_1   krnl_vadd    store_result                           300.300293        411.015198
+krnl_vadd_1   krnl_vadd    krnl_vadd                              300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                            Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+krnl_vadd_1   krnl_vadd    entry_proc                             0               0              0             0               0 ns             0 ns            0 ns
+krnl_vadd_1   krnl_vadd    load_input_Pipeline_mem_rd             4099            4099           4099          4099            13.662 us        13.662 us       13.662 us
+krnl_vadd_1   krnl_vadd    load_input                             4171            4171           4171          4171            13.902 us        13.902 us       13.902 us
+krnl_vadd_1   krnl_vadd    compute_add_Pipeline_VITIS_LOOP_106_1  4099            4099           4099          4099            13.662 us        13.662 us       13.662 us
+krnl_vadd_1   krnl_vadd    compute_add                            4102            4102           4102          4102            13.672 us        13.672 us       13.672 us
+krnl_vadd_1   krnl_vadd    store_result                           70              70             70            70              0.233 us         0.233 us        0.233 us
+krnl_vadd_1   krnl_vadd    krnl_vadd                              4172            4174           4174          4174            13.912 us        13.912 us       13.912 us
+
+Area Information
+Compute Unit  Kernel Name  Module Name                            FF    LUT   DSP  BRAM  URAM
+------------  -----------  -------------------------------------  ----  ----  ---  ----  ----
+krnl_vadd_1   krnl_vadd    entry_proc                             3     37    0    0     0
+krnl_vadd_1   krnl_vadd    load_input_Pipeline_mem_rd             69    126   0    0     0
+krnl_vadd_1   krnl_vadd    load_input                             238   704   0    0     0
+krnl_vadd_1   krnl_vadd    compute_add_Pipeline_VITIS_LOOP_106_1  101   161   0    0     0
+krnl_vadd_1   krnl_vadd    compute_add                            139   233   0    0     0
+krnl_vadd_1   krnl_vadd    store_result                           168   391   0    0     0
+krnl_vadd_1   krnl_vadd    krnl_vadd                              1743  3047  0    0     0
+-------------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vitis Analyzer v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# 
+# Start of session at: Thu Mar 23 18:30:03 2023
+# Process ID: 9665
+# Current directory: /home/pablo1318/workspace
+# Command line: vitis_analyzer
+# Log file: /home/pablo1318/workspace/vitis_analyzer.log
+# Journal file: /home/pablo1318/workspace/vitis_analyzer.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 4000.000 MHz, CPU Physical cores: 4, Host memory: 16701 MB
+#-----------------------------------------------------------
+start_gui
+create_project dummy
+close_project
+exit
+INFO: [Common 17-206] Exiting vitis_analyzer at Thu Mar 23 18:31:29 2023...

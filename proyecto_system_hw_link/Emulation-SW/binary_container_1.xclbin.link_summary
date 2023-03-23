@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:31 2023",
- "timestampMillis": "1679591971460",
+ "dateTimestamp": "Thu Mar 23 18:39:53 2023",
+ "timestampMillis": "1679593193592",
  "buildStep": {
-  "cmdId": "a472d0a5-9403-42c6-9f65-8782ce5d74f7",
+  "cmdId": "0fc18804-1619-4641-bccb-a0ab24dbae7a",
   "name": "v++",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/link.steps.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --link --config binary_container_1-link.cfg -obinary_container_1.xclbin ../../proyecto_kernels/Emulation-SW/build/krnl_vadd.xo ",
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:31 2023",
- "timestampMillis": "1679591971460",
+ "dateTimestamp": "Thu Mar 23 18:39:53 2023",
+ "timestampMillis": "1679593193592",
  "status": {
-  "cmdId": "a472d0a5-9403-42c6-9f65-8782ce5d74f7",
+  "cmdId": "0fc18804-1619-4641-bccb-a0ab24dbae7a",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu Mar 23 18:19:34 2023",
- "timestampMillis": "1679591974311",
+ "dateTimestamp": "Thu Mar 23 18:39:56 2023",
+ "timestampMillis": "1679593196696",
  "buildSummary": {
   "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
   "hardwareDsa": "",
@@ -97,8 +97,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:19:34 2023",
- "timestampMillis": "1679591974582",
+ "dateTimestamp": "Thu Mar 23 18:39:56 2023",
+ "timestampMillis": "1679593196990",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/systemDiagramModel.json",
   "name": "",
@@ -111,10 +111,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:34 2023",
- "timestampMillis": "1679591974583",
+ "dateTimestamp": "Thu Mar 23 18:39:56 2023",
+ "timestampMillis": "1679593196991",
  "buildStep": {
-  "cmdId": "66d7da54-3476-42f7-bdaa-90d334cd3487",
+  "cmdId": "8e54f2e6-6004-4735-bb02-dacca5e3c3cc",
   "name": "regiongen",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_regiongen.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../runtime/bin/regiongen_new -v -m /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml -r /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.rtd -t alg -o xcl_top",
@@ -137,10 +137,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:34 2023",
- "timestampMillis": "1679591974583",
+ "dateTimestamp": "Thu Mar 23 18:39:56 2023",
+ "timestampMillis": "1679593196991",
  "status": {
-  "cmdId": "66d7da54-3476-42f7-bdaa-90d334cd3487",
+  "cmdId": "8e54f2e6-6004-4735-bb02-dacca5e3c3cc",
   "state": "CS_RUNNING"
  }
 }
@@ -148,10 +148,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:35 2023",
- "timestampMillis": "1679591975673",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198120",
  "status": {
-  "cmdId": "66d7da54-3476-42f7-bdaa-90d334cd3487",
+  "cmdId": "8e54f2e6-6004-4735-bb02-dacca5e3c3cc",
   "state": "CS_PASSED"
  }
 }
@@ -159,10 +159,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:35 2023",
- "timestampMillis": "1679591975675",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198121",
  "buildStep": {
-  "cmdId": "53bceb88-bddd-462a-961e-8449d2bd25ee",
+  "cmdId": "e58a5248-e9c3-42d6-86ae-f1f87ccf4a09",
   "name": "gcc",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd/krnl_vadd_kernel_gcc.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../data/emulation/include -std=c++14 -g -I /home/pablo1318/workspace/proyecto_kernels/src -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/krnl_vadd.o -MP -MF obj/krnl_vadd.Cd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/krnl_vadd/krnl_vadd/cpu_sources/krnl_vadd.cpp -o obj/krnl_vadd.o",
@@ -206,10 +206,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:35 2023",
- "timestampMillis": "1679591975676",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198121",
  "status": {
-  "cmdId": "53bceb88-bddd-462a-961e-8449d2bd25ee",
+  "cmdId": "e58a5248-e9c3-42d6-86ae-f1f87ccf4a09",
   "state": "CS_RUNNING"
  }
 }
@@ -217,10 +217,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:36 2023",
- "timestampMillis": "1679591976206",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198702",
  "status": {
-  "cmdId": "53bceb88-bddd-462a-961e-8449d2bd25ee",
+  "cmdId": "e58a5248-e9c3-42d6-86ae-f1f87ccf4a09",
   "state": "CS_PASSED"
  }
 }
@@ -228,10 +228,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:36 2023",
- "timestampMillis": "1679591976207",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198702",
  "buildStep": {
-  "cmdId": "8510f19c-ebd1-4ee8-8c4e-f9bef269b817",
+  "cmdId": "9c05feff-5242-4e8c-8b70-e02cc73a4c77",
   "name": "ar",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd/krnl_vadd_ar.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/binutils-2.26/bin/ar -cr /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd/krnl_vadd.csim_cu.a /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd/obj/krnl_vadd.o",
@@ -248,10 +248,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:36 2023",
- "timestampMillis": "1679591976207",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198703",
  "status": {
-  "cmdId": "8510f19c-ebd1-4ee8-8c4e-f9bef269b817",
+  "cmdId": "9c05feff-5242-4e8c-8b70-e02cc73a4c77",
   "state": "CS_RUNNING"
  }
 }
@@ -259,10 +259,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:36 2023",
- "timestampMillis": "1679591976215",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198710",
  "status": {
-  "cmdId": "8510f19c-ebd1-4ee8-8c4e-f9bef269b817",
+  "cmdId": "9c05feff-5242-4e8c-8b70-e02cc73a4c77",
   "state": "CS_PASSED"
  }
 }
@@ -270,10 +270,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:36 2023",
- "timestampMillis": "1679591976216",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198711",
  "buildStep": {
-  "cmdId": "be770b8f-e999-4213-95e0-afd65b14a562",
+  "cmdId": "26f9aee9-becb-4493-a9db-cc86c24f33dd",
   "name": "g++",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xcl_top_gpp.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -I . -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../data/emulation/include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
@@ -314,10 +314,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:36 2023",
- "timestampMillis": "1679591976217",
+ "dateTimestamp": "Thu Mar 23 18:39:58 2023",
+ "timestampMillis": "1679593198711",
  "status": {
-  "cmdId": "be770b8f-e999-4213-95e0-afd65b14a562",
+  "cmdId": "26f9aee9-becb-4493-a9db-cc86c24f33dd",
   "state": "CS_RUNNING"
  }
 }
@@ -325,10 +325,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977434",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200116",
  "status": {
-  "cmdId": "be770b8f-e999-4213-95e0-afd65b14a562",
+  "cmdId": "26f9aee9-becb-4493-a9db-cc86c24f33dd",
   "state": "CS_PASSED"
  }
 }
@@ -336,10 +336,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977435",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200116",
  "buildStep": {
-  "cmdId": "de7fb66f-3bf6-49fe-a614-8657ac50973d",
+  "cmdId": "8d535bd6-b279-42d3-ab8c-d91d235b0aa6",
   "name": "g++",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_top_gpp.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,binary_container_1.so -o binary_container_1.so krnl_vadd/krnl_vadd.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lib/lnx64.o -lhlsmathsim -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel -Wl,-rpath,/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
@@ -387,10 +387,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977435",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200117",
  "status": {
-  "cmdId": "de7fb66f-3bf6-49fe-a614-8657ac50973d",
+  "cmdId": "8d535bd6-b279-42d3-ab8c-d91d235b0aa6",
   "state": "CS_RUNNING"
  }
 }
@@ -398,10 +398,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977517",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200212",
  "status": {
-  "cmdId": "de7fb66f-3bf6-49fe-a614-8657ac50973d",
+  "cmdId": "8d535bd6-b279-42d3-ab8c-d91d235b0aa6",
   "state": "CS_PASSED"
  }
 }
@@ -409,8 +409,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977625",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200335",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd",
   "name": "",
@@ -423,10 +423,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977626",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200337",
  "buildStep": {
-  "cmdId": "065cf388-63bc-4ab3-94ec-9693eeec73dc",
+  "cmdId": "7fac44f7-f222-4c82-89d6-8d1796f8eb4b",
   "name": "xclbinutil",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xclbinutil.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/xclbinutil --add-section BITSTREAM:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.so --force --target sw_emu --add-section :JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.rtd --append-section :JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd --add-section BUILD_METADATA:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml --add-section DEBUG_DATA:RAW:/dev/null --add-section SYSTEM_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/systemDiagramModel.json --output /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.xclbin",
@@ -461,10 +461,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977626",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200337",
  "status": {
-  "cmdId": "065cf388-63bc-4ab3-94ec-9693eeec73dc",
+  "cmdId": "7fac44f7-f222-4c82-89d6-8d1796f8eb4b",
   "state": "CS_RUNNING"
  }
 }
@@ -472,10 +472,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977735",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200459",
  "status": {
-  "cmdId": "065cf388-63bc-4ab3-94ec-9693eeec73dc",
+  "cmdId": "7fac44f7-f222-4c82-89d6-8d1796f8eb4b",
   "state": "CS_PASSED"
  }
 }
@@ -483,10 +483,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977736",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200459",
  "buildStep": {
-  "cmdId": "cfd87496-592e-40a7-a068-72a2c2dd12fd",
+  "cmdId": "4554e40c-4342-4f6b-a056-938097632f8c",
   "name": "xclbinutil",
   "logFile": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.xclbin.info",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/xclbinutil --quiet --info --input /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.xclbin",
@@ -504,10 +504,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977737",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200460",
  "status": {
-  "cmdId": "cfd87496-592e-40a7-a068-72a2c2dd12fd",
+  "cmdId": "4554e40c-4342-4f6b-a056-938097632f8c",
   "state": "CS_RUNNING"
  }
 }
@@ -515,10 +515,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977846",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200578",
  "status": {
-  "cmdId": "cfd87496-592e-40a7-a068-72a2c2dd12fd",
+  "cmdId": "4554e40c-4342-4f6b-a056-938097632f8c",
   "state": "CS_PASSED"
  }
 }
@@ -526,8 +526,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977849",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200581",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/logs/optraceViewer.html",
   "name": "",
@@ -540,10 +540,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977849",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200581",
  "status": {
-  "cmdId": "a472d0a5-9403-42c6-9f65-8782ce5d74f7",
+  "cmdId": "0fc18804-1619-4641-bccb-a0ab24dbae7a",
   "state": "CS_PASSED"
  }
 }
@@ -551,8 +551,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977903",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200638",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/reports/link/link_guidance.html",
   "name": "",
@@ -565,8 +565,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:19:37 2023",
- "timestampMillis": "1679591977904",
+ "dateTimestamp": "Thu Mar 23 18:40:00 2023",
+ "timestampMillis": "1679593200638",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link_guidance.pb3",
   "name": "",

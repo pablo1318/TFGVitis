@@ -42,6 +42,11 @@ clean:
 	-$(RMDIR) $(BUILD_SUBDIRS)
 	-$(RMDIR) .Xil
 
+ifeq ($(MAKECMDGOALS),incremental)
+.PHONY: binary_container_1.xclbin
+.PHONY: ../../proyecto_kernels/Emulation-HW/build/krnl_vadd.xo
+endif
+
 .PHONY: incremental
 incremental: all
 

@@ -1,0 +1,110 @@
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                   Line: 93, Column: 5 }
+Function:        _ZL10load_inputPjRN3hls6streamIjLi0EEEi
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.4
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inseq
+  - String:          ' '
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        mem_rd
+  - String:          ' '
+  - LoopLoc:         '/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93:5'
+  - String:          ' '
+  - Function:        'load_input(unsigned int*, hls::stream<unsigned int, 0>&, int)'
+    DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                       Line: 91, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                   Line: 93, Column: 5 }
+Function:        _ZL10load_inputPjRN3hls6streamIjLi0EEEi
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inseq
+  - String:          ' '
+  - ArrayName:       in
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        mem_rd
+  - String:          ' '
+  - LoopLoc:         '/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93:5'
+  - String:          ' '
+  - Function:        'load_input(unsigned int*, hls::stream<unsigned int, 0>&, int)'
+    DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                       Line: 91, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                   Line: 93, Column: 5 }
+Function:        _ZL10load_inputPjRN3hls6streamIjLi0EEEi.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        mem_rd
+  - String:          ' '
+  - LoopLoc:         '/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93:5'
+  - String:          ' '
+  - Function:        'load_input(unsigned int*, hls::stream<unsigned int, 0>&, int) (.1)'
+    DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                       Line: 91, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp, 
+                   Line: 93, Column: 5 }
+Function:        _ZL10load_inputPjRN3hls6streamIjLi0EEEi.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        mem_rd
+  - String:          '''('
+  - LoopLoc:         '/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93:5'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

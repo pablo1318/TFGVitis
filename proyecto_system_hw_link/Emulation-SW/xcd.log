@@ -246,3 +246,34 @@ Thu Mar 23 18:19:37 2023: SERVER: destructor for server bound to port 40399
 Thu Mar 23 18:19:37 2023: XCD main fifo: Good unlink of /tmp/xcdmain53df6b5e-333d-408e-8a70-4bf6f0d5ebf6
 Thu Mar 23 18:19:37 2023: Server exiting with status 0.
 Thu Mar 23 18:19:37 2023: Closing log file.
+Thu Mar 23 18:39:44 2023: Running xcd server. This server was built by gradle.
+Thu Mar 23 18:39:44 2023: Server was asked to start on port: '40833'
+Thu Mar 23 18:39:44 2023: Server is using token UUID: 'bf8b01b6-0e6d-4f30-911b-bd0ae4450500'
+Thu Mar 23 18:39:44 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Thu Mar 23 18:39:44 2023: Attempting to start server on port '40833'
+Thu Mar 23 18:39:44 2023: XCD main fifo: created main fifo '/tmp/xcdmainbf8b01b6-0e6d-4f30-911b-bd0ae4450500', fd read = 13
+Thu Mar 23 18:39:44 2023: Running Dispatch Server
+Thu Mar 23 18:39:44 2023: Version 2.2.0
+Thu Mar 23 18:39:53 2023: Dispatch Server: Accepted socket connection from client
+Thu Mar 23 18:39:53 2023: Starting Socket connection
+Thu Mar 23 18:39:53 2023: EXCHANGE_TOKEN received, server token: bf8b01b6-0e6d-4f30-911b-bd0ae4450500, passed token: bf8b01b6-0e6d-4f30-911b-bd0ae4450500
+Thu Mar 23 18:39:53 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Thu Mar 23 18:39:53 2023: SESSION_MGR: creating session with session uuid: '1f265692-8669-4732-9e78-8682955eb7c9' and name 'link'
+Thu Mar 23 18:39:53 2023: KERNEL_SVC: creating session with uuid: '1f265692-8669-4732-9e78-8682955eb7c9' and name 'link'
+Thu Mar 23 18:39:53 2023: GUIDANCE_SMGR: creating guidance session with uuid: '1f265692-8669-4732-9e78-8682955eb7c9' and name 'link'
+Thu Mar 23 18:39:53 2023: SYSTEM_DIAGRAM: creating session with uuid: '1f265692-8669-4732-9e78-8682955eb7c9' and name 'link'
+Thu Mar 23 18:40:00 2023: SESSION_MGR: closing session for UUID '1f265692-8669-4732-9e78-8682955eb7c9' with name 'link'
+Thu Mar 23 18:40:00 2023: KERNEL_SVC: closing session for UUID '1f265692-8669-4732-9e78-8682955eb7c9' with name 'link'
+Thu Mar 23 18:40:00 2023: GUIDANCE_SMGR: closing session for UUID '1f265692-8669-4732-9e78-8682955eb7c9' with name 'link'
+Thu Mar 23 18:40:00 2023: SYSTEM_DIAGRAM: closing session for UUID '1f265692-8669-4732-9e78-8682955eb7c9' with name 'link'
+Thu Mar 23 18:40:00 2023: STOP_SERVER received, server token: bf8b01b6-0e6d-4f30-911b-bd0ae4450500, passed token: bf8b01b6-0e6d-4f30-911b-bd0ae4450500
+Thu Mar 23 18:40:00 2023: Socket received request to stop server.
+Thu Mar 23 18:40:00 2023: Dispatch Server: do_await_stop
+Thu Mar 23 18:40:00 2023: Dispatch Server: stopping mainFifo_
+Thu Mar 23 18:40:00 2023: XCD main fifo: Stopping
+Thu Mar 23 18:40:00 2023: XCD main fifo: do_read error code: Operation canceled
+Thu Mar 23 18:40:00 2023: XCD main fifo: bytes_transferred: 0
+Thu Mar 23 18:40:00 2023: SERVER: destructor for server bound to port 40833
+Thu Mar 23 18:40:00 2023: XCD main fifo: Good unlink of /tmp/xcdmainbf8b01b6-0e6d-4f30-911b-bd0ae4450500
+Thu Mar 23 18:40:00 2023: Server exiting with status 0.
+Thu Mar 23 18:40:00 2023: Closing log file.

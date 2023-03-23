@@ -1,0 +1,246 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf -sc_lib libprotobuf.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xscl -sc_lib libxscl.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xscl/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_cpp_v1_0 -sc_lib libsim_qdma_cpp_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_cpp_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0 -sc_lib libxtlm_ipc_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_sc_v1_0 -sc_lib libsim_qdma_sc_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_sc_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_simple_interconnect_v1_0 -sc_lib libxtlm_simple_interconnect_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_simple_interconnect_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ap_ctrl_v1_0 -sc_lib libxtlm_ap_ctrl_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ap_ctrl_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_ddr_v1_0 -sc_lib libsim_ddr_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_ddr_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_cpp_v1_0 -sc_lib libcommon_cpp_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_cpp_v1_0/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_rpc_v1 -sc_lib libcommon_rpc_v1.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_rpc_v1/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm -sc_lib libxtlm.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm/include -sv_root /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/emu_perf_common_v1_0 -sc_lib libemu_perf_common_v1_0.so --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/emu_perf_common_v1_0/include --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_smartconn_data_0_0/xtlm --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_smartconn_data_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_9/xtlm --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_9/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_12/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_12/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_13/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_irq_const_tieoff_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_hub_0/src --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_hub_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon0_0/src --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon1_0/src --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon1_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_4/src --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_4/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_5/src --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_5/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_6/src --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_6/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_6/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_6/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_7/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_7/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_s00_regslice_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_s00_regslice_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m00_regslice_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m00_regslice_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_1/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_1/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_8/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_8/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_2/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_2/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m02_regslice_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m02_regslice_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_3/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_3/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m03_regslice_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m03_regslice_0/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_4/sysc --include ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_4/sim --include ../../../../prj.ip_user_files/bd/pfm_dynamic/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_embedded_schedular_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_embedded_schedular_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_clock_converter_0_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_clock_converter_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_ddr_0_0/sim_tlm/top --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_ddr_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_smartconnect_0_0/xtlm --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_smartconnect_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_0_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_2_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_2_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_3_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_3_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_address_0_0/sysc --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_address_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_qdma_0_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_xbar_0/src --include ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_xbar_0/sim --include ../../../../prj.ip_user_files/bd/pfm_top/sim --include /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/boost_1_72_0 -L xil_defaultlib -L sim_clk_gen_v1_0_3 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlconcat_v2_1_4 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L axi_mmu_v2_1_25 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_29 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm -sv_root . -sc_lib libdpi.so --snapshot pfm_top_wrapper_behav xil_defaultlib.pfm_top_wrapper xil_defaultlib.glbl -log elaborate.log -ignore_assertions --debug sc 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:5191]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:5197]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:5206]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:5212]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/sim/bd_d216.v:1940]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_mmu_v2_1/hdl/axi_mmu_v2_1_vl_rfs.v:1155]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/sim/bd_d216.v:1964]
+WARNING: [VRFC 10-5021] port 'gpio_io_o' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:8771]
+WARNING: [VRFC 10-5021] port 'gpio_io_o' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:9046]
+WARNING: [VRFC 10-5021] port 'gpio_io_o' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:9206]
+WARNING: [VRFC 10-5021] port 'gpio_io_o' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/sim/pfm_dynamic.v:9366]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_top/sim/pfm_top.v:5332]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_irq_const_tieoff_0/sim/pfm_dynamic_irq_const_tieoff_0_stub.sv" Line 63. Module pfm_dynamic_irq_const_tieoff_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/sim/bd_d216_sci_stub.sv" Line 10. Module bd_d216_sci doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_13/sim/bd_d216_calib_const_0_stub.sv" Line 63. Module bd_d216_calib_const_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_irq_const_tieoff_0/sim/pfm_dynamic_irq_const_tieoff_0_stub.sv" Line 63. Module pfm_dynamic_irq_const_tieoff_0 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/sim/bd_d216_sci_stub.sv" Line 10. Module bd_d216_sci doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_13/sim/bd_d216_calib_const_0_stub.sv" Line 63. Module bd_d216_calib_const_0 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+INFO: [XSIM 43-4431] System-C Modules instantiated in Design
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package xil_defaultlib.$unit_pfm_dynamic_irq_const_tieo...
+Compiling package xil_defaultlib.$unit_bd_d216_interconnect_M00_A...
+Compiling package xil_defaultlib.$unit_pfm_dynamic_profile_vip_0_...
+Compiling package xil_defaultlib.$unit_pfm_dynamic_smartconn_data...
+Compiling package xil_defaultlib.$unit_pfm_top_embedded_schedular...
+Compiling package xil_defaultlib.$unit_pfm_top_sim_ddr_0_0_stub_s...
+Compiling module xil_defaultlib.pfm_dynamic_auto_cc_1
+Compiling module xil_defaultlib.pfm_dynamic_m00_regslice_0
+Compiling module xil_defaultlib.m00_couplers_imp_184K1VH
+Compiling module xil_defaultlib.pfm_dynamic_auto_cc_2
+Compiling module xil_defaultlib.pfm_dynamic_m01_regslice_8
+Compiling module xil_defaultlib.m01_couplers_imp_87NC3
+Compiling module xil_defaultlib.pfm_dynamic_auto_cc_3
+Compiling module xil_defaultlib.pfm_dynamic_m02_regslice_0
+Compiling module xil_defaultlib.m02_couplers_imp_YCLZI8
+Compiling module xil_defaultlib.pfm_dynamic_auto_cc_4
+Compiling module xil_defaultlib.pfm_dynamic_m03_regslice_0
+Compiling module xil_defaultlib.m03_couplers_imp_1RAAZKU
+Compiling module xil_defaultlib.pfm_dynamic_s00_regslice_0
+Compiling module xil_defaultlib.s00_couplers_imp_VX2DF1
+Compiling module xil_defaultlib.pfm_dynamic_xbar_6
+Compiling module xil_defaultlib.pfm_dynamic_dpa_ctrl_interconnec...
+Compiling module xil_defaultlib.pfm_dynamic_dpa_hub_0
+Compiling module xil_defaultlib.pfm_dynamic_dpa_mon0_0
+Compiling module xil_defaultlib.pfm_dynamic_dpa_mon1_0
+Compiling module xil_defaultlib.System_DPA_imp_NCWU00
+Compiling module sim_clk_gen_v1_0_3.sim_clk_gen(CLOCK_PERIOD=3.33333...
+Compiling module xil_defaultlib.pfm_dynamic_c0_sys_0
+Compiling module xil_defaultlib.pfm_dynamic_c1_sys_0
+Compiling module xil_defaultlib.pfm_dynamic_c2_sys_0
+Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(IN0_WID...
+Compiling module xil_defaultlib.pfm_dynamic_xlconcat_interrupt_0
+Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(dout_wi...
+Compiling module xil_defaultlib.pfm_dynamic_xlconcat_interrupt_0...
+Compiling module xil_defaultlib.pfm_dynamic_xlconcat_interrupt_1...
+Compiling module xil_defaultlib.pfm_dynamic_xlconcat_interrupt_2...
+Compiling module xil_defaultlib.pfm_dynamic_xlconcat_interrupt_3...
+Compiling module xil_defaultlib.interrupt_concat_imp_1SXQM3I
+Compiling module xil_defaultlib.pfm_dynamic_irq_const_tieoff_0
+Compiling module sim_clk_gen_v1_0_3.sim_clk_gen(CLOCK_PERIOD=2.0,RES...
+Compiling module xil_defaultlib.pfm_dynamic_kernel2_clk_0
+Compiling module xil_defaultlib.pfm_dynamic_kernel_clk_0
+Compiling module xil_defaultlib.krnl_vadd_control_s_axi
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_mem(MEM_ST...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(MEM_S...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_store(NUM_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_mem(MEM_ST...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(MEM_S...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_load(NUM_R...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_srl(DATA_W...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_throttle(C...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_write(CONS...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_reg_slice(...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi_read(C_USE...
+Compiling module xil_defaultlib.krnl_vadd_gmem0_m_axi(CONSERVATI...
+Compiling module xil_defaultlib.krnl_vadd_entry_proc
+Compiling module xil_defaultlib.krnl_vadd_flow_control_loop_pipe...
+Compiling module xil_defaultlib.krnl_vadd_load_input_Pipeline_me...
+Compiling module xil_defaultlib.krnl_vadd_load_input
+Compiling module xil_defaultlib.krnl_vadd_compute_add_Pipeline_V...
+Compiling module xil_defaultlib.krnl_vadd_compute_add
+Compiling module xil_defaultlib.krnl_vadd_store_result
+Compiling module xil_defaultlib.krnl_vadd_fifo_w64_d4_S_ShiftReg
+Compiling module xil_defaultlib.krnl_vadd_fifo_w64_d4_S
+Compiling module xil_defaultlib.krnl_vadd_fifo_w32_d2_S_ShiftReg
+Compiling module xil_defaultlib.krnl_vadd_fifo_w32_d2_S
+Compiling module xil_defaultlib.krnl_vadd_start_for_store_result...
+Compiling module xil_defaultlib.krnl_vadd_start_for_store_result...
+Compiling module xil_defaultlib.krnl_vadd_start_for_compute_add_...
+Compiling module xil_defaultlib.krnl_vadd_start_for_compute_add_...
+Compiling module xil_defaultlib.krnl_vadd_hls_deadlock_detect_un...
+Compiling module xil_defaultlib.krnl_vadd_hls_deadlock_detect_un...
+Compiling module xil_defaultlib.krnl_vadd_hls_deadlock_detect_un...
+Compiling module xil_defaultlib.krnl_vadd_hls_deadlock_detect_un...
+Compiling module xil_defaultlib.krnl_vadd(C_M_AXI_GMEM0_USER_VAL...
+Compiling module xil_defaultlib.pfm_dynamic_krnl_vadd_1_0
+Compiling module xil_defaultlib.bd_d216_sci
+Compiling module xil_defaultlib.bd_d216_interconnect_M00_AXI_MEM...
+Compiling module xil_defaultlib.bd_d216_rs_M00_AXI_0
+Compiling module xil_defaultlib.interconnect_imp_6HQKUY
+Compiling module xil_defaultlib.bd_d216_calib_const_0
+Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(dout_wi...
+Compiling module xil_defaultlib.bd_d216_calib_vector_concat_0
+Compiling module axi_mmu_v2_1_25.axi_mmu_v2_1_25_addr_decoder(C_F...
+Compiling module axi_mmu_v2_1_25.axi_mmu_v2_1_25_decerr_slave(C_A...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axi_r...
+Compiling module axi_mmu_v2_1_25.axi_mmu_v2_1_25_top(C_FAMILY="vi...
+Compiling module xil_defaultlib.bd_d216_interconnect_ddrmem_ctrl...
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="virtex...]
+Compiling architecture bd_d216_psr_ctrl_interconnect_0_arch of entity xil_defaultlib.bd_d216_psr_ctrl_interconnect_0 [bd_d216_psr_ctrl_interconnect_0_...]
+Compiling module xil_defaultlib.memory_imp_1K98CM8
+Compiling architecture bd_d216_psr_aclk_slr1_0_arch of entity xil_defaultlib.bd_d216_psr_aclk_SLR1_0 [bd_d216_psr_aclk_slr1_0_default]
+Compiling module xil_defaultlib.reset_imp_1YKOSPE
+Compiling module xil_defaultlib.bd_d216
+Compiling module xil_defaultlib.pfm_dynamic_memory_subsystem_0
+Compiling module sim_clk_gen_v1_0_3.sim_clk_gen(CLOCK_PERIOD=20.0,RE...
+Compiling module xil_defaultlib.pfm_dynamic_pfm_clk_2_0
+Compiling module sim_clk_gen_v1_0_3.sim_clk_gen(CLOCK_PERIOD=4.0,RES...
+Compiling module xil_defaultlib.pfm_dynamic_pfm_clk_3_0
+Compiling module xil_defaultlib.pfm_dynamic_sci
+Compiling module xil_defaultlib.pfm_dynamic_profile_vip_0_0
+Compiling architecture pfm_dynamic_psr_kernel2_clk_0_0_arch of entity xil_defaultlib.pfm_dynamic_psr_kernel2_clk_0_0 [pfm_dynamic_psr_kernel2_clk_0_0_...]
+Compiling architecture pfm_dynamic_psr_kernel_clk_0_0_arch of entity xil_defaultlib.pfm_dynamic_psr_kernel_clk_0_0 [pfm_dynamic_psr_kernel_clk_0_0_d...]
+Compiling architecture pfm_dynamic_psr_pfm_clk_0_2_0_arch of entity xil_defaultlib.pfm_dynamic_psr_pfm_clk_0_2_0 [pfm_dynamic_psr_pfm_clk_0_2_0_de...]
+Compiling architecture pfm_dynamic_psr_pfm_clk_0_3_0_arch of entity xil_defaultlib.pfm_dynamic_psr_pfm_clk_0_3_0 [pfm_dynamic_psr_pfm_clk_0_3_0_de...]
+Compiling module xil_defaultlib.m00_couplers_imp_8JNEI7
+Compiling module xil_defaultlib.pfm_dynamic_m01_regslice_6
+Compiling module xil_defaultlib.m01_couplers_imp_ZTEVG1
+Compiling module xil_defaultlib.s00_couplers_imp_1VD9R9B
+Compiling module xil_defaultlib.pfm_dynamic_xbar_4
+Compiling module xil_defaultlib.pfm_dynamic_interconnect_axilite...
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_mtbf_...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_family="virt...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="virtexuplus"...]
+Compiling architecture pfm_dynamic_to_delete_kernel_ctrl_0_0_arch of entity xil_defaultlib.pfm_dynamic_to_delete_kernel_ctrl_0_0 [pfm_dynamic_to_delete_kernel_ctr...]
+Compiling module xil_defaultlib.slr0_imp_1Q3M93Z
+Compiling module xil_defaultlib.m00_couplers_imp_1IU07KW
+Compiling module xil_defaultlib.pfm_dynamic_auto_cc_0
+Compiling module xil_defaultlib.pfm_dynamic_m01_regslice_7
+Compiling module xil_defaultlib.m01_couplers_imp_P1OJY6
+Compiling module xil_defaultlib.s00_couplers_imp_BJPJ00
+Compiling module xil_defaultlib.pfm_dynamic_xbar_5
+Compiling module xil_defaultlib.pfm_dynamic_interconnect_axilite...
+Compiling architecture pfm_dynamic_to_delete_kernel_ctrl_1_0_arch of entity xil_defaultlib.pfm_dynamic_to_delete_kernel_ctrl_1_0 [pfm_dynamic_to_delete_kernel_ctr...]
+Compiling module xil_defaultlib.slr1_imp_IZT2WG
+Compiling module xil_defaultlib.s00_couplers_imp_1858E00
+Compiling module xil_defaultlib.pfm_dynamic_interconnect_axilite...
+Compiling architecture pfm_dynamic_to_delete_kernel_ctrl_2_0_arch of entity xil_defaultlib.pfm_dynamic_to_delete_kernel_ctrl_2_0 [pfm_dynamic_to_delete_kernel_ctr...]
+Compiling module xil_defaultlib.slr2_imp_EEMOLC
+Compiling module xil_defaultlib.s00_couplers_imp_IY3J5B
+Compiling module xil_defaultlib.pfm_dynamic_interconnect_axilite...
+Compiling architecture pfm_dynamic_to_delete_kernel_ctrl_3_0_arch of entity xil_defaultlib.pfm_dynamic_to_delete_kernel_ctrl_3_0 [pfm_dynamic_to_delete_kernel_ctr...]
+Compiling module xil_defaultlib.slr3_imp_1AP68A7
+Compiling module xil_defaultlib.pfm_dynamic_smartconn_data_0_0
+Compiling module xil_defaultlib.pfm_dynamic
+Compiling module xil_defaultlib.pfm_top_sci
+Compiling module xil_defaultlib.pfm_top_axi_clock_converter_0_0
+Compiling module xil_defaultlib.pfm_top_axi_vip_0_0
+Compiling module xil_defaultlib.pfm_top_axi_vip_1_0
+Compiling module xil_defaultlib.pfm_top_axi_vip_2_0
+Compiling module xil_defaultlib.pfm_top_axi_vip_3_0
+Compiling module xil_defaultlib.pfm_top_kernel2_clk_0
+Compiling module xil_defaultlib.pfm_top_kernel_clk_0
+Compiling module xil_defaultlib.clk_reset_wizard_imp_1ULW1Z6
+Compiling module xil_defaultlib.m00_couplers_imp_1WWR602
+Compiling module xil_defaultlib.m01_couplers_imp_ZIGXNL
+Compiling module xil_defaultlib.m02_couplers_imp_CBJNC5
+Compiling module xil_defaultlib.m03_couplers_imp_1BNM6CM
+Compiling module xil_defaultlib.m04_couplers_imp_12NOBU5
+Compiling module xil_defaultlib.s00_couplers_imp_ZCH4U6
+Compiling module xil_defaultlib.s01_couplers_imp_1X0T1Q5
+Compiling module xil_defaultlib.pfm_top_xbar_0
+Compiling module xil_defaultlib.pfm_top_connect_to_es_cu_0
+Compiling module xil_defaultlib.pfm_top_dma_pcie_clk_0
+Compiling module xil_defaultlib.pfm_top_embedded_schedular_0
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="virtex...]
+Compiling architecture pfm_top_psr_dma_pcie_aclk_0_arch of entity xil_defaultlib.pfm_top_psr_dma_pcie_aclk_0 [pfm_top_psr_dma_pcie_aclk_0_defa...]
+Compiling module xil_defaultlib.pfm_top_sim_address_0_0
+Compiling module xil_defaultlib.pfm_top_sim_ddr_0_0
+Compiling module xil_defaultlib.pfm_top_sim_qdma_0_0
+Compiling module xil_defaultlib.pfm_top_smartconnect_0_0
+Compiling module xil_defaultlib.static_region_imp_1TEKTPK
+Compiling module xil_defaultlib.pfm_top
+Compiling module xil_defaultlib.pfm_top_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pfm_top_wrapper_behav

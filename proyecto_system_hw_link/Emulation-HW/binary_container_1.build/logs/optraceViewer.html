@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|13512|100||cpp|1679593856115|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|13512|101|launchStep_|cpp|1679593856115|START|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|13512|102||cpp|1679593856117|END|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|13512|103||cpp|1679593856118|END|OCL_LINK|",
+      "[OPTRACE]|13512|104||cpp|1679593856124|END|v++|",
+      "[OPTRACE]|13512|10|run|cpp|1679593568584|START|OCL_LINK|",
+      "[OPTRACE]|13512|11|setupBinaryForLink|cpp|1679593568585|START|Create Binary|",
+      "[OPTRACE]|13512|12||cpp|1679593568585|END|Create Binary|",
+      "[OPTRACE]|13512|13|setupBinaryForLink|cpp|1679593568585|START|Extract Kernels|",
+      "[OPTRACE]|13512|14||cpp|1679593568683|END|Extract Kernels|",
+      "[OPTRACE]|13512|15|launchStep_|cpp|1679593569028|START|Launch Step: system_link|",
+      "[OPTRACE]|13512|16||cpp|1679593583399|END|Launch Step: system_link|",
+      "[OPTRACE]|13512|17|launchStep_|cpp|1679593583400|START|Launch Step: cf2sw|",
+      "[OPTRACE]|13512|18||cpp|1679593586999|END|Launch Step: cf2sw|",
+      "[OPTRACE]|13512|19|launchStep_|cpp|1679593587000|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|13512|1|main|cpp|1679593554404|START|v++|ROLLUP_0",
+      "[OPTRACE]|13512|20||cpp|1679593587289|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|13512|21|launchStep_|cpp|1679593587290|START|Launch Step: vpl|",
+      "[OPTRACE]|13512|2|run|cpp|1679593554404|START|Validate Kernels|",
+      "[OPTRACE]|13512|3||cpp|1679593554559|END|Validate Kernels|",
+      "[OPTRACE]|13512|4|prepareProject|cpp|1679593554582|START|Create Solution|",
+      "[OPTRACE]|13512|5||cpp|1679593564786|END|Create Solution|",
+      "[OPTRACE]|13512|6|prepareProject|cpp|1679593564786|START|Add Device|",
+      "[OPTRACE]|13512|7|addDevice|cpp|1679593564786|START|Find & Load Device|",
+      "[OPTRACE]|13512|88||cpp|1679593850519|END|Launch Step: vpl|",
+      "[OPTRACE]|13512|89|launchStep_|cpp|1679593850552|START|Launch Step: rtdgen|",
+      "[OPTRACE]|13512|8||cpp|1679593566104|END|Find & Load Device|",
+      "[OPTRACE]|13512|90|launchCf2sw_|cpp|1679593850555|START|Launch cf2sw|",
+      "[OPTRACE]|13512|91||cpp|1679593853587|END|Launch cf2sw|",
+      "[OPTRACE]|13512|92|writeSystemDiagram|cpp|1679593855661|START|writeSystemDiagram|",
+      "[OPTRACE]|13512|93||cpp|1679593855663|END|writeSystemDiagram|",
+      "[OPTRACE]|13512|94|writeAutomationSummary|cpp|1679593855663|START|writeAutomationSummary|",
+      "[OPTRACE]|13512|95||cpp|1679593855664|END|writeAutomationSummary|",
+      "[OPTRACE]|13512|96||cpp|1679593855665|END|Launch Step: rtdgen|",
+      "[OPTRACE]|13512|97|launchStep_|cpp|1679593855665|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|13512|98||cpp|1679593855815|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|13512|99|launchStep_|cpp|1679593855815|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|13512|9||cpp|1679593568576|END|Add Device|",
+      "[OPTRACE]|13866|22|main|cpp|1679593588568|START|vpl|",
+      "[OPTRACE]|13866|23|runPlatformLinker|cpp|1679593588588|START|runPlatformLinker|",
+      "[OPTRACE]|13866|24|setupBinaryForLink|cpp|1679593588588|START|Create Solution|",
+      "[OPTRACE]|13866|25||cpp|1679593588592|END|Create Solution|",
+      "[OPTRACE]|13866|26|setupBinaryForLink|cpp|1679593588592|START|Add platform|",
+      "[OPTRACE]|13866|27||cpp|1679593592641|END|Add platform|",
+      "[OPTRACE]|13866|28|setupBinaryForLink|cpp|1679593592641|START|Create Binary|",
+      "[OPTRACE]|13866|29||cpp|1679593592642|END|Create Binary|",
+      "[OPTRACE]|13866|30|setupBinaryForLink|cpp|1679593592642|START|Create Kernels|",
+      "[OPTRACE]|13866|31||cpp|1679593592645|END|Create Kernels|",
+      "[OPTRACE]|13866|32|runPlatformLinker|cpp|1679593592653|START|Process Kernels|",
+      "[OPTRACE]|13866|33|runPlatformLinker|cpp|1679593592653|START|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|13866|34||cpp|1679593592653|END|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|13866|35|runPlatformLinker|cpp|1679593592653|START|Process Kernel Profiles|",
+      "[OPTRACE]|13866|36||cpp|1679593592653|END|Process Kernel Profiles|",
+      "[OPTRACE]|13866|37|runPlatformLinker|cpp|1679593592653|START|Process Trace Memory|",
+      "[OPTRACE]|13866|38||cpp|1679593592654|END|Process Trace Memory|",
+      "[OPTRACE]|13866|39|runPlatformLinker|cpp|1679593592654|START|Process AIE Trace|",
+      "[OPTRACE]|13866|40||cpp|1679593592654|END|Process AIE Trace|",
+      "[OPTRACE]|13866|41||cpp|1679593592654|END|Process Kernels|",
+      "[OPTRACE]|13866|42|runPlatformLinker|cpp|1679593592654|START|Process Kernel Debug|",
+      "[OPTRACE]|13866|43||cpp|1679593592654|END|Process Kernel Debug|",
+      "[OPTRACE]|13866|44|runPlatformLinker|cpp|1679593592654|START|Set Kernel Debug|",
+      "[OPTRACE]|13866|45||cpp|1679593592654|END|Set Kernel Debug|",
+      "[OPTRACE]|13866|46|runPlatformLinker|cpp|1679593592654|START|Set Miscellaneous|",
+      "[OPTRACE]|13866|47||cpp|1679593592654|END|Set Miscellaneous|",
+      "[OPTRACE]|13866|48|run|cpp|1679593592654|START|Extract Platform|",
+      "[OPTRACE]|13866|49||cpp|1679593594358|END|Extract Platform|",
+      "[OPTRACE]|13866|50|run|cpp|1679593594358|START|Retrieving Debuggable Kernel|",
+      "[OPTRACE]|13866|51||cpp|1679593594358|END|Retrieving Debuggable Kernel|",
+      "[OPTRACE]|13866|84|runPlatformLinker|cpp|1679593850290|START|Generate Resource Availability Report|",
+      "[OPTRACE]|13866|85||cpp|1679593850290|END|Generate Resource Availability Report|",
+      "[OPTRACE]|13866|86||cpp|1679593850290|END|runPlatformLinker|",
+      "[OPTRACE]|13866|87||cpp|1679593850450|END|vpl|",
+      "[OPTRACE]|13947|52|/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/vpl.tcl|vivado_impl|1679593600138|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|13947|53|ipirun.tcl|vpl|1679593600168|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|13947|54|ipirun.tcl|vpl|1679593600169|END|ipirun|",
+      "[OPTRACE]|13947|55|ipirun.tcl|vpl|1679593600198|START|Source pre_sys_link Tcl script|",
+      "[OPTRACE]|13947|56|ipirun.tcl|vpl|1679593600198|END|Source pre_sys_link Tcl script|",
+      "[OPTRACE]|13947|57|ipirun.tcl|vpl|1679593600199|START|Create project|",
+      "[OPTRACE]|13947|58|ipirun.tcl|vpl|1679593629849|END|Create project|",
+      "[OPTRACE]|13947|59|ipirun.tcl|vpl|1679593631155|START|Create IP caching environment|",
+      "[OPTRACE]|13947|60|ipirun.tcl|vpl|1679593632689|END|Create IP caching environment|",
+      "[OPTRACE]|13947|61|ipirun.tcl|vpl|1679593632690|START|Import/add dynamic BD|",
+      "[OPTRACE]|13947|62|ipirun.tcl|vpl|1679593632744|END|Import/add dynamic BD|",
+      "[OPTRACE]|13947|63|ipirun.tcl|vpl|1679593632744|START|Open BD and insert kernels|",
+      "[OPTRACE]|13947|64|ipirun.tcl|vpl|1679593643390|END|Open BD and insert kernels|",
+      "[OPTRACE]|13947|65|ipirun.tcl|vpl|1679593643391|START|Add debug/profiling support|",
+      "[OPTRACE]|13947|66|ipirun.tcl|vpl|1679593645628|END|Add debug/profiling support|",
+      "[OPTRACE]|13947|67|ipirun.tcl|vpl|1679593645628|START|IPI address assignments|",
+      "[OPTRACE]|13947|68|ipirun.tcl|vpl|1679593645636|END|IPI address assignments|",
+      "[OPTRACE]|13947|69|ipirun.tcl|vpl|1679593645637|START|Source hardware platform post_sys_link Tcl script|",
+      "[OPTRACE]|13947|70|ipirun.tcl|vpl|1679593645927|END|Source hardware platform post_sys_link Tcl script|",
+      "[OPTRACE]|13947|71|ipirun.tcl|vpl|1679593645932|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|13947|72|ipirun.tcl|vpl|1679593645947|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|13947|73|ipirun.tcl|vpl|1679593645947|START|Collect BD interface connectivity and write automation summary report|",
+      "[OPTRACE]|13947|74|ipirun.tcl|vpl|1679593645952|END|Collect BD interface connectivity and write automation summary report|",
+      "[OPTRACE]|13947|75|ipirun.tcl|vpl|1679593646044|START|Generate output products|",
+      "[OPTRACE]|13947|76|ipirun.tcl|vpl|1679593740039|END|Generate output products|",
+      "[OPTRACE]|13947|77|ipirun.tcl|vpl|1679593740041|START|Generate simulation scripts|",
+      "[OPTRACE]|13947|78|ipirun.tcl|vpl|1679593753319|END|Generate simulation scripts|",
+      "[OPTRACE]|13947|79|ipirun.tcl|vpl|1679593753321|START|Compile simulation scripts|",
+      "[OPTRACE]|13947|80|ipirun.tcl|vpl|1679593825638|END|Compile simulation scripts|",
+      "[OPTRACE]|13947|81|ipirun.tcl|vpl|1679593825640|START|Elaborate simulation scripts|",
+      "[OPTRACE]|13947|82|ipirun.tcl|vpl|1679593848823|END|Elaborate simulation scripts|",
+      "[OPTRACE]|13947|83|ipirun.tcl|vpl|1679593849719|END|Implementation|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM:SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+
