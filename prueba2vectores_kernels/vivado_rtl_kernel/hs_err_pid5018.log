@@ -1,0 +1,19 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7fbd63fefecb]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7fbd63ff6c81]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7fbd63fead23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7fbda7442520]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib/libjimage.so(+0x2759) [0x7fbd62802759]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib/libjimage.so(+0x3674) [0x7fbd62803674]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib/libjimage.so(JIMAGE_FindResource+0xc8) [0x7fbd62803b48]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0x5bc27a) [0x7fbd639bc27a]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0x5b94bc) [0x7fbd639b94bc]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xd57abc) [0x7fbd64157abc]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xd5847a) [0x7fbd6415847a]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xd59065) [0x7fbd64159065]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0x673440) [0x7fbd63a73440]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0x85b904) [0x7fbd63c5b904]
+[0x7fbd4ac1e44a]

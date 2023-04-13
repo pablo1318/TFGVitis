@@ -6,7 +6,7 @@
 
 source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'pablo1318' on host 'pop-os.localdomain' (Linux_x86_64 version 6.2.6-76060206-generic) on Thu Mar 23 18:39:35 CET 2023
+INFO: [HLS 200-10] For user 'pablo1318' on host 'pop-os.localdomain' (Linux_x86_64 version 6.2.6-76060206-generic) on Mon Mar 27 19:41:15 CEST 2023
 INFO: [HLS 200-10] On os Pop!_OS 22.04 LTS
 INFO: [HLS 200-10] In directory '/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd'
 Sourcing Tcl script 'krnl_vadd.tcl'
@@ -39,16 +39,16 @@ INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0
 INFO: [HLS 200-1510] Running: config_export -format xo -ipname krnl_vadd 
 INFO: [HLS 200-1907] Replacing 'config_export -deadlock_detection=none' with 'config_rtl -deadlock_detection=none' in current solution file
 INFO: [HLS 200-1510] Running: csynth_design -synthesis_check 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.945 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 300.027 MB.
 INFO: [HLS 200-10] Analyzing design file '/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp' ... 
 WARNING: [HLS 207-5292] unused parameter 'size' (/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:113:80)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.35 seconds. CPU system time: 0.29 seconds. Elapsed time: 0.64 seconds; current allocated memory: 309.242 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.3 seconds. CPU system time: 0.29 seconds. Elapsed time: 0.6 seconds; current allocated memory: 301.324 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.34 seconds. CPU system time: 0.38 seconds. Elapsed time: 3.71 seconds; current allocated memory: 309.566 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 309.566 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.76 seconds. CPU system time: 0.35 seconds. Elapsed time: 3.12 seconds; current allocated memory: 301.652 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 301.652 MB.
 INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.71 seconds. CPU system time: 0.69 seconds. Elapsed time: 4.38 seconds; current allocated memory: 2.008 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.07 seconds. CPU system time: 0.66 seconds. Elapsed time: 3.75 seconds; current allocated memory: 2.012 MB.
 INFO: [HLS 200-1510] Running: close_project 
 HLS completed successfully
-INFO: [HLS 200-112] Total CPU user time: 5.01 seconds. Total CPU system time: 0.95 seconds. Total elapsed time: 5.79 seconds; peak allocated memory: 309.969 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Thu Mar 23 18:39:40 2023...
+INFO: [HLS 200-112] Total CPU user time: 4.29 seconds. Total CPU system time: 0.94 seconds. Total elapsed time: 5.09 seconds; peak allocated memory: 302.055 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon Mar 27 19:41:19 2023...

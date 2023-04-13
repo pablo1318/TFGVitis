@@ -1,0 +1,3 @@
+control_kenel_tutorial_vip_pkg.sv,systemverilog,xil_defaultlib,../../../../kenel_tutorial_ex.gen/sources_1/ip/control_kenel_tutorial_vip/sim/control_kenel_tutorial_vip_pkg.sv,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+control_kenel_tutorial_vip.sv,systemverilog,xil_defaultlib,../../../../kenel_tutorial_ex.gen/sources_1/ip/control_kenel_tutorial_vip/sim/control_kenel_tutorial_vip.sv,incdir="$ref_dir/../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

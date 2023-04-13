@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 23 18:48:57 2023" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 27 18:26:13 2023" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:au250:part0:1.4" DEVICE="xcu250" NAME="pfm_dynamic" PACKAGE="figd2104" SPEEDGRADE="-2L"/>
 
@@ -7666,7 +7666,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="2112955725" FULLNAME="/krnl_vadd_1" HWVERSION="1.0" INSTANCE="krnl_vadd_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="krnl_vadd" VLNV="xilinx.com:hls:krnl_vadd:1.0">
+    <MODULE COREREVISION="2112961402" FULLNAME="/krnl_vadd_1" HWVERSION="1.0" INSTANCE="krnl_vadd_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="krnl_vadd" VLNV="xilinx.com:hls:krnl_vadd:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_CONTROL_ADDR_WIDTH" VALUE="6"/>
@@ -7688,7 +7688,7 @@
         <PARAMETER NAME="clk_period" VALUE="3.333"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="4174"/>
+        <PARAMETER NAME="latency" VALUE="1000078"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="SLR_ASSIGNMENTS"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>

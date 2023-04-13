@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_input_Pipeline_mem_rd'
 ================================================================
-* Date:           Thu Mar 23 18:45:24 2023
+* Date:           Mon Mar 27 18:22:35 2023
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        krnl_vadd
@@ -25,24 +25,24 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
-    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
-    +---------+---------+-----------+-----------+------+------+---------+
-    |     4099|     4099|  13.662 us|  13.662 us|  4099|  4099|       no|
-    +---------+---------+-----------+-----------+------+------+---------+
+    +---------+---------+----------+----------+---------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute) |      Interval     | Pipeline|
+    |   min   |   max   |    min   |    max   |   min   |   max   |   Type  |
+    +---------+---------+----------+----------+---------+---------+---------+
+    |  1000003|  1000003|  3.333 ms|  3.333 ms|  1000003|  1000003|       no|
+    +---------+---------+----------+----------+---------+---------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +----------+---------+---------+----------+-----------+-----------+------+----------+
-        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
-        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
-        +----------+---------+---------+----------+-----------+-----------+------+----------+
-        |- mem_rd  |     4097|     4097|         3|          1|          1|  4096|       yes|
-        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- mem_rd  |  1000001|  1000001|         3|          1|          1|  1000000|       yes|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -108,7 +108,7 @@ ST_2 : Operation 22 [1/1] (2.43ns)   --->   "%gmem0_addr_read = read i32 @_ssdm_
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (!icmp_ln93)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 1.21>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%speclooptripcount_ln94 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:94]   --->   Operation 23 'speclooptripcount' 'speclooptripcount_ln94' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%speclooptripcount_ln94 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1000000, i64 1000000, i64 1000000" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:94]   --->   Operation 23 'speclooptripcount' 'speclooptripcount_ln94' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specloopname_ln93 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93]   --->   Operation 24 'specloopname' 'specloopname_ln93' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (1.21ns)   --->   "%write_ln95 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %in1_stream, i32 %gmem0_addr_read" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:95]   --->   Operation 25 'write' 'write_ln95' <Predicate = true> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.39> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln93 = br void %for.inc.i" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:93]   --->   Operation 26 'br' 'br_ln93' <Predicate = true> <Delay = 0.00>

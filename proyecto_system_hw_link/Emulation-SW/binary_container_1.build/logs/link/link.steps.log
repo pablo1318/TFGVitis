@@ -9,7 +9,7 @@
 Environment variables :
 ------------------------------------------
 SHELL=/bin/bash
-SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2552,unix/pop-os:/tmp/.ICE-unix/2552
+SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2438,unix/pop-os:/tmp/.ICE-unix/2438
 QT_ACCESSIBILITY=1
 XDG_CONFIG_DIRS=/etc/xdg/xdg-pop:/etc/xdg
 SSH_AGENT_LAUNCHER=gnome-keyring
@@ -43,7 +43,7 @@ XDG_SESSION_DESKTOP=pop
 XDG_SESSION_TYPE=x11
 _RDI_DONT_SET_XILINX_AS_PATH=True
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-SYSTEMD_EXEC_PID=2576
+SYSTEMD_EXEC_PID=2461
 XAUTHORITY=/run/user/1000/gdm/Xauthority
 RDI_PREPEND_PATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
 XILINX_DSP=
@@ -57,10 +57,10 @@ XDG_CURRENT_DESKTOP=pop:GNOME
 XILINX_HLS=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2
 HDI_PROCESSOR=x86_64
 RDI_BUILD=yes
-XILINX_RS_SESSION=bd91b3d9-40bf-46bd-8b71-f6c6ebbf11c5
+XILINX_RS_SESSION=c2cc5dcc-771b-47fe-aec6-1ca23ef3c80a
 RDI_PROG=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++
-INVOCATION_ID=63ccf2dd69694362881efa10b54eab2b
-MANAGERPID=2352
+INVOCATION_ID=ed668d63cf1445da93170fce0925e094
+MANAGERPID=2240
 RT_TCL_PATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/scripts/rt/base_tcl/tcl
 MFLAGS=
 GJS_DEBUG_OUTPUT=stderr
@@ -68,7 +68,7 @@ XILINX_SDK=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2
 MAKEFLAGS=
 XDG_SESSION_CLASS=user
 PYTHONPATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/lib/python3.8/
-XILINX_RS_PORT=38705
+XILINX_RS_PORT=35041
 DEFAULTS_PATH=/usr/share/gconf/pop.default.path
 PYTHONHOME=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/
 USER=pablo1318
@@ -91,7 +91,7 @@ HDIPRELDPATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/lib/lnx64.o/Default:/
 XDG_RUNTIME_DIR=/run/user/1000
 TCL_LIBRARY=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/tcl/tcl8.5
 LC_ALL=en_US.UTF-8
-JOURNAL_STREAM=8:37281
+JOURNAL_STREAM=8:33216
 XDG_DATA_DIRS=/usr/share/pop:/usr/share/gnome:/home/pablo1318/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
 CWD=/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW
 PATH=/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/binutils-2.26/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/aarch64/lin/aarch64-linux/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/gnu/microblaze/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/jre11.0.11_9/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/arm/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch64/lin/aarch64-none/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch64/lin/aarch64-linux/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/cmake-3.21.4/bin::/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/aietools/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin:/opt/xilinx/xrt/bin:/media/pablo1318/hddLinux/XILINX/DocNav:/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Model_Composer/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/cmake-3.3.2/bin:/home/pablo1318/.cargo/bin:/home/pablo1318/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -102,13 +102,13 @@ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 RDI_PLATFORM=lnx64
 MYVIVADO=
 ISL_IOSTREAMS_RSA=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/isl
-GIO_LAUNCHED_DESKTOP_FILE_PID=11255
+GIO_LAUNCHED_DESKTOP_FILE_PID=6182
 GIO_LAUNCHED_DESKTOP_FILE=/home/pablo1318/.local/share/applications/Xilinx Vitis 2022.2_1678822903405.desktop
 XILINX_VITIS=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2
 OLDPWD=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
 _=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=40833
-XILINX_CD_SESSION=1f265692-8669-4732-9e78-8682955eb7c9
+XILINX_CD_CONNECT_ID=45931
+XILINX_CD_SESSION=54d4b999-ac82-4d40-9fd1-6a91ef20ee53
 
 
 V++ command line:
@@ -162,61 +162,61 @@ FINAL PLATFORM PATH
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 23 Mar 2023 18:39:56
+timestamp: 27 Mar 2023 19:42:01
 ------------------------------------------
 V++ internal step: generating xclbin xml file
-timestamp: 23 Mar 2023 18:39:56
+timestamp: 27 Mar 2023 19:42:01
 output: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml
 ------------------------------------------
 V++ internal step: running regiongen
-timestamp: 23 Mar 2023 18:39:56
+timestamp: 27 Mar 2023 19:42:02
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../runtime/bin/regiongen_new -v -m /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml -r /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.rtd -t alg -o xcl_top
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running gcc to generate obj files for kernel source
-timestamp: 23 Mar 2023 18:39:58
+timestamp: 27 Mar 2023 19:42:03
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd
 cmd: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../data/emulation/include -std=c++14 -g -I /home/pablo1318/workspace/proyecto_kernels/src -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/krnl_vadd.o -MP -MF obj/krnl_vadd.Cd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/krnl_vadd/krnl_vadd/cpu_sources/krnl_vadd.cpp -o obj/krnl_vadd.o
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running ar to generate .csim_cu.a
-timestamp: 23 Mar 2023 18:39:58
+timestamp: 27 Mar 2023 19:42:03
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd
 cmd: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/binutils-2.26/bin/ar -cr /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd/krnl_vadd.csim_cu.a /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/krnl_vadd/obj/krnl_vadd.o
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: compiling xcl_top.cpp to obj/xcl_top.o
-timestamp: 23 Mar 2023 18:39:58
+timestamp: 27 Mar 2023 19:42:03
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int
 cmd: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -I . -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../data/emulation/include -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running g++ to generate .so
-timestamp: 23 Mar 2023 18:40:00
+timestamp: 27 Mar 2023 19:42:04
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int
 cmd: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,binary_container_1.so -o binary_container_1.so krnl_vadd/krnl_vadd.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lib/lnx64.o -lhlsmathsim -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel -Wl,-rpath,/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running xclbinutil to generate xclbin
-timestamp: 23 Mar 2023 18:40:00
+timestamp: 27 Mar 2023 19:42:05
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/xclbinutil --add-section BITSTREAM:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.so --force --target sw_emu --add-section :JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.rtd --append-section :JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd --add-section BUILD_METADATA:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml --add-section DEBUG_DATA:RAW:/dev/null --add-section SYSTEM_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/systemDiagramModel.json --output /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.xclbin
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running xclbinutil to generate xclbin info
-timestamp: 23 Mar 2023 18:40:00
+timestamp: 27 Mar 2023 19:42:05
 launch dir: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/xclbinutil --quiet --info --input /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.xclbin
 V++ internal step status: success
 ------------------------------------------
 sw emulation completed
-timestamp: 23 Mar 2023 18:40:00
+timestamp: 27 Mar 2023 19:42:05
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 23 Mar 2023 18:40:00
+timestamp: 27 Mar 2023 19:42:05
 output: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/reports/link/system_estimate_binary_container_1.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 23 Mar 2023 18:40:00
+timestamp: 27 Mar 2023 19:42:05

@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2022.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu Mar 23 18:45:50 2023</td></tr>
+<tr><td><b>Date</b></td><td>Mon Mar 27 18:23:04 2023</td></tr>
 <tr><td><b>Host</b></td><td>pop-os running 64-bit Pop!_OS 22.04 LTS</td></tr>
 <tr><td><b>Command</b></td><td>/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop "run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}" --advanced.misc "report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}" --advanced.misc "report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}" --target hw_emu --compile -I../src --config krnl_vadd-compile.cfg -obuild/krnl_vadd.xo ../src/krnl_vadd.cpp </td></tr>
 </table></center><br>
@@ -3432,17 +3432,6 @@ window.onload = function () { addSorting(); }
 <th align="left">Categories</th>
 <th align="left" width="350">Details</th>
 <th align="left" width="380">Resolution</th>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.krnl_vadd.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 32 in loop 'mem_rd'(<a href="file:///home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp#line=93">krnl_vadd.cpp</a>) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp#line=93">krnl_vadd.cpp</a>)
-</td>
-<td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">2</td>
@@ -3485,6 +3474,17 @@ window.onload = function () { addSorting(); }
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.krnl_vadd.Kernel</td>
 <td align="left">**** Estimated Fmax: 411.00 MHz
+</td>
+<td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.krnl_vadd.Interface</td>
+<td align="left">Multiple burst reads of variable length and bit width 32 in loop 'mem_rd'(<a href="file:///home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp#line=93">krnl_vadd.cpp</a>) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp#line=93">krnl_vadd.cpp</a>)
 </td>
 <td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

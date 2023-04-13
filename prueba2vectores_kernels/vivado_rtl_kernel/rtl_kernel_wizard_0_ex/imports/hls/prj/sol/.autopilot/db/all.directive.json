@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "rtl_kernel_wizard_0",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/pablo1318\/workspace\/prueba2vectores_kernels\/vivado_rtl_kernel\/rtl_kernel_wizard_0_ex\/imports\/hls\/run_hls.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "rtl_kernel_wizard_0"
+              }]
+          }
+        }]
+    }]}

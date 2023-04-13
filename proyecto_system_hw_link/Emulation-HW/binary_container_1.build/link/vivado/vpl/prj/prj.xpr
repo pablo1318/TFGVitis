@@ -6,7 +6,7 @@
 <Project Version="7" Minor="61" Path="/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="0c437902ef604569b19715e16f5db3b8"/>
+    <Option Name="Id" Val="cb3f90a2632b4766b12b30132f56755a"/>
     <Option Name="Part" Val="xcu250-figd2104-2L-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -118,7 +118,7 @@
       <File Path="$PSRCDIR/sources_1/bd/pfm_dynamic/pfm_dynamic.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../.local/hw_platform/prj/202210_1_dev.srcs/sources_1/bd/pfm_dynamic/pfm_dynamic.bd"/>
-          <Attr Name="ImportTime" Val="1679593627"/>
+          <Attr Name="ImportTime" Val="1679934263"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -127,7 +127,7 @@
       <File Path="$PSRCDIR/sources_1/bd/pfm_top/pfm_top.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../.local/hw_platform/prj/202210_1_dev.srcs/sources_1/bd/pfm_top/pfm_top.bd"/>
-          <Attr Name="ImportTime" Val="1679593628"/>
+          <Attr Name="ImportTime" Val="1679934264"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

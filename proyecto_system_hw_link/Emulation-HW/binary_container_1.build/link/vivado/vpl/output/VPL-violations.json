@@ -2,7 +2,7 @@
  "session": {
   "name": "link",
   "pid": "0",
-  "uuid": "58eca792-b8d4-468d-9b60-2a368fcab7d1",
+  "uuid": "65e3a852-8395-48d9-8027-a42e5ad3305e",
   "description": "/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw_emu --link --config binary_container_1-link.cfg -obinary_container_1.xclbin ../../proyecto_kernels/Emulation-HW/build/krnl_vadd.xo ",
   "timestamp": "0",
   "outputFiles": []
@@ -110,9 +110,9 @@
     }
    },
    "categories": {
+    "2": "IP",
     "0": "System",
-    "1": "Link",
-    "2": "IP"
+    "1": "Link"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -334,9 +334,9 @@
     }
    },
    "categories": {
+    "0": "System",
     "1": "Link",
-    "2": "IP",
-    "0": "System"
+    "2": "IP"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -446,9 +446,9 @@
     }
    },
    "categories": {
-    "2": "IP",
     "0": "System",
-    "1": "Link"
+    "1": "Link",
+    "2": "IP"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -894,9 +894,9 @@
     }
    },
    "categories": {
+    "0": "System",
     "1": "Link",
-    "2": "IP",
-    "0": "System"
+    "2": "IP"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -1118,9 +1118,9 @@
     }
    },
    "categories": {
+    "2": "IP",
     "0": "System",
-    "1": "Link",
-    "2": "IP"
+    "1": "Link"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -1230,9 +1230,9 @@
     }
    },
    "categories": {
+    "2": "IP",
     "0": "System",
-    "1": "Link",
-    "2": "IP"
+    "1": "Link"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -1790,9 +1790,9 @@
     }
    },
    "categories": {
-    "0": "System",
     "1": "Link",
-    "2": "IP"
+    "2": "IP",
+    "0": "System"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",
@@ -2462,9 +2462,9 @@
     }
    },
    "categories": {
+    "2": "IP",
     "0": "System",
-    "1": "Link",
-    "2": "IP"
+    "1": "Link"
    },
    "extendedCategories": {},
    "impact": "IMPACT_UNKNOWN",

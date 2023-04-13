@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr 11 19:32:45 2023
+# Process ID: 28294
+# Current directory: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.runs/synth_1
+# Command line: vivado -log kernel_prueba.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kernel_prueba.tcl
+# Log file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.runs/synth_1/kernel_prueba.vds
+# Journal file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.runs/synth_1/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 4000.069 MHz, CPU Physical cores: 4, Host memory: 16701 MB
+#-----------------------------------------------------------
+source kernel_prueba.tcl -notrace

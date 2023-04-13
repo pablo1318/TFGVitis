@@ -1,225 +1,6 @@
-2023-03-23T18:45:50.82195100255-18:45:51 **** Incremental Build of configuration Emulation-HW for project proyecto_system_hw_link ****
+2023-03-27T19:21:09.64889100255-19:21:09 **** Incremental Build of configuration Emulation-HW for project proyecto_system_hw_link ****
 000-make all 
-000-/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/v++ --target hw_emu --link --config binary_container_1-link.cfg -o"binary_container_1.xclbin" ../../proyecto_kernels/Emulation-HW/build/krnl_vadd.xo
-000-Option Map File Used: '/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data/vitis/vpp/optMap.xml'
-000-
-000-****** v++ v2022.2 (64-bit)
-000-  **** SW Build 3671529 on 2022-10-13-17:52:11
-000-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-000-
-000-INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
-000-	Reports: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link
-000-	Log files: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/logs/link
-000-Running Dispatch Server on port: 35373
-000-INFO: [v++ 60-1548] Creating build summary session with primary output /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin.link_summary, at Thu Mar 23 18:46:04 2023
-000-INFO: [v++ 60-1315] Creating rulecheck session with output '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/link_guidance.html', at Thu Mar 23 18:46:04 2023
-000-INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm
-000-INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/hw_emu/hw_emu.xsa'
-000-INFO: [v++ 74-78] Compiler Version string: 2022.2
-000-INFO: [v++ 60-629] Linking for hardware emulation target
-000-INFO: [v++ 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
-000-INFO: [v++ 60-1332] Run 'run_link' status: Not started
-000-INFO: [v++ 60-1443] [18:46:09] Run run_link: Step system_link: Started
-000-INFO: [v++ 60-1453] Command Line: system_link --xo /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd.xo -keep --config /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target emu --output_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int --temp_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd.xo
-000-INFO: [SYSTEM_LINK 82-53] Creating IP database /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-000-INFO: [SYSTEM_LINK 82-38] [18:46:10] build_xd_ip_db started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/hw_emu.hpfm -clkid 0 -ip /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/iprepo/xilinx_com_hls_krnl_vadd_1_0,krnl_vadd -o /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-000-INFO: [SYSTEM_LINK 82-37] [18:46:14] build_xd_ip_db finished successfully
-000-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 2632 ; free virtual = 35108
-000-INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
-000-INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml
-000-INFO: [SYSTEM_LINK 82-38] [18:46:14] cfgen started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cfgen  -nk krnl_vadd:1:krnl_vadd_1 -dpa_mem_offload false -dmclkid 0 -r /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml
-000-INFO: [CFGEN 83-0] Kernel Specs: 
-000-INFO: [CFGEN 83-0]   kernel: krnl_vadd, num: 1  {krnl_vadd_1}
-000-INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_vadd_1.in1 to DDR[1]
-000-INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_vadd_1.out to DDR[1]
-000-INFO: [SYSTEM_LINK 82-37] [18:46:20] cfgen finished successfully
-000-Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 2665 ; free virtual = 35142
-000-INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
-000-INFO: [SYSTEM_LINK 82-38] [18:46:20] cf2bd started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.xsd --temp_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link --output_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int
-000-INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
-000-INFO: [CF2BD 82-28] cf2xd finished successfully
-000-INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.xsd
-000-INFO: [CF2BD 82-28] cf_xsd finished successfully
-000-INFO: [SYSTEM_LINK 82-37] [18:46:23] cf2bd finished successfully
-000-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 2645 ; free virtual = 35128
-000-INFO: [v++ 60-1441] [18:46:23] Run run_link: Step system_link: Completed
-000-Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 2721 ; free virtual = 35204
-000-INFO: [v++ 60-1443] [18:46:23] Run run_link: Step cf2sw: Started
-000-INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/sdsl.dat -rtd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/cf2sw.rtd -nofilter /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/cf2sw_full.rtd -xclbin /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.xml -o /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.1.xml
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-INFO: [v++ 60-1441] [18:46:26] Run run_link: Step cf2sw: Completed
-000-Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 2730 ; free virtual = 35216
-000-INFO: [v++ 60-1443] [18:46:26] Run run_link: Step rtd2_system_diagram: Started
-000-INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-INFO: [v++ 60-1441] [18:46:27] Run run_link: Step rtd2_system_diagram: Completed
-000-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.29 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 2718 ; free virtual = 35203
-000-INFO: [v++ 60-1443] [18:46:27] Run run_link: Step vpl: Started
-000-INFO: [v++ 60-1453] Command Line: vpl -t hw_emu -f xilinx_u250_gen3x16_xdma_4_1_202210_1 -s -g --remote_ip_cache /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/.ipcache --output_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int --log_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/logs/link --report_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link --config /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/vplConfig.ini -k /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link --emulation_mode debug_waveform --no-info --iprepo /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0 --messageDb /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link/vpl.pb /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/dr.bd.tcl
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-
-000-****** vpl v2022.2 (64-bit)
-000-  **** SW Build 3671529 on 2022-10-13-17:52:11
-000-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-000-
-000-INFO: [VPL 60-839] Read in kernel information from file '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/kernel_info.dat'.
-000-INFO: [VPL 74-78] Compiler Version string: 2022.2
-000-INFO: [VPL 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
-000-INFO: [VPL 60-1032] Extracting hardware platform to /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/hw_platform
-000-[18:46:40] Run vpl: Step create_project: Started
-000-Creating Vivado project.
-000-[18:47:09] Run vpl: Step create_project: Completed
-000-[18:47:09] Run vpl: Step create_bd: Started
-000-[18:47:23] Run vpl: Step create_bd: Completed
-000-[18:47:23] Run vpl: Step update_bd: Started
-000-[18:47:26] Run vpl: Step update_bd: Completed
-000-[18:47:26] Run vpl: Step generate_target: Started
-000-[18:48:42] Run vpl: Step generate_target: RUNNING...
-000-[18:49:00] Run vpl: Step generate_target: Completed
-000-[18:49:00] Run vpl: Step config_hw_emu.gen_scripts: Started
-000-[18:49:13] Run vpl: Step config_hw_emu.gen_scripts: Completed
-000-[18:49:13] Run vpl: Step config_hw_emu.compile: Started
-000-[18:50:25] Run vpl: Step config_hw_emu.compile: Completed
-000-[18:50:25] Run vpl: Step config_hw_emu.elaborate: Started
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_axi_clock_converter_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_clock_converter_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_axi_vip_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_axi_vip_1_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_1_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_1_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_1_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_axi_vip_2_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_2_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_2_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_2_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_axi_vip_3_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_3_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_3_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_3_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_connect_to_es_cu_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Interconnect (2.1)' for IP 'pfm_top_connect_to_es_cu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_connect_to_es_cu_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Interconnect (2.1)' for IP 'pfm_top_connect_to_es_cu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_sim_ddr_0_0 is locked. The IP is locked for the following reason - * IP definition 'DDR4 SDRAM (MIG) (2.2)' for IP 'pfm_top_sim_ddr_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_sim_ddr_0_0 is locked. The IP is locked for the following reason - * IP definition 'DDR4 SDRAM (MIG) (2.2)' for IP 'pfm_top_sim_ddr_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000- * IP 'pfm_top_sim_ddr_0_0' contains one or more locked subcores.* Target IP definition 'DDR4 SDRAM (MIG) (2.2)' requires a revision change. Please review the change log before upgrading the IP.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_smartconnect_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI SmartConnect (1.0)' for IP 'pfm_top_smartconnect_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_smartconnect_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI SmartConnect (1.0)' for IP 'pfm_top_smartconnect_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000- * IP 'pfm_top_smartconnect_0_0' contains one or more locked subcores.* Target IP definition 'AXI SmartConnect (1.0)' requires a revision change. Please review the change log before upgrading the IP.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_xbar_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Crossbar (2.1)' for IP 'pfm_top_xbar_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_xbar_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Crossbar (2.1)' for IP 'pfm_top_xbar_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_sim_ddr_0_0_microblaze_mcs is locked. The IP is locked for the following reason - * IP definition 'MicroBlaze MCS (3.0)' for IP 'pfm_top_sim_ddr_0_0_microblaze_mcs' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_sim_ddr_0_0_microblaze_mcs is locked. The IP is locked for the following reason - * IP definition 'MicroBlaze MCS (3.0)' for IP 'pfm_top_sim_ddr_0_0_microblaze_mcs' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000- * IP 'pfm_top_sim_ddr_0_0_microblaze_mcs' contains one or more locked subcores.* Please upgrade the parent IP 'pfm_top_sim_ddr_0_0'.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP pfm_top_sim_ddr_0_0_phy is locked. The IP is locked for the following reason - * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_sim_ddr_0_0_phy is locked. The IP is locked for the following reason - * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_m00e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m00e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_m00e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m00e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_m01e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m01e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_m01e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m01e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_m02e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m02e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_m02e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m02e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_m03e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m03e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_m03e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m03e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_m04e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m04e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_m04e_0 is locked. The IP is locked for the following reason - * IP definition 'SC EXIT (1.0)' for IP 'bd_387c_m04e_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_one_0 is locked. The IP is locked for the following reason - * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_one_0 is locked. The IP is locked for the following reason - * The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_s00mmu_0 is locked. The IP is locked for the following reason - * IP definition 'SC MMU (1.0)' for IP 'bd_387c_s00mmu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_s00mmu_0 is locked. The IP is locked for the following reason - * IP definition 'SC MMU (1.0)' for IP 'bd_387c_s00mmu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_s00sic_0 is locked. The IP is locked for the following reason - * IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_387c_s00sic_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_s00sic_0 is locked. The IP is locked for the following reason - * IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_387c_s00sic_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_s01mmu_0 is locked. The IP is locked for the following reason - * IP definition 'SC MMU (1.0)' for IP 'bd_387c_s01mmu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_s01mmu_0 is locked. The IP is locked for the following reason - * IP definition 'SC MMU (1.0)' for IP 'bd_387c_s01mmu_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_387c_s01sic_0 is locked. The IP is locked for the following reason - * IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_387c_s01sic_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_s01sic_0 is locked. The IP is locked for the following reason - * IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_387c_s01sic_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000/proyecto_system_hw_link/Emulation-HW0-1-1IP-LOCK-01: In your vivado project:prj for design:dr the IP bd_448f_microblaze_I_0 is locked. The IP is locked for the following reason - * IP definition 'MicroBlaze (11.0)' for IP 'bd_448f_microblaze_I_0' (customized with software release 2022.1) has a different revision in the IP Catalog.1-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_448f_microblaze_I_0 is locked. The IP is locked for the following reason - * IP definition 'MicroBlaze (11.0)' for IP 'bd_448f_microblaze_I_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-000-.
-000-Check VPL, containing 2 checks, has run: 0 errors, 22 warning violations
-000-[18:50:49] Run vpl: Step config_hw_emu.elaborate: Completed
-000-[18:50:50] Run vpl: FINISHED. Run Status: config_hw_emu.elaborate Complete!
-000-INFO: [v++ 60-1441] [18:50:50] Run run_link: Step vpl: Completed
-000-Time (s): cpu = 00:00:07 ; elapsed = 00:04:23 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 3040 ; free virtual = 33273
-000-INFO: [v++ 60-1443] [18:50:50] Run run_link: Step rtdgen: Started
-000-INFO: [v++ 60-1453] Command Line: rtdgen
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-INFO: [v++ 60-991] clock name 'kernel_clk/clk' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
-000-INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): Kernel (DATA) clock: kernel_clk/clk = 300, Kernel (KERNEL) clock: kernel_clk/clk = 300
-000-INFO: [v++ 60-1453] Command Line: cf2sw -a /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/address_map.xml -sdsl /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/sdsl.dat -xclbin /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.xml -rtd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.rtd -o /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml
-000-INFO: [v++ 60-1652] Cf2sw returned exit code: 0
-000/proyecto_system_hw_link/Emulation-HW0-1-1v++ 60-1455: Debuggable symbols are not generated successfully, clean up /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/consolidated.cf1-WARNING: [v++ 60-1455] Debuggable symbols are not generated successfully, clean up /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/consolidated.cf
-000-INFO: [v++ 60-1441] [18:50:55] Run run_link: Step rtdgen: Completed
-000-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4915 ; free virtual = 35175
-000-INFO: [v++ 60-1443] [18:50:55] Run run_link: Step xclbinutil: Started
-000-INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/behav.xse --force --target hw_emu --key-value SYS:dfx_enable:false --add-section :JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_xml.rtd --add-section BUILD_METADATA:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml --add-section SYSTEM_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1 --output /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-XRT Build Version: 2.14.354 (2022.2)
-000-       Build Date: 2022-10-08 09:49:53
-000-          Hash ID: 43926231f7183688add2dccfd391b36a1f000bea
-000-Creating a default 'in-memory' xclbin image.
-000-
-000-Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
-000-Size   : 728 bytes
-000-Format : JSON
-000-File   : '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/debug_ip_layout.rtd'
-000-
-000-Section: 'BITSTREAM'(0) was successfully added.
-000-Size   : 28068337 bytes
-000-Format : RAW
-000-File   : '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/behav.xse'
-000-
-000-Section: 'MEM_TOPOLOGY'(6) was successfully added.
-000-Format : JSON
-000-File   : 'mem_topology'
-000-
-000-Section: 'IP_LAYOUT'(8) was successfully added.
-000-Format : JSON
-000-File   : 'ip_layout'
-000-
-000-Section: 'CONNECTIVITY'(7) was successfully added.
-000-Format : JSON
-000-File   : 'connectivity'
-000-
-000-Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
-000-Size   : 274 bytes
-000-Format : JSON
-000-File   : '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_xml.rtd'
-000-
-000-Section: 'BUILD_METADATA'(14) was successfully added.
-000-Size   : 2367 bytes
-000-Format : JSON
-000-File   : '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_build.rtd'
-000-
-000-Section: 'EMBEDDED_METADATA'(2) was successfully added.
-000-Size   : 6182 bytes
-000-Format : RAW
-000-File   : '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml'
-000-
-000-Section: 'SYSTEM_METADATA'(22) was successfully added.
-000-Size   : 12560 bytes
-000-Format : RAW
-000-File   : '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/systemDiagramModelSlrBaseAddress.json'
-000-Successfully wrote (28100197 bytes) to the output file: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin
-000-Leaving xclbinutil.
-000-INFO: [v++ 60-1441] [18:50:55] Run run_link: Step xclbinutil: Completed
-000-Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.15 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4887 ; free virtual = 35174
-000-INFO: [v++ 60-1443] [18:50:55] Run run_link: Step xclbinutilinfo: Started
-000-INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin.info --input /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-INFO: [v++ 60-1441] [18:50:56] Run run_link: Step xclbinutilinfo: Completed
-000-Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.3 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4869 ; free virtual = 35157
-000-INFO: [v++ 60-1443] [18:50:56] Run run_link: Step generate_sc_driver: Started
-000-INFO: [v++ 60-1453] Command Line: 
-000-INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-000-INFO: [v++ 60-1441] [18:50:56] Run run_link: Step generate_sc_driver: Completed
-000-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4869 ; free virtual = 35157
-000-Check POST-VPL, containing 1 checks, has run: 0 errors
-000-INFO: [v++ 60-244] Generating system estimate report...
-000-INFO: [v++ 60-1092] Generated system estimate report: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/system_estimate_binary_container_1.xtxt
-000-INFO: [v++ 60-586] Created binary_container_1.xclbin
-000-INFO: [v++ 60-1307] Run completed. Additional information can be found in:
-000-	Guidance: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/link_guidance.html
-000-	Steps Log File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/logs/link/link.steps.log
-000-
-000-INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
-000-    vitis_analyzer /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin.link_summary 
-000-INFO: [v++ 60-791] Total elapsed time: 0h 5m 1s
-000-INFO: [v++ 60-1653] Closing dispatch client.
+000-make: Nothing to be done for 'all'.
 00255-
-18:50:56 Build Finished (took 5m:4s.251ms)
+19:21:10 Build Finished (took 928ms)
 

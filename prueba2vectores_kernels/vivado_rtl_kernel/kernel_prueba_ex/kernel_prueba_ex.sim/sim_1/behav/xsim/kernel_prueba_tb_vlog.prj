@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../kernel_prueba_ex.ip_user_files/ipstatic/hdl" --include "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../kernel_prueba_ex.gen/sources_1/ip/slv_m00_axi_vip/sim/slv_m00_axi_vip_pkg.sv" \
+"../../../../kernel_prueba_ex.gen/sources_1/ip/slv_m00_axi_vip/sim/slv_m00_axi_vip.sv" \
+"../../../../kernel_prueba_ex.gen/sources_1/ip/control_kernel_prueba_vip/sim/control_kernel_prueba_vip_pkg.sv" \
+"../../../../kernel_prueba_ex.gen/sources_1/ip/control_kernel_prueba_vip/sim/control_kernel_prueba_vip.sv" \
+
+verilog xil_defaultlib  --include "../../../../kernel_prueba_ex.ip_user_files/ipstatic/hdl" --include "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imports/kernel_prueba.v" \
+"../../../../imports/kernel_prueba_control_s_axi.v" \
+
+sv xil_defaultlib  --include "../../../../kernel_prueba_ex.ip_user_files/ipstatic/hdl" --include "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imports/kernel_prueba_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

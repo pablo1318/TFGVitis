@@ -4,7 +4,7 @@
     "xci_name": "pfm_dynamic_krnl_vadd_1_0",
     "cell_name": "krnl_vadd_1",
     "component_reference": "xilinx.com:hls:krnl_vadd:1.0",
-    "ip_revision": "2112955725",
+    "ip_revision": "2112961402",
     "gen_directory": "../../../../../../prj.gen/sources_1/bd/pfm_dynamic/ip/pfm_dynamic_krnl_vadd_1_0",
     "parameters": {
       "component_parameters": {
@@ -24,7 +24,7 @@
         "clk_period": [ { "value": "3.333", "enabled": false, "usage": "all" } ],
         "machine": [ { "value": "64", "enabled": false, "usage": "all" } ],
         "combinational": [ { "value": "0", "enabled": false, "usage": "all" } ],
-        "latency": [ { "value": "4174", "enabled": false, "usage": "all" } ],
+        "latency": [ { "value": "1000078", "enabled": false, "usage": "all" } ],
         "II": [ { "value": "x", "enabled": false, "usage": "all" } ],
         "SLR_ASSIGNMENTS": [ { "value": "", "resolve_type": "user", "usage": "all" } ]
       },
@@ -60,7 +60,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2112955725" } ],
+        "IPREVISION": [ { "value": "2112961402" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../prj.gen/sources_1/bd/pfm_dynamic/ip/pfm_dynamic_krnl_vadd_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

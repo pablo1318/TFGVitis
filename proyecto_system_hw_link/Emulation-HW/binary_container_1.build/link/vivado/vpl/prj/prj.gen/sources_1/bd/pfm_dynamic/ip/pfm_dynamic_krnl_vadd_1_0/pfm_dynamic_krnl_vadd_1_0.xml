@@ -1700,11 +1700,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Mar 23 17:48:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:26:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cab0478c</spirit:value>
+            <spirit:value>9:2f537cfa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1715,7 +1715,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cab0478c</spirit:value>
+            <spirit:value>9:2f537cfa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1731,11 +1731,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Mar 23 17:48:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:26:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cab0478c</spirit:value>
+            <spirit:value>9:2f537cfa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1751,11 +1751,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Mar 23 17:48:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:26:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:41f6df63</spirit:value>
+            <spirit:value>9:dd083216</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1771,11 +1771,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Mar 23 17:48:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:26:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:41f6df63</spirit:value>
+            <spirit:value>9:dd083216</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1789,11 +1789,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Mar 23 17:48:56 UTC 2023</spirit:value>
+            <spirit:value>Mon Mar 27 16:26:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cab0478c</spirit:value>
+            <spirit:value>9:2f537cfa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3109,71 +3109,71 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_compute_add.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_compute_add.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_control_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_control_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_entry_proc.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_entry_proc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_fifo_w32_d2_S.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_fifo_w32_d2_S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_fifo_w64_d4_S.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_fifo_w64_d4_S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_gmem0_m_axi.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_gmem0_m_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_detection_unit.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_detection_unit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_detector.vh</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_detector.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_report_unit.vh</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_report_unit.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_load_input.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_load_input.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_load_input_Pipeline_mem_rd.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_load_input_Pipeline_mem_rd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_start_for_compute_add_U0.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_start_for_compute_add_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_start_for_store_result_U0.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_start_for_store_result_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_store_result.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_store_result.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -3188,87 +3188,87 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_compute_add.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_compute_add.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_control_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_control_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_entry_proc.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_entry_proc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_fifo_w32_d2_S.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_fifo_w32_d2_S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_fifo_w64_d4_S.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_fifo_w64_d4_S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_gmem0_m_axi.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_gmem0_m_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_detection_unit.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_detection_unit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_detector.vh</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_detector.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_report_unit.vh</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_report_unit.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_load_input.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_load_input.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_load_input_Pipeline_mem_rd.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_load_input_Pipeline_mem_rd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_start_for_compute_add_U0.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_start_for_compute_add_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_start_for_store_result_U0.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_start_for_store_result_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd_store_result.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd_store_result.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ac8c/hdl/verilog/krnl_vadd.v</spirit:name>
+        <spirit:name>../../ipshared/14e9/hdl/verilog/krnl_vadd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3467,7 +3467,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="17">4174</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="17">1000078</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -3496,7 +3496,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Krnl_vadd</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2112955725</xilinx:coreRevision>
+      <xilinx:coreRevision>2112961402</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3587,10 +3587,10 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="475cd20e"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="02c0c7c5"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="80f4cc4f"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e67c9dc6"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cde8db58"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="766babed"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="43b3c676"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="eb9533f8"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="aa1b50e7"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

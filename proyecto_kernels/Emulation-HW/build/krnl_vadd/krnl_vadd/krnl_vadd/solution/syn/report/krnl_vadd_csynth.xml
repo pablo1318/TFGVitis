@@ -22,15 +22,15 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4174</Best-caseLatency>
-<Average-caseLatency>4174</Average-caseLatency>
-<Worst-caseLatency>4174</Worst-caseLatency>
-<Best-caseRealTimeLatency>13.912 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>13.912 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>13.912 us</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>4172</DataflowPipelineThroughput>
-<Interval-min>4172</Interval-min>
-<Interval-max>4172</Interval-max>
+<Best-caseLatency>1000078</Best-caseLatency>
+<Average-caseLatency>1000078</Average-caseLatency>
+<Worst-caseLatency>1000078</Worst-caseLatency>
+<Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>1000076</DataflowPipelineThroughput>
+<Interval-min>1000076</Interval-min>
+<Interval-max>1000076</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 

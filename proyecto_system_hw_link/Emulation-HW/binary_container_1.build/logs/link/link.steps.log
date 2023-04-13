@@ -9,7 +9,7 @@
 Environment variables :
 ------------------------------------------
 SHELL=/bin/bash
-SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2552,unix/pop-os:/tmp/.ICE-unix/2552
+SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2438,unix/pop-os:/tmp/.ICE-unix/2438
 QT_ACCESSIBILITY=1
 XDG_CONFIG_DIRS=/etc/xdg/xdg-pop:/etc/xdg
 SSH_AGENT_LAUNCHER=gnome-keyring
@@ -43,7 +43,7 @@ XDG_SESSION_DESKTOP=pop
 XDG_SESSION_TYPE=x11
 _RDI_DONT_SET_XILINX_AS_PATH=True
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-SYSTEMD_EXEC_PID=2576
+SYSTEMD_EXEC_PID=2461
 XAUTHORITY=/run/user/1000/gdm/Xauthority
 RDI_PREPEND_PATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
 XILINX_DSP=
@@ -57,10 +57,10 @@ XDG_CURRENT_DESKTOP=pop:GNOME
 XILINX_HLS=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2
 HDI_PROCESSOR=x86_64
 RDI_BUILD=yes
-XILINX_RS_SESSION=c9838536-cf19-47a2-aeab-2270dac7c859
+XILINX_RS_SESSION=73992cbf-8171-4b1d-aa21-8929c154f21c
 RDI_PROG=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++
-INVOCATION_ID=63ccf2dd69694362881efa10b54eab2b
-MANAGERPID=2352
+INVOCATION_ID=ed668d63cf1445da93170fce0925e094
+MANAGERPID=2240
 RT_TCL_PATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/scripts/rt/base_tcl/tcl
 MFLAGS=
 GJS_DEBUG_OUTPUT=stderr
@@ -68,7 +68,7 @@ XILINX_SDK=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2
 MAKEFLAGS=
 XDG_SESSION_CLASS=user
 PYTHONPATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/lib/python3.8/
-XILINX_RS_PORT=38705
+XILINX_RS_PORT=44455
 DEFAULTS_PATH=/usr/share/gconf/pop.default.path
 PYTHONHOME=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/
 USER=pablo1318
@@ -91,7 +91,7 @@ HDIPRELDPATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/lib/lnx64.o/Default:/
 XDG_RUNTIME_DIR=/run/user/1000
 TCL_LIBRARY=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/tcl/tcl8.5
 LC_ALL=en_US.UTF-8
-JOURNAL_STREAM=8:37281
+JOURNAL_STREAM=8:33216
 XDG_DATA_DIRS=/usr/share/pop:/usr/share/gnome:/home/pablo1318/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
 CWD=/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW
 PATH=/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/binutils-2.26/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/aarch64/lin/aarch64-linux/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/gnu/microblaze/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/jre11.0.11_9/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/arm/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch64/lin/aarch64-none/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch64/lin/aarch64-linux/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/cmake-3.21.4/bin::/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/aietools/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin:/opt/xilinx/xrt/bin:/media/pablo1318/hddLinux/XILINX/DocNav:/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Model_Composer/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/cmake-3.3.2/bin:/home/pablo1318/.cargo/bin:/home/pablo1318/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -102,13 +102,13 @@ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 RDI_PLATFORM=lnx64
 MYVIVADO=
 ISL_IOSTREAMS_RSA=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/isl
-GIO_LAUNCHED_DESKTOP_FILE_PID=11255
+GIO_LAUNCHED_DESKTOP_FILE_PID=6182
 GIO_LAUNCHED_DESKTOP_FILE=/home/pablo1318/.local/share/applications/Xilinx Vitis 2022.2_1678822903405.desktop
 XILINX_VITIS=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2
 OLDPWD=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
 _=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=35373
-XILINX_CD_SESSION=58eca792-b8d4-468d-9b60-2a368fcab7d1
+XILINX_CD_CONNECT_ID=36657
+XILINX_CD_SESSION=65e3a852-8395-48d9-8027-a42e5ad3305e
 
 
 V++ command line:
@@ -166,29 +166,29 @@ FINAL PLATFORM PATH
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 23 Mar 2023 18:46:08
+timestamp: 27 Mar 2023 18:23:21
 ------------------------------------------
 V++ internal step: generating xclbin xml file
-timestamp: 23 Mar 2023 18:46:08
+timestamp: 27 Mar 2023 18:23:21
 output: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml
 ------------------------------------------
 step: running system_link
-timestamp: 23 Mar 2023 18:46:09
+timestamp: 27 Mar 2023 18:23:22
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/system_link --xo /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd.xo -keep --config /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target emu --output_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int --temp_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link
 system_link status: success
 ------------------------------------------
 step: running cf2sw
-timestamp: 23 Mar 2023 18:46:23
+timestamp: 27 Mar 2023 18:23:39
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cf2sw -sdsl /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/sdsl.dat -rtd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/cf2sw.rtd -nofilter /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/cf2sw_full.rtd -xclbin /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.xml -o /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.1.xml
 cf2sw status: success
 ------------------------------------------
 step: running rtd2_system_diagram
-timestamp: 23 Mar 2023 18:46:26
+timestamp: 27 Mar 2023 18:23:43
 cmd: rtd2SystemDiagram
 rtd2_system_diagram status: success
 ------------------------------------------
 step: running vpl
-timestamp: 23 Mar 2023 18:46:27
+timestamp: 27 Mar 2023 18:23:44
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/vpl -t hw_emu -f xilinx_u250_gen3x16_xdma_4_1_202210_1 -s -g --remote_ip_cache /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/.ipcache --output_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int --log_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/logs/link --report_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link --config /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/vplConfig.ini -k /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link --emulation_mode debug_waveform --no-info --iprepo /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0 --messageDb /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link/vpl.pb /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/dr.bd.tcl
 Vivado Log File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link/../vivado/vpl/vivado.log
 file: vplConfig.ini
@@ -270,182 +270,182 @@ vivado.prop run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sd
 
    ------------------------------------------
    VPL internal step: generating ipirun.tcl for vivado
-   timestamp: 23 Mar 2023 18:46:34
+   timestamp: 27 Mar 2023 18:23:51
    -----------------------
    VPL internal step: source -notrace ./ipirun.tcl
    File: vpl.tcl:125
    Line computed from base: 122 offset: 3
-   timestamp: 23 March 2023 18:46:40
+   timestamp: 27 March 2023 18:23:56
    -----------------------
    VPL internal step: source scripts/_vivado_params.tcl
    File: vpl.tcl:140
    Line computed from base: 122 offset: 18
-   timestamp: 23 March 2023 18:46:40
+   timestamp: 27 March 2023 18:23:56
    -----------------------
   current step: vpl.create_project
    -----------------------
    VPL internal step: create_vivado_project
    Proc: ::ocl_util::create_vivado_project
    File: ocl_util.tcl:566
-   timestamp: 23 March 2023 18:46:40
+   timestamp: 27 March 2023 18:23:56
    -----------------------
    VPL internal step: source .local/hw_platform/tcl_hooks/dynamic_prelink.tcl
    File: vpl.tcl:1358
-   timestamp: 23 March 2023 18:46:40
+   timestamp: 27 March 2023 18:23:56
    -----------------------
    VPL internal step: source .local/hw_platform/prj/rebuild.tcl to create prj project
    File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/ocl_util.tcl:608
-   timestamp: 23 March 2023 18:46:40
+   timestamp: 27 March 2023 18:23:56
    -----------------------
   current step: vpl.create_bd
    -----------------------
    VPL internal step: update_ip_catalog
    File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/ocl_util.tcl:2428
-   timestamp: 23 March 2023 18:47:11
+   timestamp: 27 March 2023 18:24:27
    -----------------------
    VPL internal step: config_ip_cache -disable_cache
    File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/ocl_util.tcl:2434
-   timestamp: 23 March 2023 18:47:12
+   timestamp: 27 March 2023 18:24:29
    -----------------------
    VPL internal step: open_bd_design -auto_upgrade [get_files pfm_dynamic.bd]
    File: vpl.tcl:194
-   timestamp: 23 March 2023 18:47:12
+   timestamp: 27 March 2023 18:24:29
    -----------------------
    VPL internal step: report locked IPs
    File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/ocl_util.tcl:3145
-   timestamp: 23 March 2023 18:47:20
+   timestamp: 27 March 2023 18:24:36
    -----------------------
    VPL internal step: source .local/dr.bd.tcl
    File: vpl.tcl:219
-   timestamp: 23 March 2023 18:47:22
+   timestamp: 27 March 2023 18:24:38
    -----------------------
    VPL internal step: save_bd_design
    File: vpl.tcl:236
-   timestamp: 23 March 2023 18:47:23
+   timestamp: 27 March 2023 18:24:39
    -----------------------
    VPL internal step: updating kernel clocks
    File: vpl.tcl:258
-   timestamp: 23 March 2023 18:47:23
+   timestamp: 27 March 2023 18:24:39
    -----------------------
   current step: vpl.update_bd
    -----------------------
    VPL internal step: inserting profiling and debug cores
    File: vpl.tcl:287
-   timestamp: 23 March 2023 18:47:23
+   timestamp: 27 March 2023 18:24:39
    -----------------------
    VPL internal step: assign_bd_address
    File: vpl.tcl:299
-   timestamp: 23 March 2023 18:47:25
+   timestamp: 27 March 2023 18:24:42
    -----------------------
    VPL internal step: source .local/hw_platform/tcl_hooks/dynamic_postlink.tcl
    File: vpl.tcl:2245
-   timestamp: 23 March 2023 18:47:25
+   timestamp: 27 March 2023 18:24:42
    -----------------------
    VPL internal step: writing address_map.xml
    File: vpl.tcl:309
-   timestamp: 23 March 2023 18:47:25
+   timestamp: 27 March 2023 18:24:42
    -----------------------
    VPL internal step: collect BD interface connectivity and write automation summary report
    File: vpl.tcl:313
-   timestamp: 23 March 2023 18:47:25
+   timestamp: 27 March 2023 18:24:42
    -----------------------
    VPL internal step: save_bd_design
    File: vpl.tcl:316
-   timestamp: 23 March 2023 18:47:25
+   timestamp: 27 March 2023 18:24:42
    -----------------------
   current step: vpl.generate_target
    -----------------------
    VPL internal step: open_bd_design -auto_upgrade [get_files pfm_top.bd]
    File: vpl.tcl:345
-   timestamp: 23 March 2023 18:47:26
+   timestamp: 27 March 2023 18:24:42
    -----------------------
    VPL internal step: generate_target all [get_files pfm_dynamic.bd]
    File: vpl.tcl:432
-   timestamp: 23 March 2023 18:48:43
+   timestamp: 27 March 2023 18:25:59
    -----------------------
    VPL internal step: write_hwdef -force -file /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/system.hdf
    File: vpl.tcl:441
-   timestamp: 23 March 2023 18:48:57
+   timestamp: 27 March 2023 18:26:13
    -----------------------
    VPL internal step: add_files /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc -fileset [current_fileset -constrset]
    File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/ocl_util.tcl:2508
-   timestamp: 23 March 2023 18:49:00
+   timestamp: 27 March 2023 18:26:16
    -----------------------
   current step: vpl.config_hw_emu.gen_scripts
    -----------------------
    VPL internal step: hw_emu_common_util::generate_simulation_scripts_only
    File: vpl.tcl:494
-   timestamp: 23 March 2023 18:49:00
+   timestamp: 27 March 2023 18:26:16
    -----------------------
    VPL internal step: creating /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/_kernel_inst_paths.dat
    File: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/ocl_util.tcl:2846
-   timestamp: 23 March 2023 18:49:13
+   timestamp: 27 March 2023 18:26:29
    -----------------------
   current step: vpl.config_hw_emu.compile
    -----------------------
    VPL internal step: hw_emu_common_util::compile_scripts_step
    File: vpl.tcl:524
-   timestamp: 23 March 2023 18:49:13
+   timestamp: 27 March 2023 18:26:29
    -----------------------
   current step: vpl.config_hw_emu.elaborate
    -----------------------
    VPL internal step: hw_emu_common_util::elaborate_scripts_step
    File: vpl.tcl:553
-   timestamp: 23 March 2023 18:50:25
+   timestamp: 27 March 2023 18:27:41
    VPL internal step status: success
 vpl status: success
 ------------------------------------------
 step: running rtdgen
-timestamp: 23 Mar 2023 18:50:50
+timestamp: 27 Mar 2023 18:28:06
 cmd: rtdgen
 ------------------------------------------
 step: running cf2sw to update xclbin xml and generate rtd file (runtime data)
-timestamp: 23 Mar 2023 18:50:50
+timestamp: 27 Mar 2023 18:28:06
 cmd: cf2sw -a /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/address_map.xml -sdsl /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/sdsl.dat -xclbin /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.xml -rtd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.rtd -o /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: generating waveform config (wcfg) file
-timestamp: 23 Mar 2023 18:50:53
+timestamp: 27 Mar 2023 18:28:09
 ------------------------------------------
 V++ internal step: generating data mining script
-timestamp: 23 Mar 2023 18:50:53
+timestamp: 27 Mar 2023 18:28:09
 ------------------------------------------
 V++ internal step: appending waveform simulation directory to system emulation file
-timestamp: 23 Mar 2023 18:50:53
+timestamp: 27 Mar 2023 18:28:09
 ------------------------------------------
 step: running writeSystemDiagram to update system diagram with slr and base address info.
-timestamp: 23 Mar 2023 18:50:55
+timestamp: 27 Mar 2023 18:28:11
 cmd: writeSystemDiagram
 V++ internal step status: success
 ------------------------------------------
 step: running writeAutomationSummary to write automation summary report
-timestamp: 23 Mar 2023 18:50:55
+timestamp: 27 Mar 2023 18:28:11
 cmd: writeAutomationSummary
 V++ internal step status: success
 rtdgen status: success
 ------------------------------------------
 step: running xclbinutil
-timestamp: 23 Mar 2023 18:50:55
+timestamp: 27 Mar 2023 18:28:11
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/behav.xse --force --target hw_emu --key-value SYS:dfx_enable:false --add-section :JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_xml.rtd --add-section BUILD_METADATA:JSON:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml --add-section SYSTEM_METADATA:RAW:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1 --output /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin
 xclbinutil status: success
 ------------------------------------------
 step: running xclbinutilinfo
-timestamp: 23 Mar 2023 18:50:55
+timestamp: 27 Mar 2023 18:28:11
 cmd: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/xclbinutil --quiet --force --info /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin.info --input /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.xclbin
 xclbinutilinfo status: success
 ------------------------------------------
 step: running generate_sc_driver
-timestamp: 23 Mar 2023 18:50:56
+timestamp: 27 Mar 2023 18:28:12
 cmd: 
 generate_sc_driver status: success
 ------------------------------------------
 hw emulation completed
-timestamp: 23 Mar 2023 18:50:56
+timestamp: 27 Mar 2023 18:28:12
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 23 Mar 2023 18:50:56
+timestamp: 27 Mar 2023 18:28:12
 output: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/system_estimate_binary_container_1.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 23 Mar 2023 18:50:56
+timestamp: 27 Mar 2023 18:28:12

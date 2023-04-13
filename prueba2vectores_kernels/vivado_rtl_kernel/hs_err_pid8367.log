@@ -1,0 +1,12 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7f779c5efecb]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7f779c5f6c81]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7f779c5ead23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7f77dea42520]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o/librdi_common.so(+0x7db318) [0x7f77dfddb318]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o/librdi_common.so(HI18N::Convert::Out(char const*, char const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&, std::codecvt<wchar_t, char, __mbstate_t> const&)+0xae) [0x7f77dfddb51e]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o/librdi_project.so(Java_ui_project_projecti_ProjStateHelper_1getBlingString+0xfb) [0x7f77b89e838b]
+[0x7f778ae01384]

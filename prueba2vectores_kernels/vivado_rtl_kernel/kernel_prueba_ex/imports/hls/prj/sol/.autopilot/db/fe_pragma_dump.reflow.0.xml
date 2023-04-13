@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="../kernel_prueba_cmodel.cpp" line="32" pragmaType="interface" parentfunction="kernel_prueba" mode="m_axi" port="axi00_ptr0" bundle="m00_axi" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../kernel_prueba_cmodel.cpp" line="33" pragmaType="interface" parentfunction="kernel_prueba" mode="s_axilite" port="in1" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kernel_prueba_cmodel.cpp" line="34" pragmaType="interface" parentfunction="kernel_prueba" mode="s_axilite" port="in2" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kernel_prueba_cmodel.cpp" line="35" pragmaType="interface" parentfunction="kernel_prueba" mode="s_axilite" port="axi00_ptr0" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kernel_prueba_cmodel.cpp" line="36" pragmaType="interface" parentfunction="kernel_prueba" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kernel_prueba_cmodel.cpp" line="37" pragmaType="interface" parentfunction="kernel_prueba" mode="ap_ctrl_hs" port="return" name=""/>
+</pragmas>

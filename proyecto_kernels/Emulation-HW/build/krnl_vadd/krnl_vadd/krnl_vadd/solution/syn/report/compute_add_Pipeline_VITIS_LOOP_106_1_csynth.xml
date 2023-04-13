@@ -22,21 +22,21 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4099</Best-caseLatency>
-<Average-caseLatency>4099</Average-caseLatency>
-<Worst-caseLatency>4099</Worst-caseLatency>
-<Best-caseRealTimeLatency>13.662 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>13.662 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>13.662 us</Worst-caseRealTimeLatency>
-<Interval-min>4099</Interval-min>
-<Interval-max>4099</Interval-max>
+<Best-caseLatency>1000003</Best-caseLatency>
+<Average-caseLatency>1000003</Average-caseLatency>
+<Worst-caseLatency>1000003</Worst-caseLatency>
+<Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+<Interval-min>1000003</Interval-min>
+<Interval-max>1000003</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_106_1>
 <Slack>2.43</Slack>
-<TripCount>4096</TripCount>
-<Latency>4097</Latency>
-<AbsoluteTimeLatency>13655</AbsoluteTimeLatency>
+<TripCount>1000000</TripCount>
+<Latency>1000001</Latency>
+<AbsoluteTimeLatency>3333003</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
 <PipelineDepth>3</PipelineDepth>
 <InstanceList>

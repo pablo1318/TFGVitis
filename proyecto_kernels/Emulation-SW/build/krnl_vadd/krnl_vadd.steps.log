@@ -9,7 +9,7 @@
 Environment variables :
 ------------------------------------------
 SHELL=/bin/bash
-SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2552,unix/pop-os:/tmp/.ICE-unix/2552
+SESSION_MANAGER=local/pop-os:@/tmp/.ICE-unix/2438,unix/pop-os:/tmp/.ICE-unix/2438
 QT_ACCESSIBILITY=1
 XDG_CONFIG_DIRS=/etc/xdg/xdg-pop:/etc/xdg
 SSH_AGENT_LAUNCHER=gnome-keyring
@@ -43,7 +43,7 @@ XDG_SESSION_DESKTOP=pop
 XDG_SESSION_TYPE=x11
 _RDI_DONT_SET_XILINX_AS_PATH=True
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
-SYSTEMD_EXEC_PID=2576
+SYSTEMD_EXEC_PID=2461
 XAUTHORITY=/run/user/1000/gdm/Xauthority
 RDI_PREPEND_PATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
 XILINX_DSP=
@@ -57,10 +57,10 @@ XDG_CURRENT_DESKTOP=pop:GNOME
 XILINX_HLS=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2
 HDI_PROCESSOR=x86_64
 RDI_BUILD=yes
-XILINX_RS_SESSION=10622be5-785f-4e1c-b14f-25ecfa5bf868
+XILINX_RS_SESSION=189c6e53-8d0f-46c0-96a1-acc061a5f11c
 RDI_PROG=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++
-INVOCATION_ID=63ccf2dd69694362881efa10b54eab2b
-MANAGERPID=2352
+INVOCATION_ID=ed668d63cf1445da93170fce0925e094
+MANAGERPID=2240
 RT_TCL_PATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/scripts/rt/base_tcl/tcl
 MFLAGS=-j8 --jobserver-auth=3,4
 GJS_DEBUG_OUTPUT=stderr
@@ -68,7 +68,7 @@ XILINX_SDK=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2
 MAKEFLAGS= -j8 --jobserver-auth=3,4
 XDG_SESSION_CLASS=user
 PYTHONPATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/lib/python3.8/
-XILINX_RS_PORT=38705
+XILINX_RS_PORT=35041
 DEFAULTS_PATH=/usr/share/gconf/pop.default.path
 PYTHONHOME=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/python-3.8.3/
 USER=pablo1318
@@ -91,7 +91,7 @@ HDIPRELDPATH=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/lib/lnx64.o/Default:/
 XDG_RUNTIME_DIR=/run/user/1000
 TCL_LIBRARY=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/tcl/tcl8.5
 LC_ALL=en_US.UTF-8
-JOURNAL_STREAM=8:37281
+JOURNAL_STREAM=8:33216
 XDG_DATA_DIRS=/usr/share/pop:/usr/share/gnome:/home/pablo1318/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
 CWD=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW
 PATH=/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/binutils-2.26/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/aarch64/lin/aarch64-linux/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/gnu/microblaze/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/jre11.0.11_9/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/microblaze/linux_toolchain/lin64_be/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/arm/lin/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch64/lin/aarch64-none/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch64/lin/aarch64-linux/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/cmake-3.21.4/bin::/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/aietools/bin:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin:/opt/xilinx/xrt/bin:/media/pablo1318/hddLinux/XILINX/DocNav:/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Model_Composer/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/lnx64/cmake-3.3.2/bin:/home/pablo1318/.cargo/bin:/home/pablo1318/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -102,13 +102,13 @@ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 RDI_PLATFORM=lnx64
 MYVIVADO=
 ISL_IOSTREAMS_RSA=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/tps/isl
-GIO_LAUNCHED_DESKTOP_FILE_PID=11255
+GIO_LAUNCHED_DESKTOP_FILE_PID=6182
 GIO_LAUNCHED_DESKTOP_FILE=/home/pablo1318/.local/share/applications/Xilinx Vitis 2022.2_1678822903405.desktop
 XILINX_VITIS=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2
 OLDPWD=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
 _=/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=41487
-XILINX_CD_SESSION=a976ea0d-ef2c-4ecd-98be-1e307703357a
+XILINX_CD_CONNECT_ID=35175
+XILINX_CD_SESSION=7edf78a6-23c3-481b-952a-e241ae9a27e0
 
 
 V++ command line:
@@ -164,18 +164,18 @@ FINAL PLATFORM PATH
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 23 Mar 2023 18:39:32
+timestamp: 27 Mar 2023 19:41:12
 ------------------------------------------
 step: performing high-level synthesis for kernel:krnl_vadd
-timestamp: 23 Mar 2023 18:39:40
+timestamp: 27 Mar 2023 19:41:19
 launch dir: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd
 cmd: vitis_hls -f /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd.tcl -messageDb vitis_hls.pb
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 23 Mar 2023 18:39:40
+timestamp: 27 Mar 2023 19:41:19
 output: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/reports/krnl_vadd/system_estimate_krnl_vadd.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 23 Mar 2023 18:39:40
+timestamp: 27 Mar 2023 19:41:19

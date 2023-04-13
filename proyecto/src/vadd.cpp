@@ -183,11 +183,14 @@ int main(int argc, char* argv[]) {
     OCL_CHECK(err, q.finish());
 
     // Verify the result
+
     int match = 0;
     int host_result = 0;
     for (int i = 0; i < DATA_SIZE; i++) {
         host_result += ptr_a[i];
     }
+    printf("Host result: %d\nDevice result: %d\n",host_result,ptr_result[0]);
+
 	if (ptr_result[0] != host_result) {
 		printf(error_message.c_str(), host_result, ptr_result[0]);
 		match = 1;

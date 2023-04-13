@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution opened at Thu Mar 23 18:39:35 CET 2023
+INFO-FLOW: Workspace /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution opened at Mon Mar 27 19:41:15 CEST 2023
 Execute       send_msg_by_id INFO @200-1505@%s%s  vitis 
 INFO: [HLS 200-1505] Using flow_target 'vitis'
 Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
@@ -22,7 +22,7 @@ DBG:HLSDevice: Trying to load device library: /media/pablo1318/hddLinux/XILINX/V
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
-Command       create_platform done; 0.65 sec.
+Command       create_platform done; 0.61 sec.
 Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
@@ -35,6 +35,7 @@ Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/
 Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
 Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.13 sec.
 Execute       ap_part_info -name xcu250-figd2104-2L-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
 Command     set_part done; 0.75 sec.
@@ -64,7 +65,7 @@ INFO: [HLS 200-1907] Replacing 'config_export -deadlock_detection=none' with 'co
 Execute     csynth_design -synthesis_check 
 INFO: [HLS 200-1510] Running: csynth_design -synthesis_check 
 Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=2 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 307.945 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 300.027 MB.
 INFO: [HLS 200-10] Analyzing design file '/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp' ... 
 INFO-FLOW: Compiling one TU...
 INFO-FLOW: Handling /home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp as C++
@@ -79,7 +80,7 @@ Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/tps/tcl
 Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 INFO-FLOW: Source syntax check for synthesis
 Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/clang.out.log 2> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/clang.err.log 
-Command         ap_eval done; 0.18 sec.
+Command         ap_eval done; 0.16 sec.
 Execute         clang_tidy xilinx-systemc-detector -desc systemc-detector /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/.systemc_flag -fix-errors /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
@@ -87,13 +88,13 @@ Execute         clang_tidy xilinx-directive2pragma -desc directive2pragma /home/
 INFO-FLOW: exec /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/all.directive.json -fix-errors /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
 Execute         clang_tidy xilinx-remove-assert -desc remove-assert /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
 Execute         ap_part_info -name xcu250-figd2104-2L-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp -g -I/home/pablo1318/workspace/proyecto_kernels/src -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.bc -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp.clang.out.log 2> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.pp.0.cpp.clang.err.log 
-Command         ap_eval done; 0.18 sec.
+Command         ap_eval done; 0.16 sec.
 WARNING: [HLS 207-5292] unused parameter 'size' (/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:113:80)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.35 seconds. CPU system time: 0.29 seconds. Elapsed time: 0.64 seconds; current allocated memory: 309.242 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.3 seconds. CPU system time: 0.29 seconds. Elapsed time: 0.6 seconds; current allocated memory: 301.324 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute         run_link_or_opt -out /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.0.bc -args  "/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.g.bc"  
@@ -105,14 +106,14 @@ INFO-FLOW:
 INFO-FLOW: Linking math bc lib
 Execute         run_link_or_opt -out /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.2.m1.bc -args /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.1.lower.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsm_39.bc /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsmc++_39.bc 
 Execute           ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.1.lower.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsm_39.bc /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsmc++_39.bc -o /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.2.m1.bc > /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
-Command           ap_eval done; 2.45 sec.
+Command           ap_eval done; 2.02 sec.
 INFO-FLOW: 
-Command         run_link_or_opt done; 2.46 sec.
+Command         run_link_or_opt done; 2.02 sec.
 Execute         run_link_or_opt -opt -out /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc -args /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=krnl_vadd -reflow-float-conversion 
 Execute           ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=krnl_vadd -reflow-float-conversion -o /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc > /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
-Command           ap_eval done; 0.87 sec.
+Command           ap_eval done; 0.75 sec.
 INFO-FLOW: 
-Command         run_link_or_opt done; 0.87 sec.
+Command         run_link_or_opt done; 0.75 sec.
 Execute         run_link_or_opt -out /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.4.m2.bc -args /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libfloatconversion_39.bc 
 Execute           ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libfloatconversion_39.bc -o /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.4.m2.bc > /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
 INFO-FLOW: 
@@ -124,11 +125,11 @@ INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
 Execute         is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=krnl_vadd -mllvm -hls-db-dir -mllvm /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/../../../kernel.xml -mllvm -top-io-mapping-info=/home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/top-io-fe.xml -mllvm -xcl-target=cpu -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -assume-maxi-align=64 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-assume-no-address-wrap=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -mllvm -default-clock-period=3.333 -x ir /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.5.gdce.bc -o /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/a.g.ld.0.bc.clang.err.log 
-Command         ap_eval done; 0.24 sec.
+Command         ap_eval done; 0.22 sec.
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/../../../kernel.xml -> /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.34 seconds. CPU system time: 0.38 seconds. Elapsed time: 3.71 seconds; current allocated memory: 309.566 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 309.566 MB.
-Command       elaborate done; 4.36 sec.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.76 seconds. CPU system time: 0.35 seconds. Elapsed time: 3.12 seconds; current allocated memory: 301.652 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 301.652 MB.
+Command       elaborate done; 3.73 sec.
 Execute       ap_eval exec zip -j /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 Execute       send_msg_by_id INFO @200-1493@ 
 INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
@@ -137,8 +138,8 @@ INFO-FLOW: DBG:PUTS:       kernel.xml check proj_kernel_xml    (1)=/home/pablo13
 INFO-FLOW: DBG:PUTS:       copy internal kernel.xml to project: /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/../../../kernel.xml
 INFO-FLOW: DBG:PUTS:       update_final_kernel_xml /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/../../../kernel.xml
 INFO-FLOW: DBG:PUTS: Updating /home/pablo1318/workspace/proyecto_kernels/Emulation-SW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/../../../kernel.xml with values: interrupt true debug true compileOptions {-g -I /home/pablo1318/workspace/proyecto_kernels/src} name krnl_vadd vlnv xilinx.com:hls:krnl_vadd:1.0 swReset false mailbox none countedAutoRestart 0 deadlockDetection local
-Command     csynth_design done; 4.38 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.71 seconds. CPU system time: 0.69 seconds. Elapsed time: 4.38 seconds; current allocated memory: 2.008 MB.
+Command     csynth_design done; 3.75 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.07 seconds. CPU system time: 0.66 seconds. Elapsed time: 3.75 seconds; current allocated memory: 2.012 MB.
 Execute     close_project 
 INFO: [HLS 200-1510] Running: close_project 
 Execute       close_solution 

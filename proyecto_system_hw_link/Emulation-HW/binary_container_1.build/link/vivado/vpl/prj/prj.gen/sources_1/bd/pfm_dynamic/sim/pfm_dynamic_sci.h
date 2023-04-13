@@ -48,10 +48,10 @@ public:
 		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_DATA_H2C_02_tlm_aximm_write_socket;;
 		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_DATA_H2C_03_tlm_aximm_read_socket;;
 		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_DATA_H2C_03_tlm_aximm_write_socket;;
-		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket;;
-		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket;;
 		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket;;
 		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket;;
+		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket;;
+		xtlm::xtlm_aximm_target_socket* PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket;;
 	
 	//Constructor for the module
 	pfm_dynamic_sci(const sc_module_name& module_name);

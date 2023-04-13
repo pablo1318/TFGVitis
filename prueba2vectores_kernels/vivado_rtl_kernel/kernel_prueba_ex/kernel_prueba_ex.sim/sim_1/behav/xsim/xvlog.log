@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.gen/sources_1/ip/slv_m00_axi_vip/sim/slv_m00_axi_vip_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.gen/sources_1/ip/slv_m00_axi_vip/sim/slv_m00_axi_vip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slv_m00_axi_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.gen/sources_1/ip/control_kernel_prueba_vip/sim/control_kernel_prueba_vip_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.gen/sources_1/ip/control_kernel_prueba_vip/sim/control_kernel_prueba_vip.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_kernel_prueba_vip
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/imports/kernel_prueba.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kernel_prueba
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/imports/kernel_prueba_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kernel_prueba_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/imports/kernel_prueba_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module kernel_prueba_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kernel_prueba_ex/kernel_prueba_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

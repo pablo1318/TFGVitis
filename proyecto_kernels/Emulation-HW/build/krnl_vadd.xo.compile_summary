@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu Mar 23 18:45:10 2023",
- "timestampMillis": "1679593510406",
+ "dateTimestamp": "Mon Mar 27 18:22:21 2023",
+ "timestampMillis": "1679934141702",
  "buildStep": {
-  "cmdId": "853b75a2-aa0e-4445-9456-2b3ec6f5275c",
+  "cmdId": "0d35aaad-9b67-47eb-b6a4-fd967d20dae8",
   "name": "v++",
   "logFile": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd.steps.log",
   "commandLine": "/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw_emu --compile -I../src --config krnl_vadd-compile.cfg -obuild/krnl_vadd.xo ../src/krnl_vadd.cpp ",
@@ -39,10 +39,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:45:10 2023",
- "timestampMillis": "1679593510406",
+ "dateTimestamp": "Mon Mar 27 18:22:21 2023",
+ "timestampMillis": "1679934141702",
  "status": {
-  "cmdId": "853b75a2-aa0e-4445-9456-2b3ec6f5275c",
+  "cmdId": "0d35aaad-9b67-47eb-b6a4-fd967d20dae8",
   "state": "CS_RUNNING"
  }
 }
@@ -50,8 +50,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu Mar 23 18:45:15 2023",
- "timestampMillis": "1679593515123",
+ "dateTimestamp": "Mon Mar 27 18:22:26 2023",
+ "timestampMillis": "1679934146659",
  "buildSummary": {
   "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
   "hardwareDsa": "",
@@ -86,10 +86,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 23 18:45:15 2023",
- "timestampMillis": "1679593515125",
+ "dateTimestamp": "Mon Mar 27 18:22:26 2023",
+ "timestampMillis": "1679934146661",
  "buildStep": {
-  "cmdId": "1b2635e1-932f-48ef-aaa6-7a70c36492d1",
+  "cmdId": "2fd30234-9dde-4446-adce-651af560933d",
   "name": "vitis_hls",
   "logFile": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/vitis_hls.log",
   "commandLine": "vitis_hls -f /home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd.tcl -messageDb vitis_hls.pb",
@@ -108,10 +108,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:45:15 2023",
- "timestampMillis": "1679593515125",
+ "dateTimestamp": "Mon Mar 27 18:22:26 2023",
+ "timestampMillis": "1679934146662",
  "status": {
-  "cmdId": "1b2635e1-932f-48ef-aaa6-7a70c36492d1",
+  "cmdId": "2fd30234-9dde-4446-adce-651af560933d",
   "state": "CS_RUNNING"
  }
 }
@@ -119,10 +119,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550384",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184688",
  "status": {
-  "cmdId": "1b2635e1-932f-48ef-aaa6-7a70c36492d1",
+  "cmdId": "2fd30234-9dde-4446-adce-651af560933d",
   "state": "CS_PASSED"
  }
 }
@@ -130,8 +130,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550396",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184701",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/krnl_vadd.design.xml",
   "name": "krnl_vadd",
@@ -144,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550396",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184702",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/.autopilot/db/.message_syn.xml",
   "name": "krnl_vadd",
@@ -158,8 +158,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550397",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184702",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/reports/krnl_vadd/hls_reports/krnl_vadd_csynth.rpt",
   "name": "krnl_vadd",
@@ -172,8 +172,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550397",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184703",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd/krnl_vadd/krnl_vadd/solution/syn/report/krnl_vadd_csynth.xml",
   "name": "krnl_vadd",
@@ -186,8 +186,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550420",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184727",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/reports/krnl_vadd/system_estimate_krnl_vadd.xtxt",
   "name": "",
@@ -200,10 +200,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550472",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184777",
  "status": {
-  "cmdId": "853b75a2-aa0e-4445-9456-2b3ec6f5275c",
+  "cmdId": "0d35aaad-9b67-47eb-b6a4-fd967d20dae8",
   "state": "CS_PASSED"
  }
 }
@@ -211,8 +211,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550531",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184830",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/reports/krnl_vadd/krnl_vadd_guidance.html",
   "name": "",
@@ -225,8 +225,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 23 18:45:50 2023",
- "timestampMillis": "1679593550531",
+ "dateTimestamp": "Mon Mar 27 18:23:04 2023",
+ "timestampMillis": "1679934184830",
  "report": {
   "path": "/home/pablo1318/workspace/proyecto_kernels/Emulation-HW/build/krnl_vadd_guidance.pb3",
   "name": "",

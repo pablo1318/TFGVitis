@@ -1,0 +1,11 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7f6189befecb]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7f6189bf6c81]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7f6189bead23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7f61ca042520]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o/librdi_common.so(HI18N::Convert::In(wchar_t const*, wchar_t const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::codecvt<wchar_t, char, __mbstate_t> const&)+0x36) [0x7f61cb3db236]
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o/librdi_common.so(Java_ui_data_common_parami_ParamMgr_1getValueAsBool+0x155) [0x7f61cb4be7f5]
+[0x7f6178556a1a]

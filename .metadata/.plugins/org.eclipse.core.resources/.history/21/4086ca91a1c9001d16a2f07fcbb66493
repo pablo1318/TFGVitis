@@ -1,4 +1,0 @@
-set substitute-path '/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/krnl_vadd/krnl_vadd/cpu_sources/' '/home/pablo1318/workspace/proyecto_kernels/src/'
-source /opt/xilinx/xrt/share/appdebug/appdebug.py
-handle SIGUSR1 nostop pass
-handle SIGTERM nostop pass

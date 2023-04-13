@@ -3,9 +3,6 @@
 	<name>proyecto_system</name>
 	<comment></comment>
 	<projects>
-		<project>proyecto_kernels</project>
-		<project>proyecto_system_hw_link</project>
-		<project>proyecto</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

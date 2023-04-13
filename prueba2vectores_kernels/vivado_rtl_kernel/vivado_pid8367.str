@@ -1,0 +1,126 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 04:59:54 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 8367
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Apr 13 18:35:17 CEST 2023
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: NAME="Pop!_OS"
+OS Version: 6.2.6-76060206-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: 1
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9
+Java executable: 	/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	pablo1318
+User home directory: /home/pablo1318
+User working directory: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /media/pablo1318/hddLinux/XILINX/Vivado
+HDI_APPROOT: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2
+RDI_DATADIR: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data
+RDI_BINDIR: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin
+
+Vivado preferences file: /home/pablo1318/.Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: /home/pablo1318/.Xilinx/Vivado/2022.2/
+Vivado layouts directory: /home/pablo1318/.Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado.log
+Vivado journal file: 	/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-8367-pop-os
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2
+RDI_BASEROOT: /media/pablo1318/hddLinux/XILINX/Vivado
+RDI_BINROOT: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data
+RDI_INSTALLROOT: /media/pablo1318/hddLinux/XILINX
+RDI_INSTALLVER: 2022.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o/Default:/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin:/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin
+RDI_PROG: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/bin/unwrapped/lnx64.o/vivado
+RDI_TPS_ROOT: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/lnx64
+RDI_USE_JDK11: True
+XILINX_DSP: 
+XILINX_HLS: /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2
+XILINX_SDK: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2
+XILINX_VITIS: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2
+XILINX_VIVADO: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2
+XILINX_VIVADO_HLS: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2
+XILINX_XRT: /opt/xilinx/xrt
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,340 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_IP_GUI
+// [GUI Memory]: 75 MB (+76595kb) [00:00:10]
+// [Engine Memory]: 1,193 MB (+1099258kb) [00:00:10]
+// Run Command: RDIResourceCommand.RDICommands_UNSELECT_ALL
+// [GUI Memory]: 102 MB (+24035kb) [00:00:12]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// [Engine Memory]: 1,272 MB (+20376kb) [00:00:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,359 MB. GUI used memory: 52 MB. Current time: 4/13/23, 6:35:18 PM CEST
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,370 MB. GUI used memory: 51 MB. Current time: 4/13/23, 6:35:44 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,371 MB. GUI used memory: 51 MB. Current time: 4/13/23, 6:36:14 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 51 MB. Current time: 4/13/23, 6:36:44 PM CEST
+// [Engine Memory]: 1,372 MB (+38278kb) [00:02:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,372 MB. GUI used memory: 51 MB. Current time: 4/13/23, 6:37:14 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,373 MB. GUI used memory: 51 MB. Current time: 4/13/23, 6:37:44 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,373 MB. GUI used memory: 51 MB. Current time: 4/13/23, 6:38:14 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2854 ms.
+// Elapsed time: 182 seconds
+dismissDialog("Customize IP"); // bq
+// [GUI Memory]: 177 MB (+73165kb) [00:03:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,383 MB. GUI used memory: 136 MB. Current time: 4/13/23, 6:38:34 PM CEST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: CREATE_IP_CORE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,405 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:39:03 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,405 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:39:09 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,406 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:39:39 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,410 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:40:09 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,411 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:40:39 PM CEST
+// Elapsed time: 146 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,411 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:41:09 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,411 MB. GUI used memory: 116 MB. Current time: 4/13/23, 6:41:39 PM CEST

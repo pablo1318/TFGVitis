@@ -18,7 +18,7 @@
       </kernels>
     </lastBuildOptions>
   </configuration>
-  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwkernel.hw_emu.609902464">
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwkernel.hw_emu.609902464" dirty="true">
     <configBuildOptions xsi:type="hwkernel:KernelOptions" kernelDebug="true" target="hw_emu">
       <kernels name="krnl_vadd" sourceFile="src/krnl_vadd.cpp">
         <args name="in1" master="true"/>
@@ -45,5 +45,13 @@
         <configSettings></configSettings>
       </kernels>
     </configBuildOptions>
+    <lastBuildOptions xsi:type="hwkernel:KernelOptions" target="hw">
+      <kernels name="krnl_vadd" sourceFile="src/krnl_vadd.cpp">
+        <args name="in1" master="true"/>
+        <args name="out" master="true"/>
+        <args name="size"/>
+        <configSettings></configSettings>
+      </kernels>
+    </lastBuildOptions>
   </configuration>
 </hwkernel:HwKernelProject>

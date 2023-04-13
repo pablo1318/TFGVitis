@@ -83,7 +83,7 @@ Input Vector 2 from Global Memory --->|             |      |__|
 #include <stdint.h>
 #include <hls_stream.h>
 
-#define DATA_SIZE 4096
+#define DATA_SIZE 1000000
 
 // TRIPCOUNT identifier
 const int c_size = DATA_SIZE;

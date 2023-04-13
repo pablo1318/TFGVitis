@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'compute_add_Pipeline_VITIS_LOOP_106_1'
 ================================================================
-* Date:           Thu Mar 23 18:45:24 2023
+* Date:           Mon Mar 27 18:22:36 2023
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        krnl_vadd
@@ -25,24 +25,24 @@
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+---------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
-    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
-    +---------+---------+-----------+-----------+------+------+---------+
-    |     4099|     4099|  13.662 us|  13.662 us|  4099|  4099|       no|
-    +---------+---------+-----------+-----------+------+------+---------+
+    +---------+---------+----------+----------+---------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute) |      Interval     | Pipeline|
+    |   min   |   max   |    min   |    max   |   min   |   max   |   Type  |
+    +---------+---------+----------+----------+---------+---------+---------+
+    |  1000003|  1000003|  3.333 ms|  3.333 ms|  1000003|  1000003|       no|
+    +---------+---------+----------+----------+---------+---------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
-        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
-        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_106_1  |     4097|     4097|         3|          1|          1|  4096|       yes|
-        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_106_1  |  1000001|  1000001|         3|          1|          1|  1000000|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -109,7 +109,7 @@ ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 
 State 3 <SV = 2> <Delay = 1.26>
 ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%accum_load = load i32 %accum" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108]   --->   Operation 21 'load' 'accum_load' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln107 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:107]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln107' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln107 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1000000, i64 1000000, i64 1000000" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:107]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln107' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln105 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:105]   --->   Operation 23 'specloopname' 'specloopname_ln105' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.88ns)   --->   "%accum_1 = add i32 %in1_stream_read, i32 %accum_load" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:108]   --->   Operation 24 'add' 'accum_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 25 [1/1] (0.38ns)   --->   "%store_ln106 = store i32 %accum_1, i32 %accum" [/home/pablo1318/workspace/proyecto_kernels/src/krnl_vadd.cpp:106]   --->   Operation 25 'store' 'store_ln106' <Predicate = true> <Delay = 0.38>

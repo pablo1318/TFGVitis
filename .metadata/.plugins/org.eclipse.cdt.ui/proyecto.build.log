@@ -1,4 +1,4 @@
-18:44:52 **** Incremental Build of configuration Emulation-HW for project proyecto ****
+19:40:47 **** Build of configuration Emulation-SW for project proyecto ****
 make -j8 all 
 g++ -std=c++1y -DVITIS_PLATFORM=xilinx_u250_gen3x16_xdma_4_1_202210_1 -D__USE_XOPEN2K8 -I/opt/xilinx/xrt/include/ -I/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/include/ -O0 -g -Wall -c -fmessage-length=0 -o "src/vadd.o" "../src/vadd.cpp"
 In file included from ../src/vadd.h:53,
@@ -8,5 +8,5 @@ In file included from ../src/vadd.h:53,
       |                                                                                                                                                       ^
 g++ -o "proyecto" src/vadd.o -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/ -Wl,-rpath-link,/opt/xilinx/xrt/lib
 
-18:44:55 Build Finished (took 2s.122ms)
+19:40:49 Build Finished (took 2s.32ms)
 

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:krnl_vadd:1.0
-// IP Revision: 2112955725
+// IP Revision: 2112961402
 
 `timescale 1ns/1ps
 

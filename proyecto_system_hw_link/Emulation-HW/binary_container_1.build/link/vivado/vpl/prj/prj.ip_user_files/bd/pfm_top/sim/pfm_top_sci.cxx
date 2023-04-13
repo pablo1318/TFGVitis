@@ -36,16 +36,16 @@ pfm_top_sci::pfm_top_sci(const sc_module_name& module_name) : xsc::utils::xsc_si
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_axi_vip_3_0","M_AXI_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_DATA_H2C_03_tlm_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_sim_address_0_0","M_AXIMM_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_DATA_H2C_00_tlm_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_sim_address_0_0","M_AXIMM_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_DATA_H2C_00_tlm_MODE",1);
-	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_sim_qdma_0_0","M_AXICTRL_TLM_MODE","pfm_top_xbar_0","S00_AXI_TLM_MODE",1);
-	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_sim_qdma_0_0","M_AXICTRL_TLM_MODE","pfm_top_xbar_0","S00_AXI_TLM_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_xbar_0","M00_AXI_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_00_tlm_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_xbar_0","M00_AXI_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_00_tlm_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_xbar_0","M04_AXI_TLM_MODE","pfm_top_embedded_schedular_0","s_axi_ctrl_user_TLM_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_xbar_0","M04_AXI_TLM_MODE","pfm_top_embedded_schedular_0","s_axi_ctrl_user_TLM_MODE",1);
-	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_embedded_schedular_0","maxi_lite_mb_TLM_MODE","pfm_top_xbar_0","S01_AXI_TLM_MODE",1);
-	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_embedded_schedular_0","maxi_lite_mb_TLM_MODE","pfm_top_xbar_0","S01_AXI_TLM_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_xbar_0","M01_AXI_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_01_tlm_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_xbar_0","M01_AXI_TLM_MODE","pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_01_tlm_MODE",1);
+	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_embedded_schedular_0","maxi_lite_mb_TLM_MODE","pfm_top_xbar_0","S01_AXI_TLM_MODE",1);
+	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_embedded_schedular_0","maxi_lite_mb_TLM_MODE","pfm_top_xbar_0","S01_AXI_TLM_MODE",1);
+	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_sim_qdma_0_0","M_AXICTRL_TLM_MODE","pfm_top_xbar_0","S00_AXI_TLM_MODE",1);
+	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_top_sim_qdma_0_0","M_AXICTRL_TLM_MODE","pfm_top_xbar_0","S00_AXI_TLM_MODE",1);
 	xsc::utils::xsc_sim_manager::addInstanceParameter("pfm_top_sci","C0_DDR4_0_TLM_MODE",-1);
 	
 	xsc::utils::xsc_sim_manager::addInstance("pfm_top_sci", this);
@@ -510,96 +510,92 @@ void pfm_top_sci::before_end_of_elaboration() {
 		inst_108->M_INITIATOR_wr_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_109->getTlmSocketByName("PLP_S_AXI_DATA_H2C_00_tlm_aximm_write_socket")));
 	}
 	
-	pfm_top_sim_qdma_0_0_sc*  inst_112=dynamic_cast<pfm_top_sim_qdma_0_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_sim_qdma_0_0"));
-	pfm_top_xbar_0_sc*  inst_113=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	xtlm_aximm_transaction_logger* log_inst_14 = new xtlm_aximm_transaction_logger("xtlm_aximm_transaction_logger_14");
-	log_inst_14->setProxyRef(inst_112, inst_113, "pfm_top_sim_qdma_0_0_M_AXICTRL_TLM", "pfm_top_xbar_0_S00_AXI_TLM", log_inst_14->m_transactionLogger);
+	pfm_top_xbar_0_sc*  inst_112=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
+	xsc_sim_conn_base*  inst_113=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
 	
 	if(inst_112==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_sim_qdma_0_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
 	}
 	if(inst_113==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
 	}
 	
-	if (inst_112!=NULL && inst_113!=NULL) {
-		inst_112->initiator_ctrl_rd_socket->bind(*(log_inst_14->tar_rd_skt));
-		log_inst_14->init_rd_skt->bind(*(inst_113->target_0_rd_socket));
+	if (inst_112!=NULL && inst_113!=NULL && inst_113->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket")!=NULL) {
+		inst_112->initiator_0_rd_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_113->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket")));
 	}
 	
-	pfm_top_sim_qdma_0_0_sc*  inst_116=dynamic_cast<pfm_top_sim_qdma_0_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_sim_qdma_0_0"));
-	pfm_top_xbar_0_sc*  inst_117=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
+	pfm_top_xbar_0_sc*  inst_116=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
+	xsc_sim_conn_base*  inst_117=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
 	
 	if(inst_116==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_sim_qdma_0_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
 	}
 	if(inst_117==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
 	}
 	
-	if (inst_116!=NULL && inst_117!=NULL) {
-		inst_116->initiator_ctrl_wr_socket->bind(*(log_inst_14->tar_wr_skt));
-		log_inst_14->init_wr_skt->bind(*(inst_117->target_0_wr_socket));
+	if (inst_116!=NULL && inst_117!=NULL && inst_117->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket")!=NULL) {
+		inst_116->initiator_0_wr_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_117->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket")));
 	}
 	
 	pfm_top_xbar_0_sc*  inst_120=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	xsc_sim_conn_base*  inst_121=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
+	pfm_top_embedded_schedular_0_sc*  inst_121=dynamic_cast<pfm_top_embedded_schedular_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_embedded_schedular_0"));
+	xtlm_aximm_transaction_logger* log_inst_15 = new xtlm_aximm_transaction_logger("xtlm_aximm_transaction_logger_15");
+	log_inst_15->setProxyRef(inst_120, inst_121, "pfm_top_xbar_0_M04_AXI_TLM", "pfm_top_embedded_schedular_0_s_axi_ctrl_user_TLM", log_inst_15->m_transactionLogger);
 	
 	if(inst_120==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
 	}
 	if(inst_121==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_embedded_schedular_0_sc"<<std::endl;
 	}
 	
-	if (inst_120!=NULL && inst_121!=NULL && inst_121->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket")!=NULL) {
-		inst_120->initiator_0_rd_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_121->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket")));
+	if (inst_120!=NULL && inst_121!=NULL) {
+		inst_120->initiator_4_rd_socket->bind(*(log_inst_15->tar_rd_skt));
+		log_inst_15->init_rd_skt->bind(*(inst_121->s_axi_ctrl_user_rd_socket));
 	}
 	
 	pfm_top_xbar_0_sc*  inst_124=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	xsc_sim_conn_base*  inst_125=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
+	pfm_top_embedded_schedular_0_sc*  inst_125=dynamic_cast<pfm_top_embedded_schedular_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_embedded_schedular_0"));
 	
 	if(inst_124==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
 	}
 	if(inst_125==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_embedded_schedular_0_sc"<<std::endl;
 	}
 	
-	if (inst_124!=NULL && inst_125!=NULL && inst_125->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket")!=NULL) {
-		inst_124->initiator_0_wr_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_125->getTlmSocketByName("PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket")));
+	if (inst_124!=NULL && inst_125!=NULL) {
+		inst_124->initiator_4_wr_socket->bind(*(log_inst_15->tar_wr_skt));
+		log_inst_15->init_wr_skt->bind(*(inst_125->s_axi_ctrl_user_wr_socket));
 	}
 	
 	pfm_top_xbar_0_sc*  inst_128=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	pfm_top_embedded_schedular_0_sc*  inst_129=dynamic_cast<pfm_top_embedded_schedular_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_embedded_schedular_0"));
-	xtlm_aximm_transaction_logger* log_inst_16 = new xtlm_aximm_transaction_logger("xtlm_aximm_transaction_logger_16");
-	log_inst_16->setProxyRef(inst_128, inst_129, "pfm_top_xbar_0_M04_AXI_TLM", "pfm_top_embedded_schedular_0_s_axi_ctrl_user_TLM", log_inst_16->m_transactionLogger);
+	xsc_sim_conn_base*  inst_129=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
 	
 	if(inst_128==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
 	}
 	if(inst_129==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_embedded_schedular_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
 	}
 	
-	if (inst_128!=NULL && inst_129!=NULL) {
-		inst_128->initiator_4_rd_socket->bind(*(log_inst_16->tar_rd_skt));
-		log_inst_16->init_rd_skt->bind(*(inst_129->s_axi_ctrl_user_rd_socket));
+	if (inst_128!=NULL && inst_129!=NULL && inst_129->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket")!=NULL) {
+		inst_128->initiator_1_rd_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_129->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket")));
 	}
 	
 	pfm_top_xbar_0_sc*  inst_132=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	pfm_top_embedded_schedular_0_sc*  inst_133=dynamic_cast<pfm_top_embedded_schedular_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_embedded_schedular_0"));
+	xsc_sim_conn_base*  inst_133=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
 	
 	if(inst_132==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
 	}
 	if(inst_133==NULL) {
-		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_embedded_schedular_0_sc"<<std::endl;
+		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
 	}
 	
-	if (inst_132!=NULL && inst_133!=NULL) {
-		inst_132->initiator_4_wr_socket->bind(*(log_inst_16->tar_wr_skt));
-		log_inst_16->init_wr_skt->bind(*(inst_133->s_axi_ctrl_user_wr_socket));
+	if (inst_132!=NULL && inst_133!=NULL && inst_133->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket")!=NULL) {
+		inst_132->initiator_1_wr_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_133->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket")));
 	}
 	
 	pfm_top_embedded_schedular_0_sc*  inst_136=dynamic_cast<pfm_top_embedded_schedular_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_embedded_schedular_0"));
@@ -634,32 +630,36 @@ void pfm_top_sci::before_end_of_elaboration() {
 		log_inst_17->init_wr_skt->bind(*(inst_141->target_1_wr_socket));
 	}
 	
-	pfm_top_xbar_0_sc*  inst_144=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	xsc_sim_conn_base*  inst_145=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
+	pfm_top_sim_qdma_0_0_sc*  inst_144=dynamic_cast<pfm_top_sim_qdma_0_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_sim_qdma_0_0"));
+	pfm_top_xbar_0_sc*  inst_145=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
+	xtlm_aximm_transaction_logger* log_inst_18 = new xtlm_aximm_transaction_logger("xtlm_aximm_transaction_logger_18");
+	log_inst_18->setProxyRef(inst_144, inst_145, "pfm_top_sim_qdma_0_0_M_AXICTRL_TLM", "pfm_top_xbar_0_S00_AXI_TLM", log_inst_18->m_transactionLogger);
 	
 	if(inst_144==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_sim_qdma_0_0_sc"<<std::endl;
 	}
 	if(inst_145==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
 	}
 	
-	if (inst_144!=NULL && inst_145!=NULL && inst_145->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket")!=NULL) {
-		inst_144->initiator_1_rd_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_145->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket")));
+	if (inst_144!=NULL && inst_145!=NULL) {
+		inst_144->initiator_ctrl_rd_socket->bind(*(log_inst_18->tar_rd_skt));
+		log_inst_18->init_rd_skt->bind(*(inst_145->target_0_rd_socket));
 	}
 	
-	pfm_top_xbar_0_sc*  inst_148=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
-	xsc_sim_conn_base*  inst_149=dynamic_cast<xsc_sim_conn_base*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_sci"));
+	pfm_top_sim_qdma_0_0_sc*  inst_148=dynamic_cast<pfm_top_sim_qdma_0_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_sim_qdma_0_0"));
+	pfm_top_xbar_0_sc*  inst_149=dynamic_cast<pfm_top_xbar_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_top_xbar_0"));
 	
 	if(inst_148==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_sim_qdma_0_0_sc"<<std::endl;
 	}
 	if(inst_149==NULL) {
-		std::cout<<"WARNING: While binding sockets cannot find socket object instance to bind xsc_sim_conn_base, Skipping this connection"<<std::endl;
+		std::cerr<<"Error: While binding sockets cannot find socket object instance to bind pfm_top_xbar_0_sc"<<std::endl;
 	}
 	
-	if (inst_148!=NULL && inst_149!=NULL && inst_149->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket")!=NULL) {
-		inst_148->initiator_1_wr_socket->bind(*static_cast<xtlm::xtlm_aximm_target_socket*>(inst_149->getTlmSocketByName("PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket")));
+	if (inst_148!=NULL && inst_149!=NULL) {
+		inst_148->initiator_ctrl_wr_socket->bind(*(log_inst_18->tar_wr_skt));
+		log_inst_18->init_wr_skt->bind(*(inst_149->target_0_wr_socket));
 	}
 	
 }

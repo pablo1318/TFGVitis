@@ -23,13 +23,13 @@ pfm_dynamic_sci::pfm_dynamic_sci(const sc_module_name& module_name) : xsc::utils
 	
 	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_DATA_H2C_03_tlm_MODE",0,"pfm_dynamic_smartconn_data_0_0","S03_AXI_tlm_MODE");
 	
-	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_01_tlm_MODE",0,"pfm_dynamic_xbar_5","S00_AXI_TLM_MODE");
-	
-	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_01_tlm_MODE",0,"pfm_dynamic_xbar_5","S00_AXI_TLM_MODE");
-	
 	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_00_tlm_MODE",0,"pfm_dynamic_xbar_4","S00_AXI_TLM_MODE");
 	
 	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_00_tlm_MODE",0,"pfm_dynamic_xbar_4","S00_AXI_TLM_MODE");
+	
+	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_01_tlm_MODE",0,"pfm_dynamic_xbar_5","S00_AXI_TLM_MODE");
+	
+	xsc::utils::xsc_sim_manager::addAssociateInstanceParameter("pfm_dynamic_sci","PLP_S_AXI_CTRL_USER_01_tlm_MODE",0,"pfm_dynamic_xbar_5","S00_AXI_TLM_MODE");
 	
 	//Add TLM Parameters
 	xsc::utils::xsc_sim_manager::addInstanceConnParameters("pfm_dynamic_xbar_4","M01_AXI_TLM_MODE","pfm_dynamic_m01_regslice_6","S_AXI_TLM_MODE",1);
@@ -133,14 +133,14 @@ void pfm_dynamic_sci::initConnModule() {
 	registerTlmSocket("PLP_S_AXI_DATA_H2C_03_tlm_aximm_read_socket",inst8->S03_AXI_tlm_aximm_read_socket);
 	pfm_dynamic_smartconn_data_0_0_sc*  inst9=dynamic_cast<pfm_dynamic_smartconn_data_0_0_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_smartconn_data_0_0"));
 	registerTlmSocket("PLP_S_AXI_DATA_H2C_03_tlm_aximm_write_socket",inst9->S03_AXI_tlm_aximm_write_socket);
-	pfm_dynamic_xbar_5_sc*  inst10=dynamic_cast<pfm_dynamic_xbar_5_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_5"));
-	registerTlmSocket("PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket",inst10->target_0_rd_socket);
-	pfm_dynamic_xbar_5_sc*  inst11=dynamic_cast<pfm_dynamic_xbar_5_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_5"));
-	registerTlmSocket("PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket",inst11->target_0_wr_socket);
-	pfm_dynamic_xbar_4_sc*  inst12=dynamic_cast<pfm_dynamic_xbar_4_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_4"));
-	registerTlmSocket("PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket",inst12->target_0_rd_socket);
-	pfm_dynamic_xbar_4_sc*  inst13=dynamic_cast<pfm_dynamic_xbar_4_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_4"));
-	registerTlmSocket("PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket",inst13->target_0_wr_socket);
+	pfm_dynamic_xbar_4_sc*  inst10=dynamic_cast<pfm_dynamic_xbar_4_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_4"));
+	registerTlmSocket("PLP_S_AXI_CTRL_USER_00_tlm_aximm_read_socket",inst10->target_0_rd_socket);
+	pfm_dynamic_xbar_4_sc*  inst11=dynamic_cast<pfm_dynamic_xbar_4_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_4"));
+	registerTlmSocket("PLP_S_AXI_CTRL_USER_00_tlm_aximm_write_socket",inst11->target_0_wr_socket);
+	pfm_dynamic_xbar_5_sc*  inst12=dynamic_cast<pfm_dynamic_xbar_5_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_5"));
+	registerTlmSocket("PLP_S_AXI_CTRL_USER_01_tlm_aximm_read_socket",inst12->target_0_rd_socket);
+	pfm_dynamic_xbar_5_sc*  inst13=dynamic_cast<pfm_dynamic_xbar_5_sc*>(xsc::utils::xsc_sim_manager::getInstancePtr("pfm_dynamic_xbar_5"));
+	registerTlmSocket("PLP_S_AXI_CTRL_USER_01_tlm_aximm_write_socket",inst13->target_0_wr_socket);
 }
 
 void pfm_dynamic_sci::before_end_of_elaboration() {

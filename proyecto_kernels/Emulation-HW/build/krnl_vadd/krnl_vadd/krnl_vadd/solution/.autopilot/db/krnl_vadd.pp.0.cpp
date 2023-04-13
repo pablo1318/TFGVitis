@@ -528,7 +528,7 @@ class stream : public stream<__STREAM_T__, 0> {
 
 
 
-const int c_size = 4096;
+const int c_size = 1000000;
 
 static void load_input(uint32_t* in, hls::stream<uint32_t>& inStream, int size) {
 mem_rd:

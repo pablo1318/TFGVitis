@@ -288,13 +288,13 @@
           <EstimatedClockPeriod>2.433</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
-          <Best-caseLatency>4099</Best-caseLatency>
-          <Average-caseLatency>4099</Average-caseLatency>
-          <Worst-caseLatency>4099</Worst-caseLatency>
-          <Best-caseRealTimeLatency>13.662 us</Best-caseRealTimeLatency>
-          <Average-caseRealTimeLatency>13.662 us</Average-caseRealTimeLatency>
-          <Worst-caseRealTimeLatency>13.662 us</Worst-caseRealTimeLatency>
-          <PipelineInitiationInterval>4099</PipelineInitiationInterval>
+          <Best-caseLatency>1000003</Best-caseLatency>
+          <Average-caseLatency>1000003</Average-caseLatency>
+          <Worst-caseLatency>1000003</Worst-caseLatency>
+          <Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+          <Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+          <Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+          <PipelineInitiationInterval>1000003</PipelineInitiationInterval>
           <PipelineType>no</PipelineType>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency/>
@@ -999,13 +999,13 @@
           <EstimatedClockPeriod>2.433</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
-          <Best-caseLatency>4171</Best-caseLatency>
-          <Average-caseLatency>4171</Average-caseLatency>
-          <Worst-caseLatency>4171</Worst-caseLatency>
-          <Best-caseRealTimeLatency>13.902 us</Best-caseRealTimeLatency>
-          <Average-caseRealTimeLatency>13.902 us</Average-caseRealTimeLatency>
-          <Worst-caseRealTimeLatency>13.902 us</Worst-caseRealTimeLatency>
-          <PipelineInitiationInterval>4171</PipelineInitiationInterval>
+          <Best-caseLatency>1000075</Best-caseLatency>
+          <Average-caseLatency>1000075</Average-caseLatency>
+          <Worst-caseLatency>1000075</Worst-caseLatency>
+          <Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+          <Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+          <Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+          <PipelineInitiationInterval>1000075</PipelineInitiationInterval>
           <PipelineType>no</PipelineType>
         </SummaryOfOverallLatency>
       </PerformanceEstimates>
@@ -1808,13 +1808,13 @@
           <EstimatedClockPeriod>1.267</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
-          <Best-caseLatency>4099</Best-caseLatency>
-          <Average-caseLatency>4099</Average-caseLatency>
-          <Worst-caseLatency>4099</Worst-caseLatency>
-          <Best-caseRealTimeLatency>13.662 us</Best-caseRealTimeLatency>
-          <Average-caseRealTimeLatency>13.662 us</Average-caseRealTimeLatency>
-          <Worst-caseRealTimeLatency>13.662 us</Worst-caseRealTimeLatency>
-          <PipelineInitiationInterval>4099</PipelineInitiationInterval>
+          <Best-caseLatency>1000003</Best-caseLatency>
+          <Average-caseLatency>1000003</Average-caseLatency>
+          <Worst-caseLatency>1000003</Worst-caseLatency>
+          <Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+          <Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+          <Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+          <PipelineInitiationInterval>1000003</PipelineInitiationInterval>
           <PipelineType>no</PipelineType>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency/>
@@ -2024,13 +2024,13 @@
           <EstimatedClockPeriod>1.267</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
-          <Best-caseLatency>4102</Best-caseLatency>
-          <Average-caseLatency>4102</Average-caseLatency>
-          <Worst-caseLatency>4102</Worst-caseLatency>
-          <Best-caseRealTimeLatency>13.672 us</Best-caseRealTimeLatency>
-          <Average-caseRealTimeLatency>13.672 us</Average-caseRealTimeLatency>
-          <Worst-caseRealTimeLatency>13.672 us</Worst-caseRealTimeLatency>
-          <PipelineInitiationInterval>4102</PipelineInitiationInterval>
+          <Best-caseLatency>1000006</Best-caseLatency>
+          <Average-caseLatency>1000006</Average-caseLatency>
+          <Worst-caseLatency>1000006</Worst-caseLatency>
+          <Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+          <Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+          <Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+          <PipelineInitiationInterval>1000006</PipelineInitiationInterval>
           <PipelineType>no</PipelineType>
         </SummaryOfOverallLatency>
       </PerformanceEstimates>
@@ -3081,13 +3081,13 @@
           <EstimatedClockPeriod>2.433</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
-          <Best-caseLatency>4174</Best-caseLatency>
-          <Average-caseLatency>4174</Average-caseLatency>
-          <Worst-caseLatency>4174</Worst-caseLatency>
-          <Best-caseRealTimeLatency>13.912 us</Best-caseRealTimeLatency>
-          <Average-caseRealTimeLatency>13.912 us</Average-caseRealTimeLatency>
-          <Worst-caseRealTimeLatency>13.912 us</Worst-caseRealTimeLatency>
-          <PipelineInitiationInterval>4172</PipelineInitiationInterval>
+          <Best-caseLatency>1000078</Best-caseLatency>
+          <Average-caseLatency>1000078</Average-caseLatency>
+          <Worst-caseLatency>1000078</Worst-caseLatency>
+          <Best-caseRealTimeLatency>3.333 ms</Best-caseRealTimeLatency>
+          <Average-caseRealTimeLatency>3.333 ms</Average-caseRealTimeLatency>
+          <Worst-caseRealTimeLatency>3.333 ms</Worst-caseRealTimeLatency>
+          <PipelineInitiationInterval>1000076</PipelineInitiationInterval>
           <PipelineType>dataflow</PipelineType>
         </SummaryOfOverallLatency>
       </PerformanceEstimates>

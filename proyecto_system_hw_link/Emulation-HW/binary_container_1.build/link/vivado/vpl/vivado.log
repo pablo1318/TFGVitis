@@ -2,17 +2,17 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Mar 23 18:46:36 2023
-# Process ID: 13947
+# Start of session at: Mon Mar 27 18:23:53 2023
+# Process ID: 11009
 # Current directory: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl
 # Command line: vivado -log vivado.log -applog -messageDb vivado.pb -mode batch -source vpl.tcl -notrace
 # Log file: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/vivado.log
 # Journal file: /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/vivado.jou
-# Running On: pop-os, OS: Linux, CPU Frequency: 4070.667 MHz, CPU Physical cores: 4, Host memory: 16701 MB
+# Running On: pop-os, OS: Linux, CPU Frequency: 4186.826 MHz, CPU Physical cores: 4, Host memory: 16701 MB
 #-----------------------------------------------------------
 source vpl.tcl -notrace
-INFO: Dispatch client connection id - 35373
-[18:46:40] Run vpl: Step create_project: Started
+INFO: Dispatch client connection id - 36657
+[18:23:56] Run vpl: Step create_project: Started
 INFO: [OCL_UTIL] current step: vpl.create_project
 Creating Vivado project.
 INFO: [OCL_UTIL] internal step: source .local/hw_platform/tcl_hooks/dynamic_prelink.tcl
@@ -260,7 +260,7 @@ WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_profile_vip_0_0' is locked:
 WARNING: [IP_Flow 19-2162] IP 'pfm_dynamic_axi_bram_null_0_0' is locked:
 * IP definition 'AXI BRAM Controller (4.1)' for IP 'pfm_dynamic_axi_bram_null_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
 INFO: [Common 17-14] Message 'IP_Flow 19-2162' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-import_files: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1827.883 ; gain = 401.344 ; free physical = 1349 ; free virtual = 34434
+import_files: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1828.004 ; gain = 401.430 ; free physical = 5893 ; free virtual = 34662
 WARNING: [BD 41-1661] One or more IPs have been locked in the design 'pfm_dynamic.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
 List of locked IPs:
 pfm_dynamic_to_delete_kernel_ctrl_3_0
@@ -294,8 +294,8 @@ pfm_top_smartconnect_0_0
 pfm_top_axi_vip_3_0
 
 INFO: Project created:prj
-[18:47:09] Run vpl: Step create_project: Completed
-[18:47:09] Run vpl: Step create_bd: Started
+[18:24:26] Run vpl: Step create_project: Completed
+[18:24:26] Run vpl: Step create_bd: Started
 INFO: [OCL_UTIL] current step: vpl.create_bd
 INFO: [OCL_UTIL] set_property board_part_repo_paths .local/hw_platform/board [current_project]
 INFO: [OCL_UTIL] set_property board_part xilinx.com:au250:part0:1.4 [current_project]
@@ -389,7 +389,7 @@ INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_to_delete_kernel_ctrl_1_0 (AXI GPIO
 INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_to_delete_kernel_ctrl_2_0 (AXI GPIO 2.0) from revision 28 to revision 29
 INFO: [IP_Flow 19-3422] Upgraded pfm_dynamic_to_delete_kernel_ctrl_3_0 (AXI GPIO 2.0) from revision 28 to revision 29
 Wrote  : </home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/pfm_dynamic/pfm_dynamic.bd> 
-open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1881.941 ; gain = 54.059 ; free physical = 1364 ; free virtual = 34327
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1882.055 ; gain = 54.051 ; free physical = 5972 ; free virtual = 34622
 INFO: [OCL_UTIL] internal step: report locked IPs
 WARNING: IP pfm_top_axi_clock_converter_0_0 is locked. Locked reason: * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
 .
@@ -462,8 +462,8 @@ INFO: [sdx_memory_subsystem 1-1] Mapped memory resource M00_AXI_MEM00 from /memo
 INFO: [OCL_UTIL] internal step: save_bd_design
 Wrote  : </home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/pfm_dynamic/pfm_dynamic.bd> 
 INFO: [OCL_UTIL] internal step: updating kernel clocks
-[18:47:23] Run vpl: Step create_bd: Completed
-[18:47:23] Run vpl: Step update_bd: Started
+[18:24:39] Run vpl: Step create_bd: Completed
+[18:24:39] Run vpl: Step update_bd: Started
 INFO: [OCL_UTIL] current step: vpl.update_bd
 INFO: [OCL_UTIL] internal step: inserting profiling and debug cores
 INFO: Platform is decorated with AXI-Lite and trace masters
@@ -508,8 +508,8 @@ INFO: [OCL_UTIL] internal step: collect BD interface connectivity and write auto
 WARNING: [BD 5-235] No pins matched 'get_bd_pins -filter {DIR=="I" && TYPE==clk} -of /kernel_clk'
 INFO: [OCL_UTIL] internal step: save_bd_design
 Wrote  : </home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/pfm_dynamic/pfm_dynamic.bd> 
-[18:47:26] Run vpl: Step update_bd: Completed
-[18:47:26] Run vpl: Step generate_target: Started
+[18:24:42] Run vpl: Step update_bd: Completed
+[18:24:42] Run vpl: Step generate_target: Started
 INFO: [OCL_UTIL] current step: vpl.generate_target
 INFO: [OCL_UTIL] internal step: open_bd_design -auto_upgrade [get_files pfm_top.bd]
 Reading block design file </home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/pfm_top/pfm_top.bd>...
@@ -576,7 +576,7 @@ INFO: [IP_Flow 19-3422] Upgraded pfm_top_axi_vip_1_0 (AXI Verification IP 1.1) f
 INFO: [IP_Flow 19-3422] Upgraded pfm_top_axi_vip_2_0 (AXI Verification IP 1.1) from revision 12 to revision 13
 INFO: [IP_Flow 19-3422] Upgraded pfm_top_axi_vip_3_0 (AXI Verification IP 1.1) from revision 12 to revision 13
 Wrote  : </home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/pfm_top/pfm_top.bd> 
-open_bd_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 3348.488 ; gain = 1466.547 ; free physical = 2445 ; free virtual = 32913
+open_bd_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 3348.195 ; gain = 1466.141 ; free physical = 4254 ; free virtual = 33031
 --- DEBUG: top is already set to pfm_top_wrapper
 INFO: [BD 41-1799] The block design contains upgradeable cell(s), automatically upgrading to newest version...
 INFO: [IP_Flow 19-3420] Updated pfm_dynamic_interconnect_axilite_user_0_0 to use current project options
@@ -985,7 +985,7 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block static_regio
 Exporting to file /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_top/hw_handoff/pfm_top.hwh
 Generated Hardware Definition File /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_top/synth/pfm_top.hwdef
 WARNING: [BD 41-2265] Clock pin for protocol instance pin C0_DDR4_S_AXI_CTRL_0 could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /static_region
-generate_target: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 3801.641 ; gain = 453.152 ; free physical = 1931 ; free virtual = 32477
+generate_target: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 3801.379 ; gain = 453.184 ; free physical = 3874 ; free virtual = 32712
 WARNING: [Vivado 12-818] No files matched 'bd_387c.bd'
 INFO: [OCL_UTIL] Restoring a top bd as current bd design: pfm_top.bd
 INFO: [OCL_UTIL] internal step: generate_target all [get_files pfm_dynamic.bd]
@@ -1044,20 +1044,20 @@ INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interfac
 INFO: [BD 41-1029] Generation completed for the IP Integrator block System_DPA/dpa_ctrl_interconnect/m03_couplers/auto_cc .
 Exporting to file /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/hw_handoff/pfm_dynamic.hwh
 Generated Hardware Definition File /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/synth/pfm_dynamic.hwdef
-generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3801.641 ; gain = 0.000 ; free physical = 1848 ; free virtual = 32462
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3801.379 ; gain = 0.000 ; free physical = 3782 ; free virtual = 32689
 INFO: [OCL_UTIL] internal step: write_hwdef -force -file /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/system.hdf
 WARNING: [Common 17-210] 'write_hwdef' is deprecated.
 WARNING: [Vivado_Tcl 4-1264] 'write_hwdef' with HDF extension is deprecated, please use 'write_hw_platform'
 INFO: [OCL_UTIL] internal step: add_files /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc -fileset [current_fileset -constrset]
 INFO: [OCL_UTIL] set_property used_in synthesis implementation out_of_context /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc
 INFO: [OCL_UTIL] set_property processing_order early /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc
-[18:49:00] Run vpl: Step generate_target: Completed
-[18:49:00] Run vpl: Step config_hw_emu.gen_scripts: Started
+[18:26:16] Run vpl: Step generate_target: Completed
+[18:26:16] Run vpl: Step config_hw_emu.gen_scripts: Started
 INFO: [OCL_UTIL] current step: vpl.config_hw_emu.gen_scripts
 INFO: [OCL_UTIL] internal step: hw_emu_common_util::generate_simulation_scripts_only
 WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
 WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
-INFO: 18:49:00 [HW_EMU_COMMON_UTIL] launch_simulation -scripts_only started
+INFO: 18:26:16 [HW_EMU_COMMON_UTIL] launch_simulation -scripts_only started
 Command: launch_simulation  -scripts_only
 INFO: [Vivado 12-12492] Generating simulation scripts for 'XSim' simulator.
 INFO: [Vivado 12-12493] Simulation top is 'pfm_top_wrapper'
@@ -1088,18 +1088,18 @@ INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-60] Script generated:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.sim/sim_1/behav/xsim/elaborate.sh
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-60] Script generated:/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.sim/sim_1/behav/xsim/simulate.sh
-launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 4262.703 ; gain = 0.000 ; free physical = 1817 ; free virtual = 32449
-INFO: 18:49:13 [HW_EMU_COMMON_UTIL] launch_simulation -scripts_only ended
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 4246.801 ; gain = 0.000 ; free physical = 3739 ; free virtual = 32661
+INFO: 18:26:29 [HW_EMU_COMMON_UTIL] launch_simulation -scripts_only ended
 INFO: [OCL_UTIL] internal step: creating /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/int/_kernel_inst_paths.dat
 INFO: [OCL_UTIL] open_bd_design [get_files pfm_dynamic.bd]
-[18:49:13] Run vpl: Step config_hw_emu.gen_scripts: Completed
-[18:49:13] Run vpl: Step config_hw_emu.compile: Started
+[18:26:29] Run vpl: Step config_hw_emu.gen_scripts: Completed
+[18:26:29] Run vpl: Step config_hw_emu.compile: Started
 INFO: [OCL_UTIL] current step: vpl.config_hw_emu.compile
 INFO: [OCL_UTIL] internal step: hw_emu_common_util::compile_scripts_step
 pwd1 /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl
 pwd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.sim/sim_1/behav_waveform/xsim
 pwd2 /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.sim/sim_1/behav_waveform/xsim
-INFO: 18:49:13 [HW_EMU_COMMON_UTIL] compile.sh started
+INFO: 18:26:29 [HW_EMU_COMMON_UTIL] compile.sh started
 xsc -c --gcc_compile_options -DBOOST_SYSTEM_NO_DEPRECATED --gcc_compile_options -I/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/include --cppversion 14 --gcc_compile_options -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_smartconn_data_0_0/xtlm -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_smartconn_data_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_9/xtlm -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_9/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_12/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_12/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_13/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_memory_subsystem_0/bd_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_irq_const_tieoff_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_hub_0/src -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_hub_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon0_0/src -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon0_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon1_0/src -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_dpa_mon1_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_4/src -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_4/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_5/src -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_5/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_6/src -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_xbar_6/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_6/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_6/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_7/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_7/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_0/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_s00_regslice_0/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_s00_regslice_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m00_regslice_0/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m00_regslice_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_1/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_1/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_8/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m01_regslice_8/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_2/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_2/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m02_regslice_0/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m02_regslice_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_3/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_3/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m03_regslice_0/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_m03_regslice_0/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_4/sysc -I../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_auto_cc_4/sim -I../../../../prj.ip_user_files/bd/pfm_dynamic/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_embedded_schedular_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_embedded_schedular_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_clock_converter_0_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_clock_converter_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_ddr_0_0/sim_tlm/top -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_ddr_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_smartconnect_0_0/xtlm -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_smartconnect_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_0_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_2_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_2_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_3_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_3_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_address_0_0/sysc -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_address_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_sim_qdma_0_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_xbar_0/src -I../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_xbar_0/sim -I../../../../prj.ip_user_files/bd/pfm_top/sim -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/tps/boost_1_72_0 -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xscl/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_cpp_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_sc_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_simple_interconnect_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ap_ctrl_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_ddr_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_cpp_v1_0/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_rpc_v1/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm/include -I/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/emu_perf_common_v1_0/include -work xil_defaultlib -f pfm_top_wrapper_xsc.prj
 xvlog --incr --relax -L uvm -L axi_vip_v1_1_13 -L smartconnect_v1_0 -L xilinx_vip -prj pfm_top_wrapper_vlog.prj
 Multi-threading is on. Using 6 slave threads.
@@ -1306,23 +1306,23 @@ INFO: [VRFC 10-311] analyzing module slr0_imp_1Q3M93Z
 INFO: [VRFC 10-311] analyzing module slr1_imp_IZT2WG
 INFO: [VRFC 10-311] analyzing module slr2_imp_EEMOLC
 INFO: [VRFC 10-311] analyzing module slr3_imp_1AP68A7
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_compute_add.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_compute_add.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_compute_add
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_compute_add_Pipeline_VITIS_LOOP_106_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_control_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_control_s_axi
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_entry_proc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_entry_proc
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_fifo_w32_d2_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_fifo_w32_d2_S
 INFO: [VRFC 10-311] analyzing module krnl_vadd_fifo_w32_d2_S_ShiftReg
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_fifo_w64_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_fifo_w64_d4_S.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_fifo_w64_d4_S
 INFO: [VRFC 10-311] analyzing module krnl_vadd_fifo_w64_d4_S_ShiftReg
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_flow_control_loop_pipe_sequential_init
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_gmem0_m_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi
 INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi_load
 INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi_store
@@ -1333,21 +1333,21 @@ INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi_reg_slice
 INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi_fifo
 INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi_srl
 INFO: [VRFC 10-311] analyzing module krnl_vadd_gmem0_m_axi_mem
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_hls_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_hls_deadlock_detection_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_hls_deadlock_detect_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_load_input.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_load_input.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_load_input
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_load_input_Pipeline_mem_rd.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_load_input_Pipeline_mem_rd.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_load_input_Pipeline_mem_rd
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_start_for_compute_add_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_start_for_compute_add_U0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_start_for_compute_add_U0
 INFO: [VRFC 10-311] analyzing module krnl_vadd_start_for_compute_add_U0_ShiftReg
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_start_for_store_result_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_start_for_store_result_U0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_start_for_store_result_U0
 INFO: [VRFC 10-311] analyzing module krnl_vadd_start_for_store_result_U0_ShiftReg
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd_store_result.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd_store_result.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd_store_result
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/ac8c/hdl/verilog/krnl_vadd.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/pfm_dynamic/ipshared/14e9/hdl/verilog/krnl_vadd.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module krnl_vadd
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_krnl_vadd_1_0/sim/pfm_dynamic_krnl_vadd_1_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pfm_dynamic_krnl_vadd_1_0
@@ -1470,7 +1470,7 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
-                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sim/pfm_dynamic_profile_vip_0_0.cpp:54:
+                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sim/pfm_dynamic_profile_vip_0_0_sc.cpp:52:
 /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
  #pragma GCC diagnostic ignored "-Wregister"
                                 ^~~~~~~~~~~~
@@ -1480,7 +1480,8 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50,
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
-                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.cpp:49:
+                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
+                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sim/pfm_dynamic_profile_vip_0_0.cpp:54:
 /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
  #pragma GCC diagnostic ignored "-Wregister"
                                 ^~~~~~~~~~~~
@@ -1501,8 +1502,7 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50,
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
-                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
-                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sim/pfm_dynamic_profile_vip_0_0_sc.cpp:52:
+                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.cpp:49:
 /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
  #pragma GCC diagnostic ignored "-Wregister"
                                 ^~~~~~~~~~~~
@@ -1554,6 +1554,17 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
+                 from ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sim/pfm_top_axi_vip_1_0.cpp:54:
+/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
+ #pragma GCC diagnostic ignored "-Wregister"
+                                ^~~~~~~~~~~~
+In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/common.h:46:0,
+                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/io/coded_stream.h:135,
+                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:23,
+                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50,
+                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
+                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
+                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
                  from ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sim/pfm_top_axi_vip_1_0_sc.cpp:52:
 /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
  #pragma GCC diagnostic ignored "-Wregister"
@@ -1565,7 +1576,7 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
                  from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
-                 from ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_1_0/sim/pfm_top_axi_vip_1_0.cpp:54:
+                 from ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_2_0/sim/pfm_top_axi_vip_2_0_sc.cpp:52:
 /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
  #pragma GCC diagnostic ignored "-Wregister"
                                 ^~~~~~~~~~~~
@@ -1588,17 +1599,6 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
                  from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
                  from ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_3_0/sim/pfm_top_axi_vip_3_0.cpp:54:
-/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
- #pragma GCC diagnostic ignored "-Wregister"
-                                ^~~~~~~~~~~~
-In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/common.h:46:0,
-                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/io/coded_stream.h:135,
-                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/xtlm_ipc_common.pb.h:23,
-                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2axi_socket.h:50,
-                 from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0/include/ipc2aximm_socket.h:50,
-                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/sim_ipc_aximm_master.h:52,
-                 from ../../../../prj.ip_user_files/bd/pfm_dynamic/ip/pfm_dynamic_profile_vip_0_0/sysc/axi_vip.h:56,
-                 from ../../../../prj.ip_user_files/bd/pfm_top/ip/pfm_top_axi_vip_2_0/sim/pfm_top_axi_vip_2_0_sc.cpp:52:
 /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf/include/google/protobuf/stubs/port.h:382:32: warning: unknown option after ‘#pragma GCC diagnostic’ kind [-Wpragmas]
  #pragma GCC diagnostic ignored "-Wregister"
                                 ^~~~~~~~~~~~
@@ -1632,14 +1632,14 @@ In file included from /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmod
  #pragma GCC diagnostic ignored "-Wregister"
                                 ^~~~~~~~~~~~
 Done compilationNo pending jobs, compilation finished.
-run_program: Time (s): cpu = 00:05:23 ; elapsed = 00:01:12 . Memory (MB): peak = 4262.703 ; gain = 0.000 ; free physical = 2579 ; free virtual = 32524
-INFO: 18:50:25 [HW_EMU_COMMON_UTIL] compile.sh ended
-[18:50:25] Run vpl: Step config_hw_emu.compile: Completed
-[18:50:25] Run vpl: Step config_hw_emu.elaborate: Started
+run_program: Time (s): cpu = 00:05:31 ; elapsed = 00:01:12 . Memory (MB): peak = 4246.801 ; gain = 0.000 ; free physical = 3449 ; free virtual = 32674
+INFO: 18:27:41 [HW_EMU_COMMON_UTIL] compile.sh ended
+[18:27:41] Run vpl: Step config_hw_emu.compile: Completed
+[18:27:41] Run vpl: Step config_hw_emu.elaborate: Started
 INFO: [OCL_UTIL] current step: vpl.config_hw_emu.elaborate
 INFO: [OCL_UTIL] internal step: hw_emu_common_util::elaborate_scripts_step
 pwd /home/pablo1318/workspace/proyecto_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/prj/prj.sim/sim_1/behav_waveform/xsim
-INFO: 18:50:25 [HW_EMU_COMMON_UTIL] elaborate.sh started
+INFO: 18:27:41 [HW_EMU_COMMON_UTIL] elaborate.sh started
 xsc --shared --cppversion 14 -lib xil_defaultlib -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/simmodels/xsim/2022.2/lnx64/6.2.0/ext/protobuf -lprotobuf -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xscl -lxscl -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_cpp_v1_0 -lsim_qdma_cpp_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ipc_v1_0 -lxtlm_ipc_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_qdma_sc_v1_0 -lsim_qdma_sc_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_simple_interconnect_v1_0 -lxtlm_simple_interconnect_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm_ap_ctrl_v1_0 -lxtlm_ap_ctrl_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/sim_ddr_v1_0 -lsim_ddr_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_cpp_v1_0 -lcommon_cpp_v1_0 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/common_rpc_v1 -lcommon_rpc_v1 -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/xtlm -lxtlm -gcc_link_options -L/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xsim/ip/emu_perf_common_v1_0 -lemu_perf_common_v1_0 -o libdpi.so
 Multi-threading is on. Using 6 slave threads.
 GCC Decoupling - Adding extra -std=c++11 -L switchs to link line
@@ -1895,8 +1895,8 @@ Compiling module xil_defaultlib.pfm_top
 Compiling module xil_defaultlib.pfm_top_wrapper
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot pfm_top_wrapper_behav
-run_program: Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 4262.703 ; gain = 0.000 ; free physical = 2452 ; free virtual = 32496
-INFO: 18:50:48 [HW_EMU_COMMON_UTIL] elaborate.sh ended
+run_program: Time (s): cpu = 00:00:48 ; elapsed = 00:00:24 . Memory (MB): peak = 4246.801 ; gain = 0.000 ; free physical = 3365 ; free virtual = 32692
+INFO: 18:28:05 [HW_EMU_COMMON_UTIL] elaborate.sh ended
 WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_clock_converter_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
 .
 WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
@@ -1945,5 +1945,5 @@ WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_s0
 WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_448f_microblaze_I_0 is locked. The IP is locked for the following reason - * IP definition 'MicroBlaze (11.0)' for IP 'bd_448f_microblaze_I_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
 .
 Check VPL, containing 2 checks, has run: 0 errors, 22 warning violations
-[18:50:49] Run vpl: Step config_hw_emu.elaborate: Completed
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 23 18:50:49 2023...
+[18:28:05] Run vpl: Step config_hw_emu.elaborate: Completed
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 18:28:05 2023...

@@ -310,7 +310,7 @@ load_input.exit.exitStub:0 %ret_ln0 = ret
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.split.i:0 %speclooptripcount_ln94 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4096, i64 4096, i64 4096
+for.inc.split.i:0 %speclooptripcount_ln94 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1000000, i64 1000000, i64 1000000
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln94"/></StgValue>
