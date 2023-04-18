@@ -1,19 +1,6 @@
-19:35:05 **** Build of configuration Emulation-HW for project prueba2vectores ****
+18:20:56 **** Incremental Build of configuration Emulation-HW for project prueba2vectores ****
 make -j8 all 
-g++ -std=c++1y -DVITIS_PLATFORM=xilinx_u250_gen3x16_xdma_4_1_202210_1 -D__USE_XOPEN2K8 -I/opt/xilinx/xrt/include/ -I/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/include/ -O0 -g -Wall -c -fmessage-length=0 -o "src/vadd.o" "../src/vadd.cpp"
-../src/vadd.cpp:178:77: warning: "/*" within comment [-Wcomment]
-  178 |     OCL_CHECK(err, err = q.enqueueMigrateMemObjects({buffer_a, buffer_b}, 0 /* 0 means from host));
-      |                                                                              
-In file included from ../src/vadd.h:53,
-                 from ../src/vadd.cpp:52:
-/usr/include/CL/cl2.hpp:18:151: note: ‘#pragma message: cl2.hpp has been renamed to opencl.hpp to make it clear that it supports all versions of OpenCL. Please include opencl.hpp directly.’
-   18 | #pragma message("cl2.hpp has been renamed to opencl.hpp to make it clear that it supports all versions of OpenCL. Please include opencl.hpp directly.")
-      |                                                                                                                                                       ^
-../src/vadd.cpp: In function ‘int main(int, char**)’:
-../src/vadd.cpp:73:12: warning: unused variable ‘size_in_bytes’ [-Wunused-variable]
-   73 |     size_t size_in_bytes = DATA_SIZE * sizeof(int);
-      |            ^~~~~~~~~~~~~
-g++ -o "prueba2vectores" src/vadd.o -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/ -Wl,-rpath-link,/opt/xilinx/xrt/lib
+make: Nothing to be done for 'all'.
 
-19:35:09 Build Finished (took 3s.882ms)
+18:20:57 Build Finished (took 1s.2ms)
 
