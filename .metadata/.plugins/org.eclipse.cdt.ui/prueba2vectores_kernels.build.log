@@ -1,6 +1,6 @@
-19:35:14 **** Incremental Build of configuration Emulation-HW for project prueba2vectores_kernels ****
+18:20:59 **** Incremental Build of configuration Emulation-HW for project prueba2vectores_kernels ****
 make -j8 all 
 make: Nothing to be done for 'all'.
 
-19:35:16 Build Finished (took 2s.235ms)
+18:21:00 Build Finished (took 980ms)
 

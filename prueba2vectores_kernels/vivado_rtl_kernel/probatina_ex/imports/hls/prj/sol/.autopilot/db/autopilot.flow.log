@@ -1,0 +1,579 @@
+INFO-FLOW: Workspace /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol opened at Sat Apr 15 17:35:26 CEST 2023
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Command   open_solution done; 0.11 sec.
+Execute   set_part xcu250-figd2104-2L-e 
+INFO: [HLS 200-1510] Running: set_part xcu250-figd2104-2L-e 
+Execute     create_platform xcu250-figd2104-2L-e -board  
+DBG:HLSDevice: Trying to load device library: /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+Command     create_platform done; 0.92 sec.
+Execute     source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.17 sec.
+Execute     ap_part_info -name xcu250-figd2104-2L-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 1.09 sec.
+Execute   add_files ../probatina_cmodel.cpp 
+INFO: [HLS 200-1510] Running: add_files ../probatina_cmodel.cpp 
+INFO: [HLS 200-10] Adding design file '../probatina_cmodel.cpp' to the project
+Execute   set_top probatina 
+INFO: [HLS 200-1510] Running: set_top probatina 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.09 seconds; current allocated memory: 307.762 MB.
+INFO: [HLS 200-10] Analyzing design file '../probatina_cmodel.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ../probatina_cmodel.cpp as C++
+Execute       ap_part_info -name xcu250-figd2104-2L-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang ../probatina_cmodel.cpp -foptimization-record-file=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.cpp.clang.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.cpp.clang.err.log 
+Command       ap_eval done; 1.67 sec.
+INFO-FLOW: Done: GCC PP 39 time: 1.7 seconds per iteration
+Execute       set_directive_top probatina -name=probatina 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/clang.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.88 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/.systemc_flag -fix-errors /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.94 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/all.directive.json -fix-errors /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.56 sec.
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.36 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.9 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.clang-tidy.loop-label.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 0.64 sec.
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 0.68 sec.
+Execute       ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.76 sec.
+Execute       ap_part_info -name xcu250-figd2104-2L-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot -I /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.bc -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.clang.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 0.7 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.24 seconds. CPU system time: 0.61 seconds. Elapsed time: 6.68 seconds; current allocated memory: 309.969 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc -args  "/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.g.bc"  
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_cmodel.g.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc -args /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+Command         ap_eval done; 0.81 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.81 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.2.m1.bc -args /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsm_39.bc /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.1.lower.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsm_39.bc /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libhlsmc++_39.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.2.m1.bc > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 3.76 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 3.76 sec.
+Execute       run_link_or_opt -opt -out /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc -args /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=probatina -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=probatina -reflow-float-conversion -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 1.31 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.31 sec.
+Execute       run_link_or_opt -out /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.4.m2.bc -args /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/lib/libfloatconversion_39.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.4.m2.bc > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+Command         ap_eval done; 0.14 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.14 sec.
+Execute       run_link_or_opt -opt -out /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc -args /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=probatina 
+Execute         ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       send_msg_by_id INFO @200-777@%s Vitis 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=probatina -mllvm -hls-db-dir -mllvm /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/../../../kernel.xml -mllvm -top-io-mapping-info=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -assume-maxi-align=64 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-assume-no-address-wrap=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -mllvm -default-clock-period=10 -x ir /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.5.gdce.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/platform.db -hls-platform-name=virtexuplus_medium -device-resource-info=BRAM_5376.000000_DSP_12288.000000_FF_3456000.000000_LUT_1728000.000000_SLICE_216000.000000_SLR_4.000000_URAM_1280.000000 -device-name-info=xcu250-figd2104-2L-e > /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 0.6 sec.
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on bundle 'm00_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../probatina_cmodel.cpp:47:5)
+INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on bundle 'm00_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../probatina_cmodel.cpp:55:5)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/../../../kernel.xml -> /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.78 seconds. CPU system time: 0.52 seconds. Elapsed time: 6.84 seconds; current allocated memory: 310.320 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 310.320 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top probatina -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.0.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.35 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 312.742 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.1.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.2.prechk.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 312.973 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.g.1.bc to /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.1.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'probatina' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_50_1' (../probatina_cmodel.cpp:50) in function 'probatina' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'probatina' automatically.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.1.tmp.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 333.945 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.2.bc -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-472] Inferring partial write operation for 'm00_axi_input_buffer' 
+INFO: [HLS 200-472] Inferring partial write operation for 'm00_axi_output_buffer' (../probatina_cmodel.cpp:51:32)
+Command         transform done; 0.11 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 354.141 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.58 sec.
+Command     elaborate done; 14.11 sec.
+Execute     ap_eval exec zip -j /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'probatina' ...
+Execute       ap_set_top_model probatina 
+Execute       get_model_list probatina -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model probatina 
+Execute       preproc_iomode -model probatina_Pipeline_3 
+Execute       preproc_iomode -model probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       preproc_iomode -model probatina_Pipeline_1 
+Execute       create_clock 
+Execute         ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute       get_model_list probatina -filter all-wo-channel 
+INFO-FLOW: Model list for configure: probatina_Pipeline_1 probatina_Pipeline_VITIS_LOOP_50_1 probatina_Pipeline_3 probatina
+INFO-FLOW: Configuring Module : probatina_Pipeline_1 ...
+Execute       set_default_model probatina_Pipeline_1 
+Execute       apply_spec_resource_limit probatina_Pipeline_1 
+INFO-FLOW: Configuring Module : probatina_Pipeline_VITIS_LOOP_50_1 ...
+Execute       set_default_model probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       apply_spec_resource_limit probatina_Pipeline_VITIS_LOOP_50_1 
+INFO-FLOW: Configuring Module : probatina_Pipeline_3 ...
+Execute       set_default_model probatina_Pipeline_3 
+Execute       apply_spec_resource_limit probatina_Pipeline_3 
+INFO-FLOW: Configuring Module : probatina ...
+Execute       set_default_model probatina 
+Execute       apply_spec_resource_limit probatina 
+INFO-FLOW: Model list for preprocess: probatina_Pipeline_1 probatina_Pipeline_VITIS_LOOP_50_1 probatina_Pipeline_3 probatina
+INFO-FLOW: Preprocessing Module: probatina_Pipeline_1 ...
+Execute       set_default_model probatina_Pipeline_1 
+Execute       cdfg_preprocess -model probatina_Pipeline_1 
+Execute       rtl_gen_preprocess probatina_Pipeline_1 
+INFO-FLOW: Preprocessing Module: probatina_Pipeline_VITIS_LOOP_50_1 ...
+Execute       set_default_model probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       cdfg_preprocess -model probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       rtl_gen_preprocess probatina_Pipeline_VITIS_LOOP_50_1 
+INFO-FLOW: Preprocessing Module: probatina_Pipeline_3 ...
+Execute       set_default_model probatina_Pipeline_3 
+Execute       cdfg_preprocess -model probatina_Pipeline_3 
+Execute       rtl_gen_preprocess probatina_Pipeline_3 
+INFO-FLOW: Preprocessing Module: probatina ...
+Execute       set_default_model probatina 
+Execute       cdfg_preprocess -model probatina 
+Execute       rtl_gen_preprocess probatina 
+INFO-FLOW: Model list for synthesis: probatina_Pipeline_1 probatina_Pipeline_VITIS_LOOP_50_1 probatina_Pipeline_3 probatina
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'probatina_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model probatina_Pipeline_1 
+Execute       schedule -model probatina_Pipeline_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.15 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 355.430 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.sched.adb -f 
+INFO-FLOW: Finish scheduling probatina_Pipeline_1.
+Execute       set_default_model probatina_Pipeline_1 
+Execute       bind -model probatina_Pipeline_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 355.430 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.bind.adb -f 
+INFO-FLOW: Finish binding probatina_Pipeline_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'probatina_Pipeline_VITIS_LOOP_50_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       schedule -model probatina_Pipeline_VITIS_LOOP_50_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_50_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 355.473 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.sched.adb -f 
+INFO-FLOW: Finish scheduling probatina_Pipeline_VITIS_LOOP_50_1.
+Execute       set_default_model probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       bind -model probatina_Pipeline_VITIS_LOOP_50_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 355.473 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.bind.adb -f 
+INFO-FLOW: Finish binding probatina_Pipeline_VITIS_LOOP_50_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'probatina_Pipeline_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model probatina_Pipeline_3 
+Execute       schedule -model probatina_Pipeline_3 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 355.656 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.sched.adb -f 
+INFO-FLOW: Finish scheduling probatina_Pipeline_3.
+Execute       set_default_model probatina_Pipeline_3 
+Execute       bind -model probatina_Pipeline_3 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 355.656 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.bind.adb -f 
+INFO-FLOW: Finish binding probatina_Pipeline_3.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'probatina' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model probatina 
+Execute       schedule -model probatina 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.2 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 355.664 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.31 sec.
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.sched.adb -f 
+INFO-FLOW: Finish scheduling probatina.
+Execute       set_default_model probatina 
+Execute       bind -model probatina 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.22 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 355.664 MB.
+Execute       syn_report -verbosereport -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.bind.adb -f 
+INFO-FLOW: Finish binding probatina.
+Execute       get_model_list probatina -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess probatina_Pipeline_1 
+Execute       rtl_gen_preprocess probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       rtl_gen_preprocess probatina_Pipeline_3 
+Execute       rtl_gen_preprocess probatina 
+INFO-FLOW: Model list for RTL generation: probatina_Pipeline_1 probatina_Pipeline_VITIS_LOOP_50_1 probatina_Pipeline_3 probatina
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'probatina_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model probatina_Pipeline_1 -top_prefix probatina_ -sub_prefix probatina_ -mg_file /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'probatina_Pipeline_1' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_1/m_axi_m00_axi_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'probatina_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 355.812 MB.
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.rtl_wrap.cfg.tcl 
+Execute       gen_rtl probatina_Pipeline_1 -style xilinx -f -lang vhdl -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/vhdl/probatina_probatina_Pipeline_1 
+Execute       gen_rtl probatina_Pipeline_1 -style xilinx -f -lang vlog -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/verilog/probatina_probatina_Pipeline_1 
+Execute       syn_report -csynth -model probatina_Pipeline_1 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_Pipeline_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model probatina_Pipeline_1 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_Pipeline_1_csynth.xml 
+Execute       syn_report -verbosereport -model probatina_Pipeline_1 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model probatina_Pipeline_1 -f -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.adb 
+Execute       db_write -model probatina_Pipeline_1 -bindview -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info probatina_Pipeline_1 -p /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'probatina_Pipeline_VITIS_LOOP_50_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model probatina_Pipeline_VITIS_LOOP_50_1 -top_prefix probatina_ -sub_prefix probatina_ -mg_file /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'probatina_Pipeline_VITIS_LOOP_50_1' pipeline 'VITIS_LOOP_50_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'probatina_Pipeline_VITIS_LOOP_50_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 356.730 MB.
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.rtl_wrap.cfg.tcl 
+Execute       gen_rtl probatina_Pipeline_VITIS_LOOP_50_1 -style xilinx -f -lang vhdl -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/vhdl/probatina_probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       gen_rtl probatina_Pipeline_VITIS_LOOP_50_1 -style xilinx -f -lang vlog -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/verilog/probatina_probatina_Pipeline_VITIS_LOOP_50_1 
+Execute       syn_report -csynth -model probatina_Pipeline_VITIS_LOOP_50_1 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_Pipeline_VITIS_LOOP_50_1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model probatina_Pipeline_VITIS_LOOP_50_1 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_Pipeline_VITIS_LOOP_50_1_csynth.xml 
+Execute       syn_report -verbosereport -model probatina_Pipeline_VITIS_LOOP_50_1 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model probatina_Pipeline_VITIS_LOOP_50_1 -f -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.adb 
+Execute       db_write -model probatina_Pipeline_VITIS_LOOP_50_1 -bindview -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info probatina_Pipeline_VITIS_LOOP_50_1 -p /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'probatina_Pipeline_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model probatina_Pipeline_3 -top_prefix probatina_ -sub_prefix probatina_ -mg_file /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'probatina_Pipeline_3' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'probatina_Pipeline_3/m_axi_m00_axi_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'probatina_Pipeline_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 357.582 MB.
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.rtl_wrap.cfg.tcl 
+Execute       gen_rtl probatina_Pipeline_3 -style xilinx -f -lang vhdl -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/vhdl/probatina_probatina_Pipeline_3 
+Execute       gen_rtl probatina_Pipeline_3 -style xilinx -f -lang vlog -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/verilog/probatina_probatina_Pipeline_3 
+Execute       syn_report -csynth -model probatina_Pipeline_3 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_Pipeline_3_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model probatina_Pipeline_3 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_Pipeline_3_csynth.xml 
+Execute       syn_report -verbosereport -model probatina_Pipeline_3 -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       db_write -model probatina_Pipeline_3 -f -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.adb 
+Execute       db_write -model probatina_Pipeline_3 -bindview -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info probatina_Pipeline_3 -p /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'probatina' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model probatina -top_prefix  -sub_prefix probatina_ -mg_file /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'probatina/m00_axi' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'probatina/axi00_ptr0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'probatina' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'axi00_ptr0' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'probatina'.
+INFO: [RTMG 210-278] Implementing memory 'probatina_m00_axi_input_buffer_RAM_AUTO_1R1W' using auto RAMs.
+Command       create_rtl_model done; 0.12 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 361.082 MB.
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.rtl_wrap.cfg.tcl 
+Execute       gen_rtl probatina -istop -style xilinx -f -lang vhdl -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/vhdl/probatina 
+Execute       gen_rtl probatina -istop -style xilinx -f -lang vlog -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/verilog/probatina 
+Execute       syn_report -csynth -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -rtlxml -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/probatina_csynth.xml 
+Execute       syn_report -verbosereport -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Command       syn_report done; 0.12 sec.
+Execute       db_write -model probatina -f -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.adb 
+Execute       db_write -model probatina -bindview -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info probatina -p /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina 
+Execute       export_constraint_db -f -tool general -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.constraint.tcl 
+Execute       syn_report -designview -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.design.xml 
+Execute       syn_report -csynthDesign -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute       syn_report -wcfg -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model probatina -o /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.protoinst 
+Execute       sc_get_clocks probatina 
+Execute       sc_get_portdomain probatina 
+INFO-FLOW: Model list for RTL component generation: probatina_Pipeline_1 probatina_Pipeline_VITIS_LOOP_50_1 probatina_Pipeline_3 probatina
+INFO-FLOW: Handling components in module [probatina_Pipeline_1] ... 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.compgen.tcl 
+INFO-FLOW: Found component probatina_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model probatina_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [probatina_Pipeline_VITIS_LOOP_50_1] ... 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.compgen.tcl 
+INFO-FLOW: Found component probatina_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model probatina_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [probatina_Pipeline_3] ... 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.compgen.tcl 
+INFO-FLOW: Found component probatina_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model probatina_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [probatina] ... 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.compgen.tcl 
+INFO-FLOW: Found component probatina_m00_axi_input_buffer_RAM_AUTO_1R1W.
+INFO-FLOW: Append model probatina_m00_axi_input_buffer_RAM_AUTO_1R1W
+INFO-FLOW: Found component probatina_m00_axi_m_axi.
+INFO-FLOW: Append model probatina_m00_axi_m_axi
+INFO-FLOW: Found component probatina_control_s_axi.
+INFO-FLOW: Append model probatina_control_s_axi
+INFO-FLOW: Append model probatina_Pipeline_1
+INFO-FLOW: Append model probatina_Pipeline_VITIS_LOOP_50_1
+INFO-FLOW: Append model probatina_Pipeline_3
+INFO-FLOW: Append model probatina
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: probatina_flow_control_loop_pipe_sequential_init probatina_flow_control_loop_pipe_sequential_init probatina_flow_control_loop_pipe_sequential_init probatina_m00_axi_input_buffer_RAM_AUTO_1R1W probatina_m00_axi_m_axi probatina_control_s_axi probatina_Pipeline_1 probatina_Pipeline_VITIS_LOOP_50_1 probatina_Pipeline_3 probatina
+INFO-FLOW: Generating /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model probatina_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model probatina_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model probatina_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model probatina_m00_axi_input_buffer_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model probatina_m00_axi_m_axi
+INFO-FLOW: To file: write model probatina_control_s_axi
+INFO-FLOW: To file: write model probatina_Pipeline_1
+INFO-FLOW: To file: write model probatina_Pipeline_VITIS_LOOP_50_1
+INFO-FLOW: To file: write model probatina_Pipeline_3
+INFO-FLOW: To file: write model probatina
+INFO-FLOW: Generating /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/generic/autopilot/common.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/generic/autopilot/op.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/ip/util.gen 
+Execute         source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/vhdl' dstVlogDir='/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/vlog' tclDir='/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db' modelList='probatina_flow_control_loop_pipe_sequential_init
+probatina_flow_control_loop_pipe_sequential_init
+probatina_flow_control_loop_pipe_sequential_init
+probatina_m00_axi_input_buffer_RAM_AUTO_1R1W
+probatina_m00_axi_m_axi
+probatina_control_s_axi
+probatina_Pipeline_1
+probatina_Pipeline_VITIS_LOOP_50_1
+probatina_Pipeline_3
+probatina
+' expOnly='0'
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu250-figd2104-2L-e -data names -quiet 
+Execute       ap_part_info -name xcu250-figd2104-2L-e -data info -quiet 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.compgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.compgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.compgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.compgen.tcl 
+Execute         source ./control.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.35 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.39 seconds; current allocated memory: 364.988 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='probatina_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='probatina_flow_control_loop_pipe_sequential_init
+probatina_flow_control_loop_pipe_sequential_init
+probatina_flow_control_loop_pipe_sequential_init
+probatina_m00_axi_input_buffer_RAM_AUTO_1R1W
+probatina_m00_axi_m_axi
+probatina_control_s_axi
+probatina_Pipeline_1
+probatina_Pipeline_VITIS_LOOP_50_1
+probatina_Pipeline_3
+probatina
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/top-io-be.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.tbgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.compgen.dataonly.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.compgen.dataonly.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.rtl_wrap.cfg.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.compgen.dataonly.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_1.tbgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_VITIS_LOOP_50_1.tbgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina_Pipeline_3.tbgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.tbgen.tcl 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu250-figd2104-2L-e -data names -quiet 
+Execute       ap_part_info -name xcu250-figd2104-2L-e -data info -quiet 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/probatina.constraint.tcl 
+Execute       sc_get_clocks probatina 
+Execute       source /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/probatina_ex/imports/hls/prj/sol/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE probatina LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME m00_axi_m_axi_U SOURCE {} VARIABLE {} MODULE probatina LOOP {} BUNDLEDNAME m00_axi DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST probatina MODULE2INSTS {probatina probatina probatina_Pipeline_1 grp_probatina_Pipeline_1_fu_87 probatina_Pipeline_VITIS_LOOP_50_1 grp_probatina_Pipeline_VITIS_LOOP_50_1_fu_95 probatina_Pipeline_3 grp_probatina_Pipeline_3_fu_101} INST2MODULE {probatina probatina grp_probatina_Pipeline_1_fu_87 probatina_Pipeline_1 grp_probatina_Pipeline_VITIS_LOOP_50_1_fu_95 probatina_Pipeline_VITIS_LOOP_50_1 grp_probatina_Pipeline_3_fu_101 probatina_Pipeline_3} INSTDATA {probatina {DEPTH 1 CHILDREN {grp_probatina_Pipeline_1_fu_87 grp_probatina_Pipeline_VITIS_LOOP_50_1_fu_95 grp_probatina_Pipeline_3_fu_101}} grp_probatina_Pipeline_1_fu_87 {DEPTH 2 CHILDREN {}} grp_probatina_Pipeline_VITIS_LOOP_50_1_fu_95 {DEPTH 2 CHILDREN {}} grp_probatina_Pipeline_3_fu_101 {DEPTH 2 CHILDREN {}}} MODULEDATA {probatina_Pipeline_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_24_fu_122_p2 SOURCE {} VARIABLE empty_24 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} probatina_Pipeline_VITIS_LOOP_50_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_fu_74_p2 SOURCE ../probatina_cmodel.cpp:50 VARIABLE add_ln50 LOOP VITIS_LOOP_50_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME m00_axi_output_buffer_d0 SOURCE ../probatina_cmodel.cpp:51 VARIABLE add_ln51 LOOP VITIS_LOOP_50_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} probatina_Pipeline_3 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME empty_20_fu_122_p2 SOURCE {} VARIABLE empty_20 LOOP {Loop 1} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} probatina {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m00_axi_input_buffer_U SOURCE ../probatina_cmodel.cpp:38 VARIABLE m00_axi_input_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 16 URAM 0 DISPNAME {bind_storage ram_1p}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME m00_axi_output_buffer_U SOURCE ../probatina_cmodel.cpp:39 VARIABLE m00_axi_output_buffer LOOP {} BUNDLEDNAME {} DSP 0 BRAM 16 URAM 0 DISPNAME {bind_storage ram_1p}}} AREA {DSP 0 BRAM 32 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+Execute       send_msg_by_id INFO @200-1603@%s  
+INFO: [HLS 200-1603] Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.44 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.48 seconds; current allocated memory: 369.449 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for probatina.
+INFO: [VLOG 209-307] Generating Verilog RTL for probatina.
+Execute       syn_report -model probatina -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+Command     autosyn done; 2.4 sec.
+Command   csynth_design done; 16.54 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.29 seconds. CPU system time: 1.27 seconds. Elapsed time: 16.54 seconds; current allocated memory: 61.766 MB.
+Execute   cleanup_all 
