@@ -134,7 +134,7 @@ int main(int argc, char* argv[]) {
             std::cout << "Failed to program device[" << i << "] with xclbin file!\n";
         } else {
             std::cout << "Device[" << i << "]: program successful!\n";
-            OCL_CHECK(err, krnl_vector_add = cl::Kernel(program, "kvadd", &err));
+            OCL_CHECK(err, krnl_vector_add = cl::Kernel(program, "kenel_tutorial", &err));
             valid_device = true;
             break; // we break because we found a valid device
         }
@@ -188,29 +188,13 @@ int main(int argc, char* argv[]) {
 
     OCL_CHECK(err, q.finish());*/
     cl::Program program(context, devices, bins);
+    int buffer_result;
 
 
-    cl::Buffer bufA(context, CL_MEM_READ_ONLY,  sizeof(int), NULL, &err);
-    cl::Buffer bufB(context, CL_MEM_READ_ONLY,  sizeof(float), NULL, &err);
-    cl::Buffer bufRes(context, CL_MEM_READ_WRITE,  sizeof(float), NULL, &err);
-
-    float *in1 = (float *)q.enqueueMapBuffer(bufA, CL_TRUE, CL_MAP_WRITE, 0, sizeof(float));
-    float *in2 = (float *)q.enqueueMapBuffer(bufB, CL_TRUE, CL_MAP_WRITE, 0, sizeof(float));
-    float *res = (float *)q.enqueueMapBuffer(bufRes, CL_TRUE, CL_MAP_WRITE, 0, sizeof(float));
-    *in1 = 1;
-    *in2 = 2;
-
-    q.enqueueMigrateMemObjects({bufA, bufB}, 0 );
-    OCL_CHECK(err, q.finish());
-
-    krnl_vector_add.setArg(0,bufA);
-    krnl_vector_add.setArg(1,bufB);
-    krnl_vector_add.setArg(2,bufRes);
-    printf("El kernel se carga en la cola\n");
+    krnl_vector_add.setArg(0,buffer_result);
     q.enqueueTask(krnl_vector_add);
-    printf("El kernel se ha cargado en la cola\n");
     q.finish();
-    std::cout<< "Res:" << *res <<std::endl;
+    std::cout<< "Res:" << buffer_result <<std::endl;
 
     // Verify the result
     /*int match = 0;

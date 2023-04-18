@@ -2,21 +2,21 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Apr 17 18:35:35 2023
-# Process ID: 7719
+# Start of session at: Thu Apr 13 18:46:21 2023
+# Process ID: 5018
 # Current directory: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel
-# Command line: vivado -mode batch -source /tmp/vivado.10220541489025176656.tmp -notrace
+# Command line: vivado -mode batch -source /tmp/vivado.10271338351391891513.tmp -notrace
 # Log file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado.log
 # Journal file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado.jou
-# Running On: pop-os, OS: Linux, CPU Frequency: 4156.801 MHz, CPU Physical cores: 4, Host memory: 16701 MB
+# Running On: pop-os, OS: Linux, CPU Frequency: 4000.017 MHz, CPU Physical cores: 4, Host memory: 16701 MB
 #-----------------------------------------------------------
-source /tmp/vivado.10220541489025176656.tmp -notrace
+source /tmp/vivado.10271338351391891513.tmp -notrace
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1405.887 ; gain = 0.023 ; free physical = 6571 ; free virtual = 34360
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1439.832 ; gain = 147.680 ; free physical = 7600 ; free virtual = 35413
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -66,16 +66,23 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-generate_target {instantiation_template} [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci]
-WARNING: [Vivado 12-818] No files matched '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci'
-set_property generate_synth_checkpoint false [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci]
-WARNING: [Vivado 12-818] No files matched '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci'
-ERROR: [Common 17-55] 'set_property' expects at least one object.
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-generate_target all [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci]
-WARNING: [Vivado 12-818] No files matched '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci'
-export_ip_user_files -of_objects [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci] -no_script -sync -force -quiet
-WARNING: [Vivado 12-818] No files matched '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.srcs/sources_1/ip/kvadd/kvadd.xci'
+create_ip -name rtl_kernel_wizard -vendor xilinx.com -library ip -version 1.0 -module_name kenel_tutorial
+create_ip: Time (s): cpu = 00:01:20 ; elapsed = 00:03:11 . Memory (MB): peak = 6688.457 ; gain = 29.344 ; free physical = 6504 ; free virtual = 34401
+set_property -dict [list \
+  CONFIG.Component_Name {kenel_tutorial} \
+  CONFIG.KERNEL_LIBRARY {kernel} \
+  CONFIG.KERNEL_VENDOR {pablo} \
+  CONFIG.NUM_INPUT_ARGS {0} \
+] [get_ips kenel_tutorial]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'kenel_tutorial' to 'kenel_tutorial' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/kenel_tutorial/kenel_tutorial.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'kenel_tutorial'...
+set_property generate_synth_checkpoint false [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/kenel_tutorial/kenel_tutorial.xci]
+generate_target all [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/kenel_tutorial/kenel_tutorial.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'kenel_tutorial'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'kenel_tutorial'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'kenel_tutorial'...
+export_ip_user_files -of_objects [get_files /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/kenel_tutorial/kenel_tutorial.xci] -no_script -sync -force -quiet
 start_gui
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -126,8 +133,8 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_example_project -force -dir /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel [get_ips kvadd]
-INFO: [IP_Flow 19-1706] Not generating 'Examples' target for IP 'kvadd'. Target already exists and is up to date.
-open_example_project: Time (s): cpu = 00:00:00.48 ; elapsed = 00:01:10 . Memory (MB): peak = 6622.668 ; gain = 0.000 ; free physical = 4737 ; free virtual = 32903
+open_example_project -force -dir /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel [get_ips kenel_tutorial]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'kenel_tutorial'...
+open_example_project: Time (s): cpu = 00:00:02 ; elapsed = 00:01:10 . Memory (MB): peak = 6731.270 ; gain = 17.812 ; free physical = 5250 ; free virtual = 33544
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 17 18:44:53 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 13 19:01:39 2023...

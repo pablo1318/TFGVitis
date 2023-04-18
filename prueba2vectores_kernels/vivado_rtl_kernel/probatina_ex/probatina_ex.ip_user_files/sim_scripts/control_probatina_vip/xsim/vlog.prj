@@ -1,7 +1,0 @@
-sv xil_defaultlib --include "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl" \
-"../../../../probatina_ex.gen/sources_1/ip/control_probatina_vip/sim/control_probatina_vip_pkg.sv" \
-"../../../../probatina_ex.gen/sources_1/ip/control_probatina_vip/sim/control_probatina_vip.sv" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

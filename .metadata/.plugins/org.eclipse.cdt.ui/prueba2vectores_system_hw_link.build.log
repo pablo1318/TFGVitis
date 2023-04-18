@@ -1,6 +1,6 @@
-18:21:01 **** Incremental Build of configuration Emulation-HW for project prueba2vectores_system_hw_link ****
+19:35:20 **** Build of configuration Emulation-HW for project prueba2vectores_system_hw_link ****
 make all 
-/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/v++ --target hw_emu --link --config binary_container_1-link.cfg -o"binary_container_1.xclbin" ../../prueba2vectores_kernels/src/vitis_rtl_kernel/kvadd/kvadd.xo
+/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/v++ --target hw_emu --link --config binary_container_1-link.cfg -o"binary_container_1.xclbin" ../../prueba2vectores_kernels/Emulation-HW/build/krnl_vadd.xo
 Option Map File Used: '/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data/vitis/vpp/optMap.xml'
 
 ****** v++ v2022.2 (64-bit)
@@ -10,55 +10,55 @@ Option Map File Used: '/media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data/vitis/
 INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
 	Reports: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/reports/link
 	Log files: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/logs/link
-Running Dispatch Server on port: 36537
-INFO: [v++ 60-1548] Creating build summary session with primary output /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin.link_summary, at Tue Apr 18 18:21:14 2023
-INFO: [v++ 60-1315] Creating rulecheck session with output '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/link_guidance.html', at Tue Apr 18 18:21:14 2023
+Running Dispatch Server on port: 36339
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin.link_summary, at Thu Apr 13 19:35:34 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/link_guidance.html', at Thu Apr 13 19:35:34 2023
 INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm
 INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/hw_emu/hw_emu.xsa'
 INFO: [v++ 74-78] Compiler Version string: 2022.2
 INFO: [v++ 60-629] Linking for hardware emulation target
 INFO: [v++ 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
 INFO: [v++ 60-1332] Run 'run_link' status: Not started
-INFO: [v++ 60-1443] [18:21:19] Run run_link: Step system_link: Started
-INFO: [v++ 60-1453] Command Line: system_link --xo /home/pablo1318/workspace/prueba2vectores_kernels/src/vitis_rtl_kernel/kvadd/kvadd.xo -keep --config /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target emu --output_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int --temp_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link
+INFO: [v++ 60-1443] [19:35:39] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/pablo1318/workspace/prueba2vectores_kernels/Emulation-HW/build/krnl_vadd.xo -keep --config /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target emu --output_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int --temp_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/pablo1318/workspace/prueba2vectores_kernels/src/vitis_rtl_kernel/kvadd/kvadd.xo
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/pablo1318/workspace/prueba2vectores_kernels/Emulation-HW/build/krnl_vadd.xo
 INFO: [SYSTEM_LINK 82-53] Creating IP database /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-38] [18:21:21] build_xd_ip_db started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/hw_emu.hpfm -clkid 0 -ip /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/iprepo/mycompany_com_kernel_kvadd_1_0,kvadd -o /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-37] [18:21:26] build_xd_ip_db finished successfully
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 4614 ; free virtual = 33924
+INFO: [SYSTEM_LINK 82-38] [19:35:41] build_xd_ip_db started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/hw_emu.hpfm -clkid 0 -ip /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/iprepo/xilinx_com_hls_krnl_vadd_1_0,krnl_vadd -o /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [19:35:48] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 5029 ; free virtual = 33701
 INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
 INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml
-INFO: [SYSTEM_LINK 82-38] [18:21:26] cfgen started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cfgen  -nk kvadd:1:kvadd_1 -dpa_mem_offload false -dmclkid 0 -r /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [19:35:48] cfgen started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cfgen  -nk krnl_vadd:1:krnl_vadd_1 -dpa_mem_offload false -dmclkid 0 -r /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml
 INFO: [CFGEN 83-0] Kernel Specs: 
-INFO: [CFGEN 83-0]   kernel: kvadd, num: 1  {kvadd_1}
-INFO: [CFGEN 83-2226] Inferring mapping for argument kvadd_1.A to DDR[1]
-INFO: [CFGEN 83-2226] Inferring mapping for argument kvadd_1.B to DDR[1]
-INFO: [CFGEN 83-2226] Inferring mapping for argument kvadd_1.res to DDR[1]
-INFO: [SYSTEM_LINK 82-37] [18:21:34] cfgen finished successfully
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 4567 ; free virtual = 33890
+INFO: [CFGEN 83-0]   kernel: krnl_vadd, num: 1  {krnl_vadd_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_vadd_1.in1 to DDR[1]
+INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_vadd_1.in2 to DDR[1]
+INFO: [CFGEN 83-2226] Inferring mapping for argument krnl_vadd_1.out to DDR[1]
+INFO: [SYSTEM_LINK 82-37] [19:35:58] cfgen finished successfully
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 4907 ; free virtual = 33595
 INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
-INFO: [SYSTEM_LINK 82-38] [18:21:34] cf2bd started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.xsd --temp_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link --output_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int
+INFO: [SYSTEM_LINK 82-38] [19:35:58] cf2bd started: /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.xsd --temp_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link --output_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int
 INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
 INFO: [CF2BD 82-28] cf2xd finished successfully
 INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/sys_link/_sysl/.xsd
 INFO: [CF2BD 82-28] cf_xsd finished successfully
-INFO: [SYSTEM_LINK 82-37] [18:21:37] cf2bd finished successfully
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 4507 ; free virtual = 33833
-INFO: [v++ 60-1441] [18:21:37] Run run_link: Step system_link: Completed
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4570 ; free virtual = 33896
-INFO: [v++ 60-1443] [18:21:37] Run run_link: Step cf2sw: Started
+INFO: [SYSTEM_LINK 82-37] [19:36:02] cf2bd finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 442.645 ; gain = 0.000 ; free physical = 5044 ; free virtual = 33712
+INFO: [v++ 60-1441] [19:36:02] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 5105 ; free virtual = 33776
+INFO: [v++ 60-1443] [19:36:02] Run run_link: Step cf2sw: Started
 INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/sdsl.dat -rtd /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/cf2sw.rtd -nofilter /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/cf2sw_full.rtd -xclbin /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.xml -o /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.1.xml
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-INFO: [v++ 60-1441] [18:21:41] Run run_link: Step cf2sw: Completed
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4692 ; free virtual = 34014
-INFO: [v++ 60-1443] [18:21:41] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1441] [19:36:08] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 5026 ; free virtual = 33691
+INFO: [v++ 60-1443] [19:36:08] Run run_link: Step rtd2_system_diagram: Started
 INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-INFO: [v++ 60-1441] [18:21:42] Run run_link: Step rtd2_system_diagram: Completed
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.33 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4686 ; free virtual = 34007
-INFO: [v++ 60-1443] [18:21:42] Run run_link: Step vpl: Started
-INFO: [v++ 60-1453] Command Line: vpl -t hw_emu -f xilinx_u250_gen3x16_xdma_4_1_202210_1 -s --remote_ip_cache /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/.ipcache --output_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int --log_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/logs/link --report_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/reports/link --config /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/vplConfig.ini -k /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link --emulation_mode debug_waveform --no-info --iprepo /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xo/ip_repo/mycompany_com_kernel_kvadd_1_0 --messageDb /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link/vpl.pb /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/dr.bd.tcl
+INFO: [v++ 60-1441] [19:36:08] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.39 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 5026 ; free virtual = 33690
+INFO: [v++ 60-1443] [19:36:08] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw_emu -f xilinx_u250_gen3x16_xdma_4_1_202210_1 -s -g --remote_ip_cache /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/.ipcache --output_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int --log_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/logs/link --report_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/reports/link --config /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/vplConfig.ini -k /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link --emulation_mode debug_waveform --no-info --iprepo /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0 --messageDb /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link/vpl.pb /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/dr.bd.tcl
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
 
 ****** vpl v2022.2 (64-bit)
@@ -69,22 +69,25 @@ INFO: [VPL 60-839] Read in kernel information from file '/home/pablo1318/workspa
 INFO: [VPL 74-78] Compiler Version string: 2022.2
 INFO: [VPL 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
 INFO: [VPL 60-1032] Extracting hardware platform to /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/vivado/vpl/.local/hw_platform
-[18:21:56] Run vpl: Step create_project: Started
+[19:36:24] Run vpl: Step create_project: Started
 Creating Vivado project.
-[18:22:31] Run vpl: Step create_project: Completed
-[18:22:31] Run vpl: Step create_bd: Started
-[18:22:43] Run vpl: Step create_bd: Completed
-[18:22:43] Run vpl: Step update_bd: Started
-[18:22:47] Run vpl: Step update_bd: Completed
-[18:22:47] Run vpl: Step generate_target: Started
-[18:24:02] Run vpl: Step generate_target: RUNNING...
-[18:24:39] Run vpl: Step generate_target: Completed
-[18:24:39] Run vpl: Step config_hw_emu.gen_scripts: Started
-[18:24:55] Run vpl: Step config_hw_emu.gen_scripts: Completed
-[18:24:55] Run vpl: Step config_hw_emu.compile: Started
-[18:26:12] Run vpl: Step config_hw_emu.compile: RUNNING...
-[18:26:31] Run vpl: Step config_hw_emu.compile: Completed
-[18:26:31] Run vpl: Step config_hw_emu.elaborate: Started
+[19:37:02] Run vpl: Step create_project: Completed
+[19:37:02] Run vpl: Step create_bd: Started
+[19:37:16] Run vpl: Step create_bd: Completed
+[19:37:16] Run vpl: Step update_bd: Started
+[19:37:19] Run vpl: Step update_bd: Completed
+[19:37:19] Run vpl: Step generate_target: Started
+[19:38:34] Run vpl: Step generate_target: RUNNING...
+[19:39:12] Run vpl: Step generate_target: Completed
+[19:39:12] Run vpl: Step config_hw_emu.gen_scripts: Started
+[19:39:25] Run vpl: Step config_hw_emu.gen_scripts: Completed
+[19:39:25] Run vpl: Step config_hw_emu.compile: Started
+[19:40:32] Run vpl: Step config_hw_emu.compile: Completed
+[19:40:32] Run vpl: Step config_hw_emu.elaborate: Started
+WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_clock_converter_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
+WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+.
 WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_1_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_1_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
 .
 WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_2_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_2_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
@@ -128,16 +131,12 @@ WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_387c_s0
 .
 WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP bd_448f_microblaze_I_0 is locked. The IP is locked for the following reason - * IP definition 'MicroBlaze (11.0)' for IP 'bd_448f_microblaze_I_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
 .
-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_clock_converter_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Clock Converter (2.1)' for IP 'pfm_top_axi_clock_converter_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-.
-WARNING: [IP-LOCK-01] In your vivado project:prj for design:dr the IP pfm_top_axi_vip_0_0 is locked. The IP is locked for the following reason - * IP definition 'AXI Verification IP (1.1)' for IP 'pfm_top_axi_vip_0_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
-.
 Check VPL, containing 2 checks, has run: 0 errors, 22 warning violations
-[18:26:57] Run vpl: Step config_hw_emu.elaborate: Completed
-[18:26:58] Run vpl: FINISHED. Run Status: config_hw_emu.elaborate Complete!
-INFO: [v++ 60-1441] [18:26:58] Run run_link: Step vpl: Completed
-Time (s): cpu = 00:00:09 ; elapsed = 00:05:17 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 3127 ; free virtual = 32236
-INFO: [v++ 60-1443] [18:26:58] Run run_link: Step rtdgen: Started
+[19:40:57] Run vpl: Step config_hw_emu.elaborate: Completed
+[19:40:57] Run vpl: FINISHED. Run Status: config_hw_emu.elaborate Complete!
+INFO: [v++ 60-1441] [19:40:57] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:00:10 ; elapsed = 00:04:49 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 3116 ; free virtual = 32223
+INFO: [v++ 60-1443] [19:40:57] Run run_link: Step rtdgen: Started
 INFO: [v++ 60-1453] Command Line: rtdgen
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
 INFO: [v++ 60-991] clock name 'kernel_clk/clk' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
@@ -145,9 +144,9 @@ INFO: [v++ 60-1230] The compiler selected the following frequencies for the runt
 INFO: [v++ 60-1453] Command Line: cf2sw -a /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/address_map.xml -sdsl /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/sdsl.dat -xclbin /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/xclbin_orig.xml -rtd /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.rtd -o /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml
 INFO: [v++ 60-1652] Cf2sw returned exit code: 0
 WARNING: [v++ 60-1455] Debuggable symbols are not generated successfully, clean up /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/consolidated.cf
-INFO: [v++ 60-1441] [18:27:05] Run run_link: Step rtdgen: Completed
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4957 ; free virtual = 34093
-INFO: [v++ 60-1443] [18:27:05] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1441] [19:41:03] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 4625 ; free virtual = 33759
+INFO: [v++ 60-1443] [19:41:03] Run run_link: Step xclbinutil: Started
 INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/behav.xse --force --target hw_emu --key-value SYS:dfx_enable:false --add-section :JSON:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_xml.rtd --add-section BUILD_METADATA:JSON:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml --add-section SYSTEM_METADATA:RAW:/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1 --output /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
 XRT Build Version: 2.14.354 (2022.2)
@@ -156,12 +155,12 @@ XRT Build Version: 2.14.354 (2022.2)
 Creating a default 'in-memory' xclbin image.
 
 Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
-Size   : 1016 bytes
+Size   : 728 bytes
 Format : JSON
 File   : '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/debug_ip_layout.rtd'
 
 Section: 'BITSTREAM'(0) was successfully added.
-Size   : 30357265 bytes
+Size   : 27999450 bytes
 Format : RAW
 File   : '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/behav.xse'
 
@@ -183,33 +182,33 @@ Format : JSON
 File   : '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_xml.rtd'
 
 Section: 'BUILD_METADATA'(14) was successfully added.
-Size   : 2594 bytes
+Size   : 2567 bytes
 Format : JSON
 File   : '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1_build.rtd'
 
 Section: 'EMBEDDED_METADATA'(2) was successfully added.
-Size   : 3187 bytes
+Size   : 3636 bytes
 Format : RAW
 File   : '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/binary_container_1.xml'
 
 Section: 'SYSTEM_METADATA'(22) was successfully added.
-Size   : 14621 bytes
+Size   : 13311 bytes
 Format : RAW
 File   : '/home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/int/systemDiagramModelSlrBaseAddress.json'
-Successfully wrote (30389451 bytes) to the output file: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin
+Successfully wrote (28030136 bytes) to the output file: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin
 Leaving xclbinutil.
-INFO: [v++ 60-1441] [18:27:05] Run run_link: Step xclbinutil: Completed
-Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.24 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4926 ; free virtual = 34061
-INFO: [v++ 60-1443] [18:27:05] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1441] [19:41:03] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.15 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 4560 ; free virtual = 33721
+INFO: [v++ 60-1443] [19:41:03] Run run_link: Step xclbinutilinfo: Started
 INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin.info --input /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-INFO: [v++ 60-1441] [18:27:05] Run run_link: Step xclbinutilinfo: Completed
-Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.43 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4901 ; free virtual = 34037
-INFO: [v++ 60-1443] [18:27:05] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1441] [19:41:03] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.31 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 4546 ; free virtual = 33708
+INFO: [v++ 60-1443] [19:41:03] Run run_link: Step generate_sc_driver: Started
 INFO: [v++ 60-1453] Command Line: 
 INFO: [v++ 60-1454] Run Directory: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/link/run_link
-INFO: [v++ 60-1441] [18:27:05] Run run_link: Step generate_sc_driver: Completed
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 448.465 ; gain = 0.000 ; free physical = 4901 ; free virtual = 34037
+INFO: [v++ 60-1441] [19:41:03] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 470.367 ; gain = 0.000 ; free physical = 4546 ; free virtual = 33708
 Check POST-VPL, containing 1 checks, has run: 0 errors
 INFO: [v++ 60-244] Generating system estimate report...
 INFO: [v++ 60-1092] Generated system estimate report: /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.build/reports/link/system_estimate_binary_container_1.xtxt
@@ -220,8 +219,8 @@ INFO: [v++ 60-1307] Run completed. Additional information can be found in:
 
 INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
     vitis_analyzer /home/pablo1318/workspace/prueba2vectores_system_hw_link/Emulation-HW/binary_container_1.xclbin.link_summary 
-INFO: [v++ 60-791] Total elapsed time: 0h 6m 2s
+INFO: [v++ 60-791] Total elapsed time: 0h 5m 39s
 INFO: [v++ 60-1653] Closing dispatch client.
 
-18:27:06 Build Finished (took 6m:4s.761ms)
+19:41:03 Build Finished (took 5m:43s.568ms)
 
