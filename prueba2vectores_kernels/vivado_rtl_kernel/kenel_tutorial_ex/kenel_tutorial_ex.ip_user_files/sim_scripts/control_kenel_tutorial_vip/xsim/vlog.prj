@@ -1,7 +1,0 @@
-sv xil_defaultlib --include "/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xilinx_vip/include" --include "../../../ipstatic/hdl" \
-"../../../../kenel_tutorial_ex.gen/sources_1/ip/control_kenel_tutorial_vip/sim/control_kenel_tutorial_vip_pkg.sv" \
-"../../../../kenel_tutorial_ex.gen/sources_1/ip/control_kenel_tutorial_vip/sim/control_kenel_tutorial_vip.sv" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

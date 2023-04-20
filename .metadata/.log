@@ -10046,3 +10046,558 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 18:28:07.350
 !MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '4'
+!SESSION 2023-04-18 18:49:10.954 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-18 18:49:11.423
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-18 18:49:11.464
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-04-18 18:49:14.351
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2023-04-18 18:49:16.665
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.364
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.364
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.365
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.475
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.475
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.476
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.476
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.476
+!MESSAGE XSCT Command: [setws /home/pablo1318/workspace], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.477
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 18:49:22.483
+!MESSAGE XSCT command with result: [setws /home/pablo1318/workspace], Result: [null, ]. Thread: Thread-22
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 18:49:43.744
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 18:49:43.744
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 18:49:43.745
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2023-04-18 19:17:54.111 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-18 19:17:54.611
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-18 19:17:54.638
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-04-18 19:18:00.504
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.363
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.364
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.364
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.612
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.612
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.613
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.614
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.615
+!MESSAGE XSCT Command: [setws /home/pablo1318/workspace], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.616
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:18:06.617
+!MESSAGE XSCT command with result: [setws /home/pablo1318/workspace], Result: [null, ]. Thread: Thread-21
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 19:19:03.676
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 19:19:03.676
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 19:19:03.677
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:30:58.167
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:31:01.189
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-18 19:35:21.999
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:35:22.001
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:36:01.340
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-18 19:40:25.219
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:40:25.220
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '2'
+!SESSION 2023-04-18 19:41:00.035 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-18 19:41:02.175
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-18 19:41:02.306
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-04-18 19:41:20.471
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.893
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.894
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.898
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.898
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.899
+!MESSAGE XSCT Command: [setws /home/pablo1318/workspace], Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.900
+!MESSAGE XSCT command with result: [setws /home/pablo1318/workspace], Result: [null, ]. Thread: Thread-22
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:33.927
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:37.781
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:37.782
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-18 19:41:37.783
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 19:41:40.197
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 19:41:40.198
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-18 19:41:40.198
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:41:56.623
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:42:03.121
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-18 19:46:02.531
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:02.534
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:12.521
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:14.044
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:17.910
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:19.002
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:27.435
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:46:30.235
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-18 19:50:21.371
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:50:21.376
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:51:08.264
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:51:14.182
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:51:18.280
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '11'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-18 19:55:29.280
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-18 19:55:29.287
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '3'
+!SESSION 2023-04-19 19:46:59.224 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-19 19:47:00.262
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-19 19:47:00.319
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-04-19 19:47:11.858
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:28.198
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:28.198
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:28.199
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.276
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.277
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.277
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.277
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.277
+!MESSAGE XSCT Command: [setws /home/pablo1318/workspace], Thread: Thread-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.278
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-19 19:47:31.279
+!MESSAGE XSCT command with result: [setws /home/pablo1318/workspace], Result: [null, ]. Thread: Thread-27
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-19 19:48:31.252
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-19 19:48:31.253
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-19 19:48:31.253
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:48:35.157
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:48:38.851
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-19 19:53:38.661
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:53:38.662
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:54:06.742
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-19 19:58:42.330
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:58:42.333
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:59:25.749
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:59:27.001
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:59:30.070
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 19:59:53.838
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:00:19.739
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:00:58.391
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:01:49.282
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:01:50.424
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:01:51.884
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:01:53.075
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:02:09.731
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:02:12.607
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '13'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-19 20:06:28.774
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:06:28.776
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:07:23.353
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '14'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:07:26.479
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '15'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-19 20:11:52.979
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:11:52.981
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:14:03.311
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '16'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:14:06.381
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '17'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-19 20:19:46.056
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 20:19:46.057
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:19:38.862
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '18'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:19:41.964
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '19'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:19:43.435
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '20'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:19:44.378
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '21'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:20:05.739
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '22'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:20:08.715
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '23'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:24:56.477
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:25:14.683
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:26:20.055
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:27:46.023
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '24'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-19 21:28:49.200
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '3'
+!SESSION 2023-04-20 17:26:51.546 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-20 17:26:52.709
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-04-20 17:26:52.767
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-04-20 17:27:18.029
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:31.680
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:31.685
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:31.685
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:31.688
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:31.688
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:31.690
+!MESSAGE XSCT Command: [setws /home/pablo1318/workspace], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:37.648
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:37.649
+!MESSAGE XSCT command with result: [setws /home/pablo1318/workspace], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:37.649
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-20 17:27:37.650
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /media/pablo1318/hddLinux/XILINX/Vitis/2022.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-20 17:28:00.808
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-20 17:28:00.809
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-04-20 17:28:00.809
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-20 17:36:05.452
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:36:05.454
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:36:08.489
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:36:10.074
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:44:40.572
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:44:43.307
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:44:44.676
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '6'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:45:02.602
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 17:45:36.368
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:33:31.988
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '7'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:33:35.548
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '8'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:39:19.837
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:39:38.240
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:41:39.875
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:50:13.683
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:51:11.719
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:56:42.418
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 18:57:31.032
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '4'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:11:41.287
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:11:42.445
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:12:30.285
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:12:31.298
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '13'
+
+!ENTRY com.xilinx.sdx.core 1 0 2023-04-20 19:13:43.613
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:13:43.614
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '14'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:13:46.805
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '15'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:19:41.756
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:20:05.303
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '16'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:20:10.361
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-20 19:24:03.896
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '6'
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-04-20 19:28:39.185
+!MESSAGE The workspace will exit with unsaved changes in this session.

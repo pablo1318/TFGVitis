@@ -1,233 +1,417 @@
+// This is a generated file. Use and modify at your own risk.
+////////////////////////////////////////////////////////////////////////////////
+
 /*******************************************************************************
 Vendor: Xilinx
-Associated Filename: vadd.cpp
-Purpose: VITIS vector addition
-
-*******************************************************************************
-Copyright (C) 2019 XILINX, Inc.
-
-This file contains confidential and proprietary information of Xilinx, Inc. and
-is protected under U.S. and international copyright and other intellectual
-property laws.
-
-DISCLAIMER
-This disclaimer is not a license and does not grant any rights to the materials
-distributed herewith. Except as otherwise provided in a valid license issued to
-you by Xilinx, and to the maximum extent permitted by applicable law:
-(1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND WITH ALL FAULTS, AND XILINX
-HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY,
-INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, OR
-FITNESS FOR ANY PARTICULAR PURPOSE; and (2) Xilinx shall not be liable (whether
-in contract or tort, including negligence, or under any other theory of
-liability) for any loss or damage of any kind or nature related to, arising under
-or in connection with these materials, including for any direct, or any indirect,
-special, incidental, or consequential loss or damage (including loss of data,
-profits, goodwill, or any type of loss or damage suffered as a result of any
-action brought by a third party) even if such damage or loss was reasonably
-foreseeable or Xilinx had been advised of the possibility of the same.
-
-CRITICAL APPLICATIONS
-Xilinx products are not designed or intended to be fail-safe, or for use in any
-application requiring fail-safe performance, such as life-support or safety
-devices or systems, Class III medical devices, nuclear facilities, applications
-related to the deployment of airbags, or any other applications that could lead
-to death, personal injury, or severe property or environmental damage
-(individually and collectively, "Critical Applications"). Customer assumes the
-sole risk and liability of any use of Xilinx products in Critical Applications,
-subject only to applicable laws and regulations governing limitations on product
-liability.
-
-THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS PART OF THIS FILE AT
-ALL TIMES.
-
+Associated Filename: main.c
+#Purpose: This example shows a basic vector add +1 (constant) by manipulating
+#         memory inplace.
 *******************************************************************************/
+#define CL_USE_DEPRECATED_OPENCL_1_2_APIS
 
-#define OCL_CHECK(error, call)                                                                   \
-    call;                                                                                        \
-    if (error != CL_SUCCESS) {                                                                   \
-        printf("%s:%d Error calling " #call ", error code is: %d\n", __FILE__, __LINE__, error); \
-        exit(EXIT_FAILURE);                                                                      \
-    }
-
-#include "vadd.h"
-#include <fstream>
+#include <fcntl.h>
+#include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#ifdef _WINDOWS
+#include <io.h>
+#else
+#include <unistd.h>
+#include <sys/time.h>
+#endif
+#include <assert.h>
+#include <stdbool.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <CL/opencl.h>
+#include <CL/cl_ext.h>
+#include "xclhal2.h"
 
-static const int DATA_SIZE = 4096;
+////////////////////////////////////////////////////////////////////////////////
 
-static const std::string error_message =
-    "Error: Result mismatch:\n"
-    "i = %d CPU result = %d Device result = %d\n";
+#define NUM_WORKGROUPS (1)
+#define WORKGROUP_SIZE (256)
+#define MAX_LENGTH 8192
+#define MEM_ALIGNMENT 4096
+#if defined(VITIS_PLATFORM) && !defined(TARGET_DEVICE)
+#define STR_VALUE(arg)      #arg
+#define GET_STRING(name) STR_VALUE(name)
+#define TARGET_DEVICE GET_STRING(VITIS_PLATFORM)
+#endif
 
-int main(int argc, char* argv[]) {
-    // TARGET_DEVICE macro needs to be passed from gcc command line
-    if (argc != 2) {
-        std::cout << "Usage: " << argv[0] << " <xclbin>" << std::endl;
-        return EXIT_FAILURE;
+////////////////////////////////////////////////////////////////////////////////
+
+cl_uint load_file_to_memory(const char *filename, char **result)
+{
+    cl_uint size = 0;
+    FILE *f = fopen(filename, "rb");
+    if (f == NULL) {
+        *result = NULL;
+        return -1; // -1 means file opening fail
     }
-
-    std::string xclbinFilename = argv[1];
-
-    // Compute the size of array in bytes
-    size_t size_in_bytes = DATA_SIZE * sizeof(int);
-
-    // Creates a vector of DATA_SIZE elements with an initial value of 10 and 32
-    // using customized allocator for getting buffer alignment to 4k boundary
-
-    std::vector<cl::Device> devices;
-    cl_int err;
-    cl::Context context;
-    cl::CommandQueue q;
-    cl::Kernel krnl_vector_add;
-
-    std::vector<cl::Platform> platforms;
-    bool found_device = false;
-
-    // traversing all Platforms To find Xilinx Platform and targeted
-    // Device in Xilinx Platform
-    cl::Platform::get(&platforms);
-    for (size_t i = 0; (i < platforms.size()) & (found_device == false); i++) {
-        cl::Platform platform = platforms[i];
-        std::string platformName = platform.getInfo<CL_PLATFORM_NAME>();
-        if (platformName == "Xilinx") {
-            devices.clear();
-            platform.getDevices(CL_DEVICE_TYPE_ACCELERATOR, &devices);
-            if (devices.size()) {
-                found_device = true;
-                break;
-            }
-        }
+    fseek(f, 0, SEEK_END);
+    size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    *result = (char *)malloc(size+1);
+    if (size != fread(*result, sizeof(char), size, f)) {
+        free(*result);
+        return -2; // -2 means file reading fail
     }
-    if (found_device == false) {
-        std::cout << "Error: Unable to find Target Device " << std::endl;
-        return EXIT_FAILURE;
-    }
-
-    std::cout << "INFO: Reading " << xclbinFilename << std::endl;
-    FILE* fp;
-    if ((fp = fopen(xclbinFilename.c_str(), "r")) == nullptr) {
-        printf("ERROR: %s xclbin not available please build\n", xclbinFilename.c_str());
-        exit(EXIT_FAILURE);
-    }
-    // Load xclbin
-    std::cout << "Loading: '" << xclbinFilename << "'\n";
-    std::ifstream bin_file(xclbinFilename, std::ifstream::binary);
-    bin_file.seekg(0, bin_file.end);
-    unsigned nb = bin_file.tellg();
-    bin_file.seekg(0, bin_file.beg);
-    char* buf = new char[nb];
-    bin_file.read(buf, nb);
-
-    // Creating Program from Binary File
-    cl::Program::Binaries bins;
-    bins.push_back({buf, nb});
-    bool valid_device = false;
-    for (unsigned int i = 0; i < devices.size(); i++) {
-        auto device = devices[i];
-        // Creating Context and Command Queue for selected Device
-        OCL_CHECK(err, context = cl::Context(device, nullptr, nullptr, nullptr, &err));
-        OCL_CHECK(err, q = cl::CommandQueue(context, device, CL_QUEUE_PROFILING_ENABLE, &err));
-        std::cout << "Trying to program device[" << i << "]: " << device.getInfo<CL_DEVICE_NAME>() << std::endl;
-        cl::Program program(context, {device}, bins, nullptr, &err);
-        if (err != CL_SUCCESS) {
-            std::cout << "Failed to program device[" << i << "] with xclbin file!\n";
-        } else {
-            std::cout << "Device[" << i << "]: program successful!\n";
-            OCL_CHECK(err, krnl_vector_add = cl::Kernel(program, "kvadd", &err));
-            valid_device = true;
-            break; // we break because we found a valid device
-        }
-    }
-    if (!valid_device) {
-        std::cout << "Failed to program any device found, exit!\n";
-        exit(EXIT_FAILURE);
-    }
-/*
-    // These commands will allocate memory on the Device. The cl::Buffer objects can
-    // be used to reference the memory locations on the device.
-    OCL_CHECK(err, cl::Buffer buffer_a(context, CL_MEM_READ_ONLY, size_in_bytes, NULL, &err));
-    OCL_CHECK(err, cl::Buffer buffer_b(context, CL_MEM_READ_ONLY, size_in_bytes, NULL, &err));
-    OCL_CHECK(err, cl::Buffer buffer_result(context, CL_MEM_WRITE_ONLY, size_in_bytes, NULL, &err));
-
-    // set the kernel Arguments
-    int narg = 0;
-    OCL_CHECK(err, err = krnl_vector_add.setArg(narg++, buffer_a));
-    OCL_CHECK(err, err = krnl_vector_add.setArg(narg++, buffer_b));
-    OCL_CHECK(err, err = krnl_vector_add.setArg(narg++, buffer_result));
-    OCL_CHECK(err, err = krnl_vector_add.setArg(narg++, DATA_SIZE));
-
-    // We then need to map our OpenCL buffers to get the pointers
-    int* ptr_a;
-    int* ptr_b;
-    int* ptr_result;
-    OCL_CHECK(err,
-              ptr_a = (int*)q.enqueueMapBuffer(buffer_a, CL_TRUE, CL_MAP_WRITE, 0, size_in_bytes, NULL, NULL, &err));
-    OCL_CHECK(err,
-              ptr_b = (int*)q.enqueueMapBuffer(buffer_b, CL_TRUE, CL_MAP_WRITE, 0, size_in_bytes, NULL, NULL, &err));
-    OCL_CHECK(err, ptr_result = (int*)q.enqueueMapBuffer(buffer_result, CL_TRUE, CL_MAP_READ, 0, size_in_bytes, NULL,
-                                                         NULL, &err));
-
-    // Initialize the vectors used in the test
-    for (int i = 0; i < DATA_SIZE; i++) {
-        ptr_a[i] = rand() % DATA_SIZE;
-        ptr_b[i] = rand() % DATA_SIZE;
-    }
-
-    // Data will be migrated to kernel space
-    OCL_CHECK(err, err = q.enqueueMigrateMemObjects({buffer_a, buffer_b}, 0 /* 0 means from host));
-
-
-    // Launch the Kernel
-    OCL_CHECK(err, err = q.enqueueTask(krnl_vector_add));
-
-    // The result of the previous kernel execution will need to be retrieved in
-    // order to view the results. This call will transfer the data from FPGA to
-    // source_results vector
-    OCL_CHECK(err, q.enqueueMigrateMemObjects({buffer_result}, CL_MIGRATE_MEM_OBJECT_HOST));
-
-    OCL_CHECK(err, q.finish());*/
-    cl::Program program(context, devices, bins);
-
-
-    cl::Buffer bufA(context, CL_MEM_READ_ONLY,  sizeof(int), NULL, &err);
-    cl::Buffer bufB(context, CL_MEM_READ_ONLY,  sizeof(float), NULL, &err);
-    cl::Buffer bufRes(context, CL_MEM_READ_WRITE,  sizeof(float), NULL, &err);
-
-    float *in1 = (float *)q.enqueueMapBuffer(bufA, CL_TRUE, CL_MAP_WRITE, 0, sizeof(float));
-    float *in2 = (float *)q.enqueueMapBuffer(bufB, CL_TRUE, CL_MAP_WRITE, 0, sizeof(float));
-    float *res = (float *)q.enqueueMapBuffer(bufRes, CL_TRUE, CL_MAP_WRITE, 0, sizeof(float));
-    *in1 = 1;
-    *in2 = 2;
-
-    q.enqueueMigrateMemObjects({bufA, bufB}, 0 );
-    OCL_CHECK(err, q.finish());
-
-    krnl_vector_add.setArg(0,bufA);
-    krnl_vector_add.setArg(1,bufB);
-    krnl_vector_add.setArg(2,bufRes);
-    printf("El kernel se carga en la cola\n");
-    q.enqueueTask(krnl_vector_add);
-    printf("El kernel se ha cargado en la cola\n");
-    q.finish();
-    std::cout<< "Res:" << *res <<std::endl;
-
-    // Verify the result
-    /*int match = 0;
-    for (int i = 0; i < DATA_SIZE; i++) {
-        int host_result = ptr_a[i] + ptr_b[i];
-        if (ptr_result[i] != host_result) {
-            printf(error_message.c_str(), i, host_result, ptr_result[i]);
-            match = 1;
-            break;
-        }
-    }
-
-    OCL_CHECK(err, err = q.enqueueUnmapMemObject(buffer_a, ptr_a));
-    OCL_CHECK(err, err = q.enqueueUnmapMemObject(buffer_b, ptr_b));
-    OCL_CHECK(err, err = q.enqueueUnmapMemObject(buffer_result, ptr_result));
-    OCL_CHECK(err, err = q.finish());
-
-    std::cout << "TEST " << (match ? "FAILED" : "PASSED") << std::endl;
-    return (match ? EXIT_FAILURE : EXIT_SUCCESS);*/
+    fclose(f);
+    (*result)[size] = 0;
+    return size;
 }
+
+int main(int argc, char** argv)
+{
+
+    cl_int err;                            // error code returned from api calls
+    cl_uint check_status = 0;
+    const cl_uint number_of_words = 4096; // 16KB of data
+
+
+    cl_platform_id platform_id;         // platform id
+    cl_device_id device_id;             // compute device id
+    cl_context context;                 // compute context
+    cl_command_queue commands;          // compute command queue
+    cl_program program;                 // compute programs
+    cl_kernel kernel;                   // compute kernel
+
+
+    cl_uint* h_data;                                // host memory for input vector
+    char cl_platform_vendor[1001];
+    char target_device_name[1001] = TARGET_DEVICE; target_device_name[23] = '\0';
+
+    cl_uint* h_A_output = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*)); // host memory for output vector
+    cl_mem d_A;                         // device memory used for a vector
+
+    cl_uint* h_B_output = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*)); // host memory for output vector
+    cl_mem d_B;                         // device memory used for a vector
+
+    cl_uint* h_res_output = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*)); // host memory for output vector
+    cl_mem d_res;                         // device memory used for a vector
+
+    if (argc != 2) {
+        printf("Usage: %s xclbin\n", argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    // Fill our data sets with pattern
+    h_data = (cl_uint*)aligned_alloc(MEM_ALIGNMENT,MAX_LENGTH * sizeof(cl_uint*));
+    for(cl_uint i = 0; i < MAX_LENGTH; i++) {
+        h_data[i]  = i;
+        h_A_output[i] = 0;
+        h_B_output[i] = 0;
+        h_res_output[i] = 0;
+
+    }
+
+    // Get all platforms and then select Xilinx platform
+    cl_platform_id platforms[16];       // platform id
+    cl_uint platform_count;
+    cl_uint platform_found = 0;
+    err = clGetPlatformIDs(16, platforms, &platform_count);
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to find an OpenCL platform!\n");
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+    printf("INFO: Found %d platforms\n", platform_count);
+
+    // Find Xilinx Plaftorm
+    for (cl_uint iplat=0; iplat<platform_count; iplat++) {
+        err = clGetPlatformInfo(platforms[iplat], CL_PLATFORM_VENDOR, 1000, (void *)cl_platform_vendor,NULL);
+        if (err != CL_SUCCESS) {
+            printf("ERROR: clGetPlatformInfo(CL_PLATFORM_VENDOR) failed!\n");
+            printf("ERROR: Test failed\n");
+            return EXIT_FAILURE;
+        }
+        if (strcmp(cl_platform_vendor, "Xilinx") == 0) {
+            printf("INFO: Selected platform %d from %s\n", iplat, cl_platform_vendor);
+            platform_id = platforms[iplat];
+            platform_found = 1;
+        }
+    }
+    if (!platform_found) {
+        printf("ERROR: Platform Xilinx not found. Exit.\n");
+        return EXIT_FAILURE;
+    }
+
+    // Get Accelerator compute device
+    cl_uint num_devices;
+    cl_uint device_found = 0;
+    cl_device_id devices[16];  // compute device id
+    char cl_device_name[1001];
+    err = clGetDeviceIDs(platform_id, CL_DEVICE_TYPE_ACCELERATOR, 16, devices, &num_devices);
+    printf("INFO: Found %d devices\n", num_devices);
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to create a device group!\n");
+        printf("ERROR: Test failed\n");
+        return -1;
+    }
+
+    //iterate all devices to select the target device.
+    for (cl_uint i=0; i<num_devices; i++) {
+        err = clGetDeviceInfo(devices[i], CL_DEVICE_NAME, 1024, cl_device_name, 0);
+        if (err != CL_SUCCESS) {
+            printf("ERROR: Failed to get device name for device %d!\n", i);
+            printf("ERROR: Test failed\n");
+            return EXIT_FAILURE;
+        }
+        printf("CL_DEVICE_NAME %s\n", cl_device_name);
+        if(strstr(cl_device_name, target_device_name) != NULL) {
+            device_id = devices[i];
+            device_found = 1;
+            printf("Selected %s as the target device\n", cl_device_name);
+        }
+    }
+
+    if (!device_found) {
+        printf("ERROR:Target device %s not found. Exit.\n", target_device_name);
+        return EXIT_FAILURE;
+    }
+
+    // Create a compute context
+    //
+    context = clCreateContext(0, 1, &device_id, NULL, NULL, &err);
+    if (!context) {
+        printf("ERROR: Failed to create a compute context!\n");
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    // Create a command commands
+    commands = clCreateCommandQueue(context, device_id, CL_QUEUE_PROFILING_ENABLE | CL_QUEUE_OUT_OF_ORDER_EXEC_MODE_ENABLE, &err);
+    if (!commands) {
+        printf("ERROR: Failed to create a command commands!\n");
+        printf("ERROR: code %i\n",err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    cl_int status;
+
+    // Create Program Objects
+    // Load binary from disk
+    unsigned char *kernelbinary;
+    char *xclbin = argv[1];
+
+    //------------------------------------------------------------------------------
+    // xclbin
+    //------------------------------------------------------------------------------
+    printf("INFO: loading xclbin %s\n", xclbin);
+    cl_uint n_i0 = load_file_to_memory(xclbin, (char **) &kernelbinary);
+    if (n_i0 < 0) {
+        printf("ERROR: failed to load kernel from xclbin: %s\n", xclbin);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    size_t n0 = n_i0;
+
+    // Create the compute program from offline
+    program = clCreateProgramWithBinary(context, 1, &device_id, &n0,
+                                        (const unsigned char **) &kernelbinary, &status, &err);
+    free(kernelbinary);
+
+    if ((!program) || (err!=CL_SUCCESS)) {
+        printf("ERROR: Failed to create compute program from binary %d!\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+
+    // Build the program executable
+    //
+    err = clBuildProgram(program, 0, NULL, NULL, NULL, NULL);
+    if (err != CL_SUCCESS) {
+        size_t len;
+        char buffer[2048];
+
+        printf("ERROR: Failed to build program executable!\n");
+        clGetProgramBuildInfo(program, device_id, CL_PROGRAM_BUILD_LOG, sizeof(buffer), buffer, &len);
+        printf("%s\n", buffer);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    // Create the compute kernel in the program we wish to run
+    //
+    kernel = clCreateKernel(program, "kvadd_tutorial", &err);
+    if (!kernel || err != CL_SUCCESS) {
+        printf("ERROR: Failed to create compute kernel!\n");
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    // Create structs to define memory bank mapping
+    cl_mem_ext_ptr_t mem_ext;
+    mem_ext.obj = NULL;
+    mem_ext.param = kernel;
+
+
+    mem_ext.flags = 1;
+    d_A = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  sizeof(cl_uint) * number_of_words, &mem_ext, &err);
+    if (err != CL_SUCCESS) {
+      std::cout << "Return code for clCreateBuffer flags=" << mem_ext.flags << ": " << err << std::endl;
+    }
+
+
+    mem_ext.flags = 2;
+    d_B = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  sizeof(cl_uint) * number_of_words, &mem_ext, &err);
+    if (err != CL_SUCCESS) {
+      std::cout << "Return code for clCreateBuffer flags=" << mem_ext.flags << ": " << err << std::endl;
+    }
+
+
+    mem_ext.flags = 3;
+    d_res = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  sizeof(cl_uint) * number_of_words, &mem_ext, &err);
+    if (err != CL_SUCCESS) {
+      std::cout << "Return code for clCreateBuffer flags=" << mem_ext.flags << ": " << err << std::endl;
+    }
+
+
+    if (!(d_A&&d_B&&d_res)) {
+        printf("ERROR: Failed to allocate device memory!\n");
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+
+    err = clEnqueueWriteBuffer(commands, d_A, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_data, 0, NULL, NULL);
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to write to source array h_data: d_A: %d!\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+
+    err = clEnqueueWriteBuffer(commands, d_B, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_data, 0, NULL, NULL);
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to write to source array h_data: d_B: %d!\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+
+    err = clEnqueueWriteBuffer(commands, d_res, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_data, 0, NULL, NULL);
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to write to source array h_data: d_res: %d!\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+
+    // Set the arguments to our compute kernel
+    // cl_uint vector_length = MAX_LENGTH;
+    err = 0;
+    cl_uint d_scalar00 = 0;
+    err |= clSetKernelArg(kernel, 0, sizeof(cl_uint), &d_scalar00); // Not used in example RTL logic.
+    err |= clSetKernelArg(kernel, 1, sizeof(cl_mem), &d_A);
+    err |= clSetKernelArg(kernel, 2, sizeof(cl_mem), &d_B);
+    err |= clSetKernelArg(kernel, 3, sizeof(cl_mem), &d_res);
+
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to set kernel arguments! %d\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    size_t global[1];
+    size_t local[1];
+    // Execute the kernel over the entire range of our 1d input data set
+    // using the maximum number of work group items for this device
+
+    global[0] = 1;
+    local[0] = 1;
+    err = clEnqueueNDRangeKernel(commands, kernel, 1, NULL, (size_t*)&global, (size_t*)&local, 0, NULL, NULL);
+    if (err) {
+        printf("ERROR: Failed to execute kernel! %d\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+
+    clFinish(commands);
+
+
+    // Read back the results from the device to verify the output
+    //
+    cl_event readevent;
+
+    err = 0;
+    err |= clEnqueueReadBuffer( commands, d_A, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_A_output, 0, NULL, &readevent );
+
+    err |= clEnqueueReadBuffer( commands, d_B, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_B_output, 0, NULL, &readevent );
+
+    err |= clEnqueueReadBuffer( commands, d_res, CL_TRUE, 0, sizeof(cl_uint) * number_of_words, h_res_output, 0, NULL, &readevent );
+
+
+    if (err != CL_SUCCESS) {
+        printf("ERROR: Failed to read output array! %d\n", err);
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    }
+    clWaitForEvents(1, &readevent);
+    // Check Results
+
+    for (cl_uint i = 0; i < number_of_words; i++) {
+        if ((h_data[i] + 1) != h_A_output[i]) {
+            printf("ERROR in kvadd_tutorial::m00_axi - array index %d (host addr 0x%03x) - input=%d (0x%x), output=%d (0x%x)\n", i, i*4, h_data[i], h_data[i], h_A_output[i], h_A_output[i]);
+            check_status = 1;
+        }
+      //  printf("i=%d, input=%d, output=%d\n", i,  h_A_input[i], h_A_output[i]);
+    }
+
+
+    for (cl_uint i = 0; i < number_of_words; i++) {
+        if ((h_data[i] + 1) != h_B_output[i]) {
+            printf("ERROR in kvadd_tutorial::m01_axi - array index %d (host addr 0x%03x) - input=%d (0x%x), output=%d (0x%x)\n", i, i*4, h_data[i], h_data[i], h_B_output[i], h_B_output[i]);
+            check_status = 1;
+        }
+      //  printf("i=%d, input=%d, output=%d\n", i,  h_B_input[i], h_B_output[i]);
+    }
+
+
+    for (cl_uint i = 0; i < number_of_words; i++) {
+        if ((h_data[i] + 1) != h_res_output[i]) {
+            printf("ERROR in kvadd_tutorial::m02_axi - array index %d (host addr 0x%03x) - input=%d (0x%x), output=%d (0x%x)\n", i, i*4, h_data[i], h_data[i], h_res_output[i], h_res_output[i]);
+            check_status = 1;
+        }
+      //  printf("i=%d, input=%d, output=%d\n", i,  h_res_input[i], h_res_output[i]);
+    }
+
+
+    //--------------------------------------------------------------------------
+    // Shutdown and cleanup
+    //--------------------------------------------------------------------------
+    clReleaseMemObject(d_A);
+    free(h_A_output);
+
+    clReleaseMemObject(d_B);
+    free(h_B_output);
+
+    clReleaseMemObject(d_res);
+    free(h_res_output);
+
+
+
+    free(h_data);
+    clReleaseProgram(program);
+
+     clReleaseKernel(kernel);
+
+    clReleaseCommandQueue(commands);
+    clReleaseContext(context);
+
+    if (check_status) {
+        printf("ERROR: Test failed\n");
+        return EXIT_FAILURE;
+    } else {
+        printf("INFO: Test completed successfully.\n");
+        return EXIT_SUCCESS;
+    }
+
+
+} // end of main

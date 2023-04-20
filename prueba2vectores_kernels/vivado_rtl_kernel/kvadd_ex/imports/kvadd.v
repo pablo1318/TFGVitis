@@ -184,6 +184,38 @@ inst_control_s_axi (
 // Add kernel logic here.  Modify/remove example code as necessary.
 ///////////////////////////////////////////////////////////////////////////////
 
+// Example RTL block.  Remove to insert custom logic.
+rtl_kernel_wizard_1_example #(
+  .C_M00_AXI_ADDR_WIDTH ( C_M00_AXI_ADDR_WIDTH ),
+  .C_M00_AXI_DATA_WIDTH ( C_M00_AXI_DATA_WIDTH )
+)
+inst_example (
+  .ap_clk          ( ap_clk          ),
+  .ap_rst_n        ( 1'b1            ),
+  .m00_axi_awvalid ( m00_axi_awvalid ),
+  .m00_axi_awready ( m00_axi_awready ),
+  .m00_axi_awaddr  ( m00_axi_awaddr  ),
+  .m00_axi_awlen   ( m00_axi_awlen   ),
+  .m00_axi_wvalid  ( m00_axi_wvalid  ),
+  .m00_axi_wready  ( m00_axi_wready  ),
+  .m00_axi_wdata   ( m00_axi_wdata   ),
+  .m00_axi_wstrb   ( m00_axi_wstrb   ),
+  .m00_axi_wlast   ( m00_axi_wlast   ),
+  .m00_axi_bvalid  ( m00_axi_bvalid  ),
+  .m00_axi_bready  ( m00_axi_bready  ),
+  .m00_axi_arvalid ( m00_axi_arvalid ),
+  .m00_axi_arready ( m00_axi_arready ),
+  .m00_axi_araddr  ( m00_axi_araddr  ),
+  .m00_axi_arlen   ( m00_axi_arlen   ),
+  .m00_axi_rvalid  ( m00_axi_rvalid  ),
+  .m00_axi_rready  ( m00_axi_rready  ),
+  .m00_axi_rdata   ( m00_axi_rdata   ),
+  .m00_axi_rlast   ( m00_axi_rlast   ),
+  .ap_start        ( ap_start        ),
+  .ap_done         ( ap_done         ),
+  .ap_idle         ( ap_idle         ),
+  .ap_ready        ( ap_ready        )
+);
 
 
 endmodule

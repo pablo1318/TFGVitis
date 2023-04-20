@@ -1,6 +1,13 @@
-18:20:56 **** Incremental Build of configuration Emulation-HW for project prueba2vectores ****
+19:20:03 **** Incremental Build of configuration Emulation-HW for project prueba2vectores ****
 make -j8 all 
-make: Nothing to be done for 'all'.
+g++ -std=c++1y -DVITIS_PLATFORM=xilinx_u250_gen3x16_xdma_4_1_202210_1 -D__USE_XOPEN2K8 -I/opt/xilinx/xrt/include/ -I/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/include/ -O0 -g -Wall -c -fmessage-length=0 -o "src/vadd.o" "../src/vadd.cpp"
+In file included from /usr/include/CL/cl.h:20,
+                 from /usr/include/CL/opencl.h:24,
+                 from ../src/vadd.cpp:28:
+/usr/include/CL/cl_version.h:22:104: note: ‘#pragma message: cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0)’
+   22 | #pragma message("cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 300 (OpenCL 3.0)")
+      |                                                                                                        ^
+g++ -o "prueba2vectores" src/vadd.o -lxilinxopencl -lpthread -lrt -lstdc++ -L/opt/xilinx/xrt/lib/ -Wl,-rpath-link,/opt/xilinx/xrt/lib
 
-18:20:57 Build Finished (took 1s.2ms)
+19:20:05 Build Finished (took 1s.337ms)
 

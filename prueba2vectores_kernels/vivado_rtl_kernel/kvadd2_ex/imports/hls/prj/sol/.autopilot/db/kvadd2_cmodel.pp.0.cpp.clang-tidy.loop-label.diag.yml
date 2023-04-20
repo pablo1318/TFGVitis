@@ -1,0 +1,76 @@
+---
+MainSourceFile:  /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          72102
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          279734
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          280173
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          280613
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          543108
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_1:  '
+    FileOffset:      56
+    FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_cmodel.cpp
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          901977
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_2:  '
+    FileOffset:      77
+    FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_cmodel.cpp
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          902372
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_98_3:  '
+    FileOffset:      98
+    FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_cmodel.cpp
+    Replacements:    
+      - FilePath:        /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/hls/prj/sol/.autopilot/db/kvadd2_cmodel.pp.0.cpp
+        Offset:          902769
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_98_3: '
+...

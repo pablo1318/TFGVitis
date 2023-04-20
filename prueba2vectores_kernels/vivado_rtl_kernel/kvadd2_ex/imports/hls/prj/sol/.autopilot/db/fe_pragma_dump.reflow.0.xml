@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="../kvadd2_cmodel.cpp" line="32" pragmaType="interface" parentfunction="kvadd2" mode="m_axi" port="A" bundle="m00_axi" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../kvadd2_cmodel.cpp" line="33" pragmaType="interface" parentfunction="kvadd2" mode="m_axi" port="B" bundle="m01_axi" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../kvadd2_cmodel.cpp" line="34" pragmaType="interface" parentfunction="kvadd2" mode="m_axi" port="res" bundle="m02_axi" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="../kvadd2_cmodel.cpp" line="35" pragmaType="interface" parentfunction="kvadd2" mode="s_axilite" port="A" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kvadd2_cmodel.cpp" line="36" pragmaType="interface" parentfunction="kvadd2" mode="s_axilite" port="B" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kvadd2_cmodel.cpp" line="37" pragmaType="interface" parentfunction="kvadd2" mode="s_axilite" port="res" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kvadd2_cmodel.cpp" line="38" pragmaType="interface" parentfunction="kvadd2" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../kvadd2_cmodel.cpp" line="39" pragmaType="interface" parentfunction="kvadd2" mode="ap_ctrl_hs" port="return" name=""/>
+</pragmas>

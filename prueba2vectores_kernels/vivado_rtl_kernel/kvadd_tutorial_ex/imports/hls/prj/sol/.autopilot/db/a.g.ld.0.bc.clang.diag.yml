@@ -1,0 +1,648 @@
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 55, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          load-store-loop14.load.3
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Aseq
+  - String:          ' '
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      m00_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:55:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 63, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          load-store-loop11.store.5
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Aseq31
+  - String:          ' '
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      m00_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:63:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 76, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          load-store-loop8.load.3
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Bseq
+  - String:          ' '
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      m01_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:76:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 84, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          load-store-loop5.store.5
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        Bseq32
+  - String:          ' '
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      m01_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:84:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 97, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          load-store-loop2.load.3
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        resseq
+  - String:          ' '
+  - ArrayName:       res
+  - String:          ' '
+  - BundleName:      m02_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:97:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 105, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '4096'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          load-store-loop.store.5
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        resseq33
+  - String:          ' '
+  - ArrayName:       res
+  - String:          ' '
+  - BundleName:      m02_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:105:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 105, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - OldLength:       '4096'
+  - String:          ' x '
+  - OldWords:        '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '256'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          resseq33
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq
+  - String:          ' '
+  - ArrayName:       res
+  - String:          ' '
+  - BundleName:      m02_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:105:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 97, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OldLength:       '4096'
+  - String:          ' x '
+  - OldWords:        '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '256'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          resseq
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq34
+  - String:          ' '
+  - ArrayName:       res
+  - String:          ' '
+  - BundleName:      m02_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:97:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 84, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - OldLength:       '4096'
+  - String:          ' x '
+  - OldWords:        '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '256'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          Bseq32
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq36
+  - String:          ' '
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      m01_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:84:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 76, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OldLength:       '4096'
+  - String:          ' x '
+  - OldWords:        '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '256'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          Bseq
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq38
+  - String:          ' '
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      m01_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:76:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 63, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - OldLength:       '4096'
+  - String:          ' x '
+  - OldWords:        '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '256'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          Aseq31
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq40
+  - String:          ' '
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      m00_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:63:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 55, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OldLength:       '4096'
+  - String:          ' x '
+  - OldWords:        '32'
+  - String:          'bit words has been widened by '
+  - Factor:          '16'
+  - String:          ': '
+  - Length:          '256'
+  - String:          ' x '
+  - Words:           '512'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          Aseq
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq42
+  - String:          ' '
+  - ArrayName:       A
+  - String:          ' '
+  - BundleName:      m00_axi
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         '../kvadd_tutorial_cmodel.cpp:55:5'
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 55, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      m00_axi
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 55, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      m00_axi
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 63, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      m00_axi
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 63, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      m00_axi
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 76, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      m01_axi
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 76, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      m01_axi
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 84, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      m01_axi
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 84, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      m01_axi
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 97, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq4
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      m02_axi
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 97, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      m02_axi
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 105, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq5
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      m02_axi
+  - String:          ' '
+  - Function:        kvadd_tutorial
+    DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 31, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../kvadd_tutorial_cmodel.cpp, Line: 105, Column: 5 }
+Function:        kvadd_tutorial
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '256'
+  - String:          ' and bit width '
+  - Width:           '512'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      m02_axi
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

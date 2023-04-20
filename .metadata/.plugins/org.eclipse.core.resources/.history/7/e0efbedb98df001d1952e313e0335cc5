@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="prueba2vectores_system_hw_link" platform="/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm" systemProject="prueba2vectores_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.923954555">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="kvadd" projectName="prueba2vectores_kernels" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="kvadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.615965376">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="kvadd2" projectName="prueba2vectores_kernels" kernelType="PRECOMPILED_KERNEL">
+          <computeUnits name="kvadd2_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.466238562">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1"/>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>

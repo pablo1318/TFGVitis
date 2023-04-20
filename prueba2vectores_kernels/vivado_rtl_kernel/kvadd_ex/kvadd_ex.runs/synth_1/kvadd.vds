@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 19 21:08:14 2023
+# Process ID: 20557
+# Current directory: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.runs/synth_1
+# Command line: vivado -log kvadd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kvadd.tcl
+# Log file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.runs/synth_1/kvadd.vds
+# Journal file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/kvadd_ex.runs/synth_1/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 4000.026 MHz, CPU Physical cores: 4, Host memory: 16701 MB
+#-----------------------------------------------------------
+source kvadd.tcl -notrace
+Command: synth_design -top kvadd -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20585
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2874.086 ; gain = 368.770 ; free physical = 2059 ; free virtual = 31357
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2280.473; parent = 2077.746; children = 202.727
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3909.875; parent = 2878.059; children = 1031.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kvadd' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:7]
+INFO: [Synth 8-6157] synthesizing module 'kvadd_control_s_axi' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd_control_s_axi.v:7]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd_control_s_axi.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd_control_s_axi' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd_control_s_axi.v:7]
+WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (64) of module 'kvadd_control_s_axi' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:178]
+WARNING: [Synth 8-6104] Input port 'A' has an internal driver [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:178]
+WARNING: [Synth 8-689] width (32) of port connection 'B' does not match port width (64) of module 'kvadd_control_s_axi' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:179]
+WARNING: [Synth 8-6104] Input port 'B' has an internal driver [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:179]
+WARNING: [Synth 8-689] width (32) of port connection 'res' does not match port width (64) of module 'kvadd_control_s_axi' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:180]
+ERROR: [Synth 8-439] module 'rtl_kernel_wizard_1_example' not found [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:192]
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+ERROR: [Synth 8-6156] failed synthesizing module 'kvadd' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_ex/imports/kvadd.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2946.023 ; gain = 440.707 ; free physical = 1940 ; free virtual = 31237
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2375.992; parent = 2173.266; children = 202.727
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3977.844; parent = 2946.027; children = 1031.816
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 5 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 21:08:37 2023...

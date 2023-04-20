@@ -1,0 +1,359 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/media/pablo1318/hddLinux/XILINX/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'pablo1318' on host 'pop-os.localdomain' (Linux_x86_64 version 6.2.6-76060206-generic) on Thu Apr 20 18:29:26 CEST 2023
+INFO: [HLS 200-10] On os Pop!_OS 22.04 LTS
+INFO: [HLS 200-10] In directory '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_tutorial_ex/imports/hls'
+Sourcing Tcl script './run_hls.tcl'
+INFO: [HLS 200-1510] Running: source ./run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project prj 
+INFO: [HLS 200-10] Creating and opening project '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_tutorial_ex/imports/hls/prj'.
+INFO: [HLS 200-1510] Running: open_solution sol -flow_target vitis 
+INFO: [HLS 200-10] Creating and opening solution '/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd_tutorial_ex/imports/hls/prj/sol'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu250-figd2104-2L-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1510] Running: add_files ../kvadd_tutorial_cmodel.cpp 
+INFO: [HLS 200-10] Adding design file '../kvadd_tutorial_cmodel.cpp' to the project
+INFO: [HLS 200-1510] Running: set_top kvadd_tutorial 
+INFO: [HLS 200-1510] Running: csynth_design 
+Running Dispatch Server on port: 35139
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 10.05 seconds; current allocated memory: 307.742 MB.
+INFO: [HLS 200-10] Analyzing design file '../kvadd_tutorial_cmodel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.27 seconds. CPU system time: 0.63 seconds. Elapsed time: 6.71 seconds; current allocated memory: 310.094 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on bundle 'm00_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../kvadd_tutorial_cmodel.cpp:55:5)
+INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on bundle 'm00_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../kvadd_tutorial_cmodel.cpp:63:5)
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on bundle 'm01_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../kvadd_tutorial_cmodel.cpp:76:5)
+INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on bundle 'm01_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../kvadd_tutorial_cmodel.cpp:84:5)
+INFO: [HLS 214-115] Multiple burst reads of length 256 and bit width 512 has been inferred on bundle 'm02_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../kvadd_tutorial_cmodel.cpp:97:5)
+INFO: [HLS 214-115] Multiple burst writes of length 256 and bit width 512 has been inferred on bundle 'm02_axi'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../kvadd_tutorial_cmodel.cpp:105:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.38 seconds. CPU system time: 0.58 seconds. Elapsed time: 7.65 seconds; current allocated memory: 310.641 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 310.641 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.57 seconds; current allocated memory: 318.395 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 319.074 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_1' (../kvadd_tutorial_cmodel.cpp:58) in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-4' in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-5' in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_79_2' (../kvadd_tutorial_cmodel.cpp:79) in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-7' in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-8' in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_100_3' (../kvadd_tutorial_cmodel.cpp:100) in function 'kvadd_tutorial' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-10' in function 'kvadd_tutorial' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 335.332 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'm00_axi_input_buffer' 
+INFO: [HLS 200-472] Inferring partial write operation for 'm00_axi_output_buffer' (../kvadd_tutorial_cmodel.cpp:59:32)
+INFO: [HLS 200-472] Inferring partial write operation for 'm01_axi_input_buffer' 
+INFO: [HLS 200-472] Inferring partial write operation for 'm01_axi_output_buffer' (../kvadd_tutorial_cmodel.cpp:80:32)
+INFO: [HLS 200-472] Inferring partial write operation for 'm02_axi_input_buffer' 
+INFO: [HLS 200-472] Inferring partial write operation for 'm02_axi_output_buffer' (../kvadd_tutorial_cmodel.cpp:101:32)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.4 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.45 seconds; current allocated memory: 413.535 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kvadd_tutorial' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.2 seconds; current allocated memory: 414.258 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 414.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_VITIS_LOOP_58_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_58_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 414.469 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 414.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 414.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 414.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 415.105 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 415.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_VITIS_LOOP_79_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_79_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_79_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 415.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 415.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 415.594 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 415.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 415.930 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 415.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_VITIS_LOOP_100_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_100_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_100_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 416.164 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 416.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial_Pipeline_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 416.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 416.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kvadd_tutorial' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 416.758 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.75 seconds. CPU system time: 0 seconds. Elapsed time: 0.75 seconds; current allocated memory: 417.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_1' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_1/m_axi_m00_axi_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 418.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_VITIS_LOOP_58_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_VITIS_LOOP_58_1' pipeline 'VITIS_LOOP_58_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_VITIS_LOOP_58_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 418.961 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_3' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_3/m_axi_m00_axi_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 419.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_4' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_4/m_axi_m01_axi_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 420.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_VITIS_LOOP_79_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_VITIS_LOOP_79_2' pipeline 'VITIS_LOOP_79_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_VITIS_LOOP_79_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 421.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_6' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_6/m_axi_m01_axi_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 422.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_7' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_7/m_axi_m02_axi_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 423.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_VITIS_LOOP_100_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_VITIS_LOOP_100_3' pipeline 'VITIS_LOOP_100_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_VITIS_LOOP_100_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 424.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial_Pipeline_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kvadd_tutorial_Pipeline_9' pipeline 'Loop 1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kvadd_tutorial_Pipeline_9/m_axi_m02_axi_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial_Pipeline_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 425.539 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kvadd_tutorial' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/m00_axi' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/m01_axi' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/m02_axi' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/scalar00' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/A' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/B' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kvadd_tutorial/res' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kvadd_tutorial' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'scalar00', 'A', 'B', 'res' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kvadd_tutorial'.
+INFO: [RTMG 210-278] Implementing memory 'kvadd_tutorial_m00_axi_input_buffer_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 430.438 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.95 seconds. CPU system time: 0 seconds. Elapsed time: 0.95 seconds; current allocated memory: 434.746 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.97 seconds. CPU system time: 0.02 seconds. Elapsed time: 1 seconds; current allocated memory: 442.668 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for kvadd_tutorial.
+INFO: [VLOG 209-307] Generating Verilog RTL for kvadd_tutorial.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14.63 seconds. CPU system time: 1.37 seconds. Elapsed time: 21.1 seconds; current allocated memory: 134.988 MB.
+INFO: [HLS 200-112] Total CPU user time: 16.03 seconds. Total CPU system time: 1.67 seconds. Total elapsed time: 34.12 seconds; peak allocated memory: 442.730 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Apr 20 18:29:59 2023...

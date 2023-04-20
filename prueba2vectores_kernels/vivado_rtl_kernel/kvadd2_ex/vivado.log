@@ -1,0 +1,394 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Apr 20 17:29:08 2023
+# Process ID: 5231
+# Current directory: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex
+# Command line: vivado -source /tmp/vivado.10548620172656886044.tmp
+# Log file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/vivado.log
+# Journal file: /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/vivado.jou
+# Running On: pop-os, OS: Linux, CPU Frequency: 1434.361 MHz, CPU Physical cores: 4, Host memory: 16701 MB
+#-----------------------------------------------------------
+start_gui
+source /tmp/vivado.10548620172656886044.tmp
+# open_project /home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/kvadd2_ex.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 6636.324 ; gain = 281.582 ; free physical = 8684 ; free virtual = 35618
+# set_property part xcu250-figd2104-2L-e [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xcu250-figd2104-2L-e
+Top: kvadd2
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 8145.262 ; gain = 359.734 ; free physical = 7163 ; free virtual = 34215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kvadd2' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_control_s_axi' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_control_s_axi.v:7]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_control_s_axi.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_control_s_axi' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example.sv:5]
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M01_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M02_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M02_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_vadd' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:6]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDER_BIT_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_axi_read_master' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_axi_read_master.sv:52]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_OUTSTANDING bound to: 2 - type: integer 
+	Parameter C_INCLUDE_DATA_FIFO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 33 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 2 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 33 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:493]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_counter' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 22 - type: integer 
+	Parameter C_INIT bound to: 22'b0000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_counter' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_counter__parameterized0' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 2 - type: integer 
+	Parameter C_INIT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_counter__parameterized0' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_axi_read_master' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_axi_read_master.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_adder.v:11]
+	Parameter C_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDER_BIT_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_CLOCKS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2349]
+	Parameter CLOCKING_MODE bound to: common_clock - type: string 
+	Parameter FIFO_MEMORY_TYPE bound to: distributed - type: string 
+	Parameter PACKET_FIFO bound to: false - type: string 
+	Parameter FIFO_DEPTH bound to: 32 - type: integer 
+	Parameter TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter TID_WIDTH bound to: 1 - type: integer 
+	Parameter TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1002 - type: string 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 27 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 5 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2349]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_adder' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_adder.v:11]
+WARNING: [Synth 8-7071] port 's_axis_tstrb' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 's_axis_tid' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 's_axis_tdest' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 's_axis_tuser' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tid' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tdest' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7071] port 'm_axis_tuser' of module 'kvadd2_example_adder' is unconnected for instance 'inst_adder' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+WARNING: [Synth 8-7023] instance 'inst_adder' of module 'kvadd2_example_adder' has 22 connections declared, but only 14 given [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:120]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_axi_write_master' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_axi_write_master.sv:42]
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_XFER_SIZE_WIDTH bound to: 32 - type: integer 
+	Parameter C_MAX_OUTSTANDING bound to: 32 - type: integer 
+	Parameter C_INCLUDE_DATA_FIFO bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+	Parameter FIFO_MEMORY_TYPE bound to: distributed - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 32 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
+INFO: [Synth 8-226] default block is never used [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (0#1) [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_counter__parameterized1' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_INIT bound to: 8'b11111111 
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_counter__parameterized1' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_counter__parameterized2' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_INIT bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_counter__parameterized2' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'kvadd2_example_counter__parameterized3' [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+	Parameter C_WIDTH bound to: 6 - type: integer 
+	Parameter C_INIT bound to: 6'b100000 
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_counter__parameterized3' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_counter.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_axi_write_master' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_axi_write_master.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example_vadd' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example_vadd.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2_example' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_example.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'kvadd2' (0#1) [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2.v:7]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_control_s_axi.v:301]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
+WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/pablo1318/hddLinux/XILINX/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
+WARNING: [Synth 8-7129] Port rd_clk in module xpm_fifo_rst is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[31] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[30] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[29] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[28] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[27] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[26] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_aclk in module kvadd2_example_axi_write_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_areset in module kvadd2_example_axi_write_master is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[43] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[42] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[41] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[40] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[39] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[38] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[37] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[36] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[35] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[34] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[33] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[32] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[31] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[30] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[29] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[28] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[27] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[26] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_aclk in module xpm_fifo_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8226.199 ; gain = 440.672 ; free physical = 7234 ; free virtual = 34290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8244.012 ; gain = 458.484 ; free physical = 7234 ; free virtual = 34290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8244.012 ; gain = 458.484 ; free physical = 7234 ; free virtual = 34290
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 8244.012 ; gain = 0.000 ; free physical = 7233 ; free virtual = 34289
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_user.xdc]
+Finished Parsing XDC File [/home/pablo1318/workspace/prueba2vectores_kernels/vivado_rtl_kernel/kvadd2_ex/imports/kvadd2_user.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8423.625 ; gain = 0.000 ; free physical = 7104 ; free virtual = 34180
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 8452.223 ; gain = 666.695 ; free physical = 6858 ; free virtual = 33966
+82 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 8452.223 ; gain = 1750.176 ; free physical = 6857 ; free virtual = 33965
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 20 17:34:47 2023...
